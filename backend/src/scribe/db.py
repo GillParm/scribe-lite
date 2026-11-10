@@ -7,7 +7,7 @@ from contextlib import contextmanager
 from datetime import UTC, datetime
 from typing import Any
 
-from sqlalchemy import DateTime, Engine, create_engine
+from sqlalchemy import DateTime, Engine, create_engine, event
 from sqlalchemy.engine import Dialect
 from sqlalchemy.orm import DeclarativeBase, Session, sessionmaker
 from sqlalchemy.types import TypeDecorator
@@ -45,9 +45,19 @@ class UTCDateTime(TypeDecorator[datetime]):
 
 def make_engine(url: str) -> Engine:
     connect_args: dict[str, Any] = {}
-    if url.startswith("sqlite"):
+    sqlite = url.startswith("sqlite")
+    if sqlite:
         connect_args["check_same_thread"] = False
-    return create_engine(url, pool_pre_ping=True, connect_args=connect_args)
+    engine = create_engine(url, pool_pre_ping=True, connect_args=connect_args)
+    if sqlite:
+        # SQLite ignores foreign keys (and so ON DELETE rules) unless asked per connection.
+        @event.listens_for(engine, "connect")
+        def _enable_foreign_keys(dbapi_connection: Any, _record: Any) -> None:
+            cursor = dbapi_connection.cursor()
+            cursor.execute("PRAGMA foreign_keys=ON")
+            cursor.close()
+
+    return engine
 
 
 class Database:
