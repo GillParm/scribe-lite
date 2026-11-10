@@ -1,0 +1,240 @@
+{
+  "slug": "sore-throat",
+  "source": "script",
+  "audio": "audio.m4a",
+  "audio_sha256": "7bf669d7ec753f6fe1073fe9f58768af01c23b7e55374499805ec6f7d39b1711",
+  "duration_seconds": 198.83,
+  "segments": [
+    {
+      "id": "s1",
+      "speaker": "doctor",
+      "start": 0.4,
+      "end": 6.37,
+      "text": "Good morning. I'm Doctor Kessler. Can I start by confirming your full name and date of birth?"
+    },
+    {
+      "id": "s2",
+      "speaker": "patient",
+      "start": 6.97,
+      "end": 12.39,
+      "text": "Sure. It's Maria Alvarez, and my date of birth is March 4th, 1988."
+    },
+    {
+      "id": "s3",
+      "speaker": "doctor",
+      "start": 12.99,
+      "end": 20.58,
+      "text": "Thanks, Maria. And is the best number to reach you still 416-555-0182?"
+    },
+    {
+      "id": "s4",
+      "speaker": "patient",
+      "start": 21.18,
+      "end": 22.85,
+      "text": "Yes, that's my cell."
+    },
+    {
+      "id": "s5",
+      "speaker": "doctor",
+      "start": 23.45,
+      "end": 28.24,
+      "text": "And you're still at 42 Maple Crescent, Apartment 3, Toronto?"
+    },
+    {
+      "id": "s6",
+      "speaker": "patient",
+      "start": 28.84,
+      "end": 29.67,
+      "text": "That's right."
+    },
+    {
+      "id": "s7",
+      "speaker": "doctor",
+      "start": 30.27,
+      "end": 32.88,
+      "text": "Great. So what brings you in today?"
+    },
+    {
+      "id": "s8",
+      "speaker": "patient",
+      "start": 33.48,
+      "end": 39.28,
+      "text": "My throat has been really sore for about three days now. It hurts a lot when I swallow, even water."
+    },
+    {
+      "id": "s9",
+      "speaker": "doctor",
+      "start": 39.88,
+      "end": 41.13,
+      "text": "Have you had a fever?"
+    },
+    {
+      "id": "s10",
+      "speaker": "patient",
+      "start": 41.73,
+      "end": 47.86,
+      "text": "I think so. Last night I took my temperature and it was 38.5. I've also had chills."
+    },
+    {
+      "id": "s11",
+      "speaker": "doctor",
+      "start": 48.46,
+      "end": 51.68,
+      "text": "Any cough, runny nose, or stuffy nose?"
+    },
+    {
+      "id": "s12",
+      "speaker": "patient",
+      "start": 52.28,
+      "end": 58.83,
+      "text": "No, not really. No cough at all. It's mostly just my throat, and my neck feels kind of swollen."
+    },
+    {
+      "id": "s13",
+      "speaker": "doctor",
+      "start": 59.43,
+      "end": 61.47,
+      "text": "Has anyone around you been sick?"
+    },
+    {
+      "id": "s14",
+      "speaker": "patient",
+      "start": 62.07,
+      "end": 66.21,
+      "text": "My roommate, Jenna, was diagnosed with strep throat last week."
+    },
+    {
+      "id": "s15",
+      "speaker": "doctor",
+      "start": 66.81,
+      "end": 70.58,
+      "text": "Okay, that's helpful. Have you taken anything for it?"
+    },
+    {
+      "id": "s16",
+      "speaker": "patient",
+      "start": 71.18,
+      "end": 76.63,
+      "text": "Just ibuprofen, 400 milligrams, maybe twice a day. It helps a little."
+    },
+    {
+      "id": "s17",
+      "speaker": "doctor",
+      "start": 77.23,
+      "end": 79.36,
+      "text": "Any allergies to medications?"
+    },
+    {
+      "id": "s18",
+      "speaker": "patient",
+      "start": 79.96,
+      "end": 84.33,
+      "text": "Yes, penicillin. I got hives from amoxicillin when I was a kid."
+    },
+    {
+      "id": "s19",
+      "speaker": "doctor",
+      "start": 84.93,
+      "end": 89.8,
+      "text": "Good to know. Any other medical problems, or medications you take regularly?"
+    },
+    {
+      "id": "s20",
+      "speaker": "patient",
+      "start": 90.4,
+      "end": 94.32,
+      "text": "No, I'm usually healthy. I don't take anything regularly."
+    },
+    {
+      "id": "s21",
+      "speaker": "doctor",
+      "start": 94.92,
+      "end": 116.74,
+      "text": "Alright, let me take a look. Your temperature here is 38.3, heart rate is 96, and blood pressure is 118 over 76. Open wide for me. Your tonsils are swollen and there's white exudate on both sides. The lymph nodes at the front of your neck are enlarged and tender. Your ears look normal, and your lungs are clear."
+    },
+    {
+      "id": "s22",
+      "speaker": "patient",
+      "start": 117.34,
+      "end": 118.25,
+      "text": "Is that bad?"
+    },
+    {
+      "id": "s23",
+      "speaker": "doctor",
+      "start": 118.85,
+      "end": 130.47,
+      "text": "It fits with strep throat. With the fever, the white patches, the swollen nodes and no cough, the chance is high, so I did a rapid strep swab while we were talking. It came back positive."
+    },
+    {
+      "id": "s24",
+      "speaker": "patient",
+      "start": 131.07,
+      "end": 133.77,
+      "text": "Okay, so it is strep, like Jenna."
+    },
+    {
+      "id": "s25",
+      "speaker": "doctor",
+      "start": 134.37,
+      "end": 146.85,
+      "text": "Yes, this is strep pharyngitis. Normally I'd give amoxicillin, but because you had hives with it, I'm going to prescribe azithromycin instead, 500 milligrams once a day for five days."
+    },
+    {
+      "id": "s26",
+      "speaker": "patient",
+      "start": 147.45,
+      "end": 149.86,
+      "text": "Okay. Will that clear it up quickly?"
+    },
+    {
+      "id": "s27",
+      "speaker": "doctor",
+      "start": 150.46,
+      "end": 163.9,
+      "text": "Most people feel better within two or three days. Please finish the whole course even if you feel better. You can keep taking ibuprofen for pain and fever, drink plenty of fluids, and warm salt water gargles can help."
+    },
+    {
+      "id": "s28",
+      "speaker": "patient",
+      "start": 164.5,
+      "end": 166.2,
+      "text": "Should I stay home from work?"
+    },
+    {
+      "id": "s29",
+      "speaker": "doctor",
+      "start": 166.8,
+      "end": 175.32,
+      "text": "Yes. Stay home until you've been on the antibiotic for at least 24 hours and your fever is gone. I can give you a note for work."
+    },
+    {
+      "id": "s30",
+      "speaker": "patient",
+      "start": 175.92,
+      "end": 177.83,
+      "text": "That would be great, thank you."
+    },
+    {
+      "id": "s31",
+      "speaker": "doctor",
+      "start": 178.43,
+      "end": 191.56,
+      "text": "Come back, or go to the emergency department, if you have trouble breathing, can't swallow your own saliva, or can't open your mouth fully. And if you're not improving in 48 to 72 hours, give us a call."
+    },
+    {
+      "id": "s32",
+      "speaker": "patient",
+      "start": 192.16,
+      "end": 193.57,
+      "text": "Okay, I will."
+    },
+    {
+      "id": "s33",
+      "speaker": "doctor",
+      "start": 194.17,
+      "end": 198.33,
+      "text": "We'll send the prescription to your pharmacy. Feel better, Maria."
+    }
+  ]
+}
