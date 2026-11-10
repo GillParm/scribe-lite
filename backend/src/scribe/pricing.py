@@ -27,10 +27,20 @@ def _anthropic(input_: str, output: str, cache_read: str) -> ModelPrice:
     return ModelPrice(inp, Decimal(output), Decimal(cache_read), inp * Decimal("1.25"))
 
 
-# Anthropic first-party API list prices (checked 2026-11-10).
+def _gemini(input_: str, output: str) -> ModelPrice:
+    # Context caching is not used here, so cached-token rates are left at zero.
+    return ModelPrice(Decimal(input_), Decimal(output), Decimal(0), Decimal(0))
+
+
 PRICES: dict[str, ModelPrice] = {
+    # Anthropic first-party API list prices (checked 2026-11-10).
     "claude-opus-5-5": _anthropic("4.00", "20.00", "0.20"),
     "claude-sonnet-5-5": _anthropic("2.00", "10.00", "0.10"),
+    # Gemini API paid-tier list prices (checked 2026-11-10; audio input is billed at the
+    # same rate as text for these models). The free tier bills nothing, so for a free key
+    # these figures are what the same calls would cost on a paid key.
+    "gemini-3.8-flash": _gemini("0.75", "3.75"),  # introductory rate to 2026-12-31
+    "gemini-3.5-flash-lite": _gemini("0.30", "2.50"),
 }
 
 
