@@ -1,0 +1,30 @@
+{
+  "notice": "Synthetic. Invented details only. Written before the redactor was run on it, and not used to tune the recognizers.",
+  "cases": [
+    { "turns": ["Patient states her name is Olivia Brennan-Hughes."], "pii": [{ "type": "PERSON", "value": "Olivia Brennan-Hughes" }] },
+    { "turns": ["I was born on the 9th of October, 1975."], "pii": [{ "type": "DATE_OF_BIRTH", "value": "9th of October, 1975" }] },
+    { "turns": ["DOB 02/11/1990, no known allergies."], "pii": [{ "type": "DATE_OF_BIRTH", "value": "02/11/1990" }] },
+    { "turns": ["You can call my daughter at (289) 555-0163 if I don't pick up."], "pii": [{ "type": "PHONE_NUMBER", "value": "(289) 555-0163" }] },
+    { "turns": ["My husband Rajesh drove me here today."], "pii": [{ "type": "PERSON", "value": "Rajesh" }] },
+    { "turns": ["We moved to 77 Orchard Hill Road, Hamilton, last spring."], "pii": [{ "type": "ADDRESS", "value": "77 Orchard Hill Road, Hamilton" }] },
+    { "turns": ["Send the letter to 15 Kingfisher Court, Suite 210, Ottawa, ON K1A 0B1."], "pii": [{ "type": "ADDRESS", "value": "15 Kingfisher Court, Suite 210, Ottawa, ON K1A 0B1" }] },
+    { "turns": ["My birthday is December 1st, 1959, so I'm due for the shingles shot."], "pii": [{ "type": "DATE_OF_BIRTH", "value": "December 1st, 1959" }] },
+    { "turns": ["Nurse Patel will take your blood pressure first."], "pii": [{ "type": "PERSON", "value": "Patel" }] },
+    { "turns": ["This is Gabriel calling about my blood test results."], "pii": [{ "type": "PERSON", "value": "Gabriel" }] },
+    { "turns": ["Her cell is 416 555 0198."], "pii": [{ "type": "PHONE_NUMBER", "value": "416 555 0198" }] },
+    { "turns": ["Reach me at nine oh five, five five five, zero one three two."], "pii": [{ "type": "PHONE_NUMBER", "value": "nine oh five, five five five, zero one three two" }] },
+    { "turns": ["I'm staying with my sister, Fatima Haddad, on Elm Street for now."], "pii": [{ "type": "PERSON", "value": "Fatima Haddad" }, { "type": "ADDRESS", "value": "Elm Street" }] },
+    { "turns": ["Dr. Liu referred me after my last scan."], "pii": [{ "type": "PERSON", "value": "Liu" }] },
+    { "turns": ["Mrs. O'Connor, can you confirm your date of birth?", "It's 1948-05-30."], "pii": [{ "type": "PERSON", "value": "O'Connor" }, { "type": "DATE_OF_BIRTH", "value": "1948-05-30" }] },
+    { "turns": ["Sam brought the kids, Ella and Noah, to the appointment."], "pii": [{ "type": "PERSON", "value": "Sam" }, { "type": "PERSON", "value": "Ella" }, { "type": "PERSON", "value": "Noah" }] },
+    { "turns": ["I live at 2209 Riverside Dr. West, Apt 5."], "pii": [{ "type": "ADDRESS", "value": "2209 Riverside Dr. West, Apt 5" }] },
+    { "turns": ["My phone number changed to 647.555.0177 last month."], "pii": [{ "type": "PHONE_NUMBER", "value": "647.555.0177" }] },
+    { "turns": ["Mr. Whitfield's mother had the same thing at his age."], "pii": [{ "type": "PERSON", "value": "Whitfield" }] },
+    { "turns": ["Hi, Grace. Have you been taking the metformin every day?"], "pii": [{ "type": "PERSON", "value": "Grace" }] },
+    { "turns": ["The address on file is 410 Queen Victoria Boulevard, Unit 8B, Kitchener, N2H 6M2."], "pii": [{ "type": "ADDRESS", "value": "410 Queen Victoria Boulevard, Unit 8B, Kitchener, N2H 6M2" }] },
+    { "turns": ["What's your date of birth?", "Um, it's April 17, 1993."], "pii": [{ "type": "DATE_OF_BIRTH", "value": "April 17, 1993" }] },
+    { "turns": ["My son Diego and his wife Priyanka are visiting from Calgary."], "pii": [{ "type": "PERSON", "value": "Diego" }, { "type": "PERSON", "value": "Priyanka" }] },
+    { "turns": ["Write down 905-555-0110, that's the after-hours line for Dr. Amara Osei."], "pii": [{ "type": "PHONE_NUMBER", "value": "905-555-0110" }, { "type": "PERSON", "value": "Amara Osei" }] },
+    { "turns": ["She lives at 8 Willow Way, Guelph, with her partner, Chris."], "pii": [{ "type": "ADDRESS", "value": "8 Willow Way, Guelph" }, { "type": "PERSON", "value": "Chris" }] }
+  ]
+}
