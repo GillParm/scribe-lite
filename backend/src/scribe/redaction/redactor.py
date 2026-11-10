@@ -40,6 +40,25 @@ ENTITY_TYPES = ["PERSON", "DATE_OF_BIRTH", "PHONE_NUMBER", "ADDRESS", "EMAIL_ADD
 # When spans overlap, the longer one wins; on a tie, the more specific type.
 _PRIORITY = {"DATE_OF_BIRTH": 0, "ADDRESS": 1, "PHONE_NUMBER": 2, "EMAIL_ADDRESS": 3, "PERSON": 4}
 MIN_SCORE = 0.5
+_SPACY_LABELS_UNUSED = [
+    "CARDINAL",
+    "DATE",
+    "EVENT",
+    "FAC",
+    "GPE",
+    "LANGUAGE",
+    "LAW",
+    "LOC",
+    "MONEY",
+    "NORP",
+    "ORDINAL",
+    "ORG",
+    "PERCENT",
+    "PRODUCT",
+    "QUANTITY",
+    "TIME",
+    "WORK_OF_ART",
+]
 PLACEHOLDER = re.compile(r"\[(?P<type>[A-Z_]+)_(?P<n>\d+)\]")
 _LEADING_TITLE = re.compile(r"(?:Dr|Doctor|Mr|Mrs|Ms|Miss|Mx|Nurse|Coach)\.?\s+")
 
@@ -146,6 +165,8 @@ class Redactor:
             nlp_configuration={
                 "nlp_engine_name": "spacy",
                 "models": [{"lang_code": "en", "model_name": spacy_model}],
+                # Only PERSON is used from spaCy; drop the other labels quietly.
+                "ner_model_configuration": {"labels_to_ignore": _SPACY_LABELS_UNUSED},
             }
         ).create_engine()
         registry = RecognizerRegistry(supported_languages=["en"])
@@ -221,7 +242,8 @@ def _trim(span: Span) -> Span | None:
     """Drop surrounding punctuation and possessive endings; discard non-names."""
     text = span.text
     start, end = span.start, span.end
-    while text and not text[0].isalnum():
+    keep_leading = "(+" if span.entity_type == "PHONE_NUMBER" else ""
+    while text and not text[0].isalnum() and text[0] not in keep_leading:
         text, start = text[1:], start + 1
     while text and not text[-1].isalnum():
         text, end = text[:-1], end - 1
