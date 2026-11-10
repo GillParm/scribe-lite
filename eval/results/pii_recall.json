@@ -1,0 +1,137 @@
+{
+  "spacy_model": "en_core_web_md",
+  "rows": [
+    {
+      "set": "sample: ankle-sprain",
+      "occurrences": 7,
+      "caught": 7,
+      "recall": 1.0,
+      "by_type": {
+        "PERSON": {
+          "total": 4,
+          "caught": 4
+        },
+        "DATE_OF_BIRTH": {
+          "total": 1,
+          "caught": 1
+        },
+        "PHONE_NUMBER": {
+          "total": 1,
+          "caught": 1
+        },
+        "ADDRESS": {
+          "total": 1,
+          "caught": 1
+        }
+      },
+      "missed": [],
+      "over_redacted": []
+    },
+    {
+      "set": "sample: diabetes-follow-up",
+      "occurrences": 7,
+      "caught": 7,
+      "recall": 1.0,
+      "by_type": {
+        "PERSON": {
+          "total": 4,
+          "caught": 4
+        },
+        "DATE_OF_BIRTH": {
+          "total": 1,
+          "caught": 1
+        },
+        "PHONE_NUMBER": {
+          "total": 1,
+          "caught": 1
+        },
+        "ADDRESS": {
+          "total": 1,
+          "caught": 1
+        }
+      },
+      "missed": [],
+      "over_redacted": []
+    },
+    {
+      "set": "sample: sore-throat",
+      "occurrences": 9,
+      "caught": 9,
+      "recall": 1.0,
+      "by_type": {
+        "PERSON": {
+          "total": 6,
+          "caught": 6
+        },
+        "DATE_OF_BIRTH": {
+          "total": 1,
+          "caught": 1
+        },
+        "PHONE_NUMBER": {
+          "total": 1,
+          "caught": 1
+        },
+        "ADDRESS": {
+          "total": 1,
+          "caught": 1
+        }
+      },
+      "missed": [],
+      "over_redacted": []
+    },
+    {
+      "set": "samples (all)",
+      "occurrences": 23,
+      "caught": 23,
+      "recall": 1.0,
+      "by_type": {
+        "PERSON": {
+          "total": 14,
+          "caught": 14
+        },
+        "DATE_OF_BIRTH": {
+          "total": 3,
+          "caught": 3
+        },
+        "PHONE_NUMBER": {
+          "total": 3,
+          "caught": 3
+        },
+        "ADDRESS": {
+          "total": 3,
+          "caught": 3
+        }
+      },
+      "missed": [],
+      "over_redacted": []
+    },
+    {
+      "set": "held-out set",
+      "occurrences": 32,
+      "caught": 31,
+      "recall": 0.9688,
+      "by_type": {
+        "PERSON": {
+          "total": 16,
+          "caught": 16
+        },
+        "DATE_OF_BIRTH": {
+          "total": 5,
+          "caught": 5
+        },
+        "PHONE_NUMBER": {
+          "total": 5,
+          "caught": 5
+        },
+        "ADDRESS": {
+          "total": 6,
+          "caught": 5
+        }
+      },
+      "missed": [
+        "ADDRESS: Elm Street"
+      ],
+      "over_redacted": []
+    }
+  ]
+}
