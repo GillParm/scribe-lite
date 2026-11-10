@@ -1,0 +1,30 @@
+{
+  "slug": "diabetes-follow-up",
+  "written": "2026-11-10, from script.json, before any note was generated",
+  "facts": [
+    { "id": "F1", "section": "subjective", "fact": "Three-month type 2 diabetes follow-up." },
+    { "id": "F2", "section": "subjective", "fact": "Dietary lapses over the holidays (more bread and sweets)." },
+    { "id": "F3", "section": "subjective", "fact": "Takes metformin 1000 mg twice daily but misses the evening dose three or four times a week." },
+    { "id": "F4", "section": "subjective", "fact": "Metformin causes cramping and loose stools about an hour after a dose." },
+    { "id": "F5", "section": "subjective", "fact": "Morning home glucose readings usually 8 to 10." },
+    { "id": "F6", "section": "subjective", "fact": "Walks about twice a week, less since the weather got cold." },
+    { "id": "F7", "section": "subjective", "fact": "No chest pain." },
+    { "id": "F8", "section": "subjective", "fact": "No eye exam in about two years." },
+    { "id": "F9", "section": "subjective", "fact": "Night-time tingling in the toes of both feet." },
+    { "id": "F10", "section": "subjective", "fact": "Has not started cinnamon supplements; advised against them." },
+    { "id": "F11", "section": "objective", "fact": "A1c 8.1%, up from 7.4% in the spring." },
+    { "id": "F12", "section": "objective", "fact": "Blood pressure 142/88." },
+    { "id": "F13", "section": "objective", "fact": "Weight 98 kg, up 2 kg since the last visit." },
+    { "id": "F14", "section": "objective", "fact": "Foot pulses normal; monofilament sensation reduced at both great toes." },
+    { "id": "F15", "section": "assessment", "fact": "Type 2 diabetes with worsening glycemic control." },
+    { "id": "F16", "section": "assessment", "fact": "Findings consistent with early diabetic peripheral neuropathy." },
+    { "id": "F17", "section": "assessment", "fact": "Blood pressure above target." },
+    { "id": "F18", "section": "plan", "fact": "Switch metformin to extended-release, 1000 mg twice daily, for GI tolerance." },
+    { "id": "F19", "section": "plan", "fact": "Start empagliflozin 10 mg once daily; counselled on genital yeast infections, urination and hydration." },
+    { "id": "F20", "section": "plan", "fact": "Refer to the diabetes education program and a dietitian." },
+    { "id": "F21", "section": "plan", "fact": "Refer to an eye doctor for a retinal exam." },
+    { "id": "F22", "section": "plan", "fact": "Kidney function and urine test today." },
+    { "id": "F23", "section": "plan", "fact": "Recheck blood pressure next visit; start medication if still above 130/80." },
+    { "id": "F24", "section": "plan", "fact": "Repeat A1c in three months; daily foot checks and call about any sores." }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "slug": "ankle-sprain",
+  "written": "2026-11-10, from script.json, before any note was generated",
+  "facts": [
+    { "id": "F1", "section": "subjective", "fact": "Right ankle inversion injury playing basketball last night, landing on another player's foot." },
+    { "id": "F2", "section": "subjective", "fact": "Felt a snap, followed by rapid swelling on the outside of the ankle." },
+    { "id": "F3", "section": "subjective", "fact": "Able to walk ten to fifteen steps with a limp after the injury." },
+    { "id": "F4", "section": "subjective", "fact": "Treated with ice and elevation, and ibuprofen 400 mg this morning." },
+    { "id": "F5", "section": "subjective", "fact": "Previous left ankle sprain about two years ago; no prior injury to the right ankle." },
+    { "id": "F6", "section": "subjective", "fact": "No numbness or tingling." },
+    { "id": "F7", "section": "subjective", "fact": "Works in a warehouse." },
+    { "id": "F8", "section": "objective", "fact": "Moderate swelling and bruising over the lateral right ankle." },
+    { "id": "F9", "section": "objective", "fact": "Maximal tenderness over the anterior talofibular ligament." },
+    { "id": "F10", "section": "objective", "fact": "No tenderness at the posterior edge or tip of either malleolus." },
+    { "id": "F11", "section": "objective", "fact": "No tenderness at the base of the fifth metatarsal or the navicular." },
+    { "id": "F12", "section": "objective", "fact": "Pulses and sensation in the foot normal." },
+    { "id": "F13", "section": "objective", "fact": "Anterior drawer test shows mild laxity compared with the other side." },
+    { "id": "F14", "section": "objective", "fact": "Able to bear weight for four steps in clinic." },
+    { "id": "F15", "section": "assessment", "fact": "Grade 2 lateral ankle sprain of the right ankle." },
+    { "id": "F16", "section": "assessment", "fact": "Ottawa ankle rules negative; no X-ray needed." },
+    { "id": "F17", "section": "plan", "fact": "Elevation and ice for 15 to 20 minutes at a time." },
+    { "id": "F18", "section": "plan", "fact": "Air-stirrup brace; crutches for two or three days, weight bearing as tolerated." },
+    { "id": "F19", "section": "plan", "fact": "Ibuprofen 400 mg every eight hours with food for up to five days." },
+    { "id": "F20", "section": "plan", "fact": "Physiotherapy referral for balance and strengthening." },
+    { "id": "F21", "section": "plan", "fact": "Expected three to four weeks out of basketball." },
+    { "id": "F22", "section": "plan", "fact": "Modified duties for one week: no heavy lifting or ladders; note provided." },
+    { "id": "F23", "section": "plan", "fact": "Return if unable to bear weight, foot becomes numb or cold, or not improving in a week." }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "slug": "sore-throat",
+  "written": "2026-11-10, from script.json, before any note was generated",
+  "facts": [
+    { "id": "F1", "section": "subjective", "fact": "Sore throat for about three days." },
+    { "id": "F2", "section": "subjective", "fact": "Pain on swallowing, including liquids." },
+    { "id": "F3", "section": "subjective", "fact": "Fever of 38.5 at home last night, with chills." },
+    { "id": "F4", "section": "subjective", "fact": "No cough and no nasal symptoms." },
+    { "id": "F5", "section": "subjective", "fact": "Roommate was diagnosed with strep throat last week." },
+    { "id": "F6", "section": "subjective", "fact": "Taking ibuprofen 400 mg about twice a day with partial relief." },
+    { "id": "F7", "section": "subjective", "fact": "Penicillin allergy: hives with amoxicillin as a child." },
+    { "id": "F8", "section": "subjective", "fact": "No other medical problems and no regular medications." },
+    { "id": "F9", "section": "objective", "fact": "Temperature 38.3, heart rate 96, blood pressure 118/76." },
+    { "id": "F10", "section": "objective", "fact": "Swollen tonsils with white exudate on both sides." },
+    { "id": "F11", "section": "objective", "fact": "Enlarged, tender anterior cervical lymph nodes." },
+    { "id": "F12", "section": "objective", "fact": "Ears normal and lungs clear." },
+    { "id": "F13", "section": "objective", "fact": "Rapid strep test positive." },
+    { "id": "F14", "section": "assessment", "fact": "Streptococcal pharyngitis." },
+    { "id": "F15", "section": "plan", "fact": "Azithromycin 500 mg once daily for five days, chosen because of the penicillin allergy." },
+    { "id": "F16", "section": "plan", "fact": "Finish the full antibiotic course." },
+    { "id": "F17", "section": "plan", "fact": "Ibuprofen for pain and fever, fluids, and warm salt water gargles." },
+    { "id": "F18", "section": "plan", "fact": "Stay off work until 24 hours on antibiotics and fever gone; work note provided." },
+    { "id": "F19", "section": "plan", "fact": "Return or go to the emergency department for trouble breathing, inability to swallow saliva or to open the mouth; call if not improving in 48 to 72 hours." }
+  ]
+}
