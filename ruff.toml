@@ -1,0 +1,6 @@
+# Lint scripts outside backend/ (samples/tools, eval) with the backend rules.
+extend = "backend/pyproject.toml"
+
+[lint.extend-per-file-ignores]
+# Local tools that shell out to fixed macOS binaries (say, afconvert).
+"samples/tools/*.py" = ["S603", "S607"]
