@@ -6,15 +6,21 @@ license = "MIT"
 requires-python = ">=3.12,<3.13"
 dependencies = [
     "alembic>=1.20.1",
+    "en-core-web-md>=3.8.0",
     "fastapi>=0.162.4",
     "google-genai>=3.1.0",
+    "presidio-analyzer>=2.2.366",
     "psycopg[binary]>=3.3.8",
     "pydantic>=2.14.3",
     "pydantic-settings>=2.16.2",
     "python-multipart>=0.0.33",
+    "spacy>=3.8.18",
     "sqlalchemy>=2.1",
     "uvicorn[standard]>=0.54.0",
 ]
+
+[tool.uv.sources]
+en-core-web-md = { url = "https://github.com/explosion/spacy-models/releases/download/en_core_web_md-3.8.0/en_core_web_md-3.8.0-py3-none-any.whl" }
 
 [project.scripts]
 scribe = "scribe.cli:main"
