@@ -193,13 +193,17 @@ def planted_note(
     planted: dict[str, str] = {}
     for edit in edits:
         if "replace" in edit:
-            for statements in by_section.values():
-                for statement in statements:
-                    if statement.id == edit["replace"]:
-                        statement.text = edit["text"]
-                        planted[statement.id] = edit["kind"]
-            if edit["replace"] not in planted:
-                raise SystemExit(f"no statement {edit['replace']} to replace")
+            phrase = edit["replace"].lower()
+            targets = [
+                statement
+                for statements in by_section.values()
+                for statement in statements
+                if phrase in statement.text.lower()
+            ]
+            if len(targets) != 1:
+                raise SystemExit(f"{len(targets)} statements contain {edit['replace']!r}")
+            targets[0].text = edit["text"]
+            planted[targets[0].id] = edit["kind"]
         else:
             section = Section(edit["insert"])
             new_id = f"{section.value}-{len(by_section[section]) + 1}"
@@ -327,7 +331,7 @@ def render(summary: dict[str, Any]) -> str:
         + (", ".join(f"{k}: {v}" for k, v in leaks.items() if v) or "none")
         + ".",
         "",
-        f"Model calls made by this evaluation run: {summary['eval_calls']}, "
+        f"Model calls behind these results: {summary['eval_calls']}, "
         f"${summary['eval_cost_usd']} at list prices.",
     ]
     return "\n".join(lines) + "\n"
@@ -413,7 +417,9 @@ def main() -> int:
 
     calls = pipeline_calls + recorder.calls()
     previous = RESULTS / "summary.json"
-    history = load(previous).get("eval_calls_log", []) if previous.exists() else []
+    # Calls behind the current tables: earlier calls whose outputs were reused, plus new ones.
+    reuse = previous.exists() and not args.fresh
+    history = load(previous).get("eval_calls_log", []) if reuse else []
     summary: dict[str, Any] = {
         "generated_at": datetime.now(UTC).strftime("%Y-%m-%d"),
         "note_model": settings.soap_model,
