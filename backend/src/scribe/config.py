@@ -42,7 +42,8 @@ class Settings(BaseSettings):
     llm_fallbacks: bool = True
 
     transcriber: TranscriberName = "auto"
-    gemini_transcribe_model: str = "gemini-3.5-flash-lite"
+    # Chosen by eval/compare_transcribers.py: better speaker labels, much slower.
+    gemini_transcribe_model: str = "gemini-3.8-flash"
 
     spacy_model: str = "en_core_web_md"
 
