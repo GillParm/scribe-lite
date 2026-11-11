@@ -47,7 +47,7 @@ class Settings(BaseSettings):
 
     spacy_model: str = "en_core_web_md"
 
-    retention_days: int = Field(default=30, ge=0)
+    retention_days: int = Field(default=30, ge=1)
     retention_interval_minutes: int = Field(default=60, ge=1)
     retention_schedule_enabled: bool = True
 
