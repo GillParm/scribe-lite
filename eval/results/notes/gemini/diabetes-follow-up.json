@@ -1,0 +1,771 @@
+{
+  "version": 1,
+  "sample_slug": null,
+  "title": "Type 2 diabetes, three-month follow-up",
+  "processed_at": "2026-11-11T00:23:08.668447+00:00",
+  "transcriber": "recorded gemini-3.8-flash transcript (gemini-3.8-flash)",
+  "note_model": "claude-opus-5-5",
+  "check_model": "claude-opus-5-5",
+  "duration_seconds": 211.5,
+  "segments": [
+    {
+      "id": "s1",
+      "speaker": "doctor",
+      "start": 0.0,
+      "end": 8.0,
+      "text": "Hi, Mr. Mitchell. I'm Dr. Raman. Good to see you again. Before we start, can you confirm your date of birth for me?",
+      "redacted_text": "Hi, Mr. [PERSON_1]. I'm Dr. [PERSON_2]. Good to see you again. Before we start, can you confirm your date of birth for me?",
+      "redaction_spans": [
+        {
+          "start": 8,
+          "end": 18,
+          "placeholder": "[PERSON_1]",
+          "entity_type": "PERSON"
+        },
+        {
+          "start": 28,
+          "end": 38,
+          "placeholder": "[PERSON_2]",
+          "entity_type": "PERSON"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "speaker": "patient",
+      "start": 8.0,
+      "end": 12.0,
+      "text": "July 19th, 1967.",
+      "redacted_text": "[DATE_OF_BIRTH_1].",
+      "redaction_spans": [
+        {
+          "start": 0,
+          "end": 17,
+          "placeholder": "[DATE_OF_BIRTH_1]",
+          "entity_type": "DATE_OF_BIRTH"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "speaker": "doctor",
+      "start": 12.0,
+      "end": 22.0,
+      "text": "Thank you. And we have your address as 1187 Birchwood Drive, Mississauga, L5G 2K9. Is that still current?",
+      "redacted_text": "Thank you. And we have your address as [ADDRESS_1]. Is that still current?",
+      "redaction_spans": [
+        {
+          "start": 39,
+          "end": 50,
+          "placeholder": "[ADDRESS_1]",
+          "entity_type": "ADDRESS"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "speaker": "patient",
+      "start": 22.0,
+      "end": 24.0,
+      "text": "Still the same, yes.",
+      "redacted_text": "Still the same, yes.",
+      "redaction_spans": []
+    },
+    {
+      "id": "s5",
+      "speaker": "doctor",
+      "start": 24.0,
+      "end": 30.5,
+      "text": "And your phone number, 905-555-0147?",
+      "redacted_text": "And your phone number, [PHONE_NUMBER_1]?",
+      "redaction_spans": [
+        {
+          "start": 23,
+          "end": 39,
+          "placeholder": "[PHONE_NUMBER_1]",
+          "entity_type": "PHONE_NUMBER"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "speaker": "patient",
+      "start": 30.5,
+      "end": 35.5,
+      "text": "That's the house phone. My wife, Linda, usually answers it.",
+      "redacted_text": "That's the house phone. My wife, [PERSON_3], usually answers it.",
+      "redaction_spans": [
+        {
+          "start": 33,
+          "end": 43,
+          "placeholder": "[PERSON_3]",
+          "entity_type": "PERSON"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "speaker": "doctor",
+      "start": 35.5,
+      "end": 41.0,
+      "text": "That's fine. So this is your 3-month diabetes check. How have things been going?",
+      "redacted_text": "That's fine. So this is your 3-month diabetes check. How have things been going?",
+      "redaction_spans": []
+    },
+    {
+      "id": "s8",
+      "speaker": "patient",
+      "start": 41.0,
+      "end": 49.0,
+      "text": "Honestly, not great. The holidays were rough. I've been eating a lot more bread and sweets than I should.",
+      "redacted_text": "Honestly, not great. The holidays were rough. I've been eating a lot more bread and sweets than I should.",
+      "redaction_spans": []
+    },
+    {
+      "id": "s9",
+      "speaker": "doctor",
+      "start": 49.0,
+      "end": 55.0,
+      "text": "That's common. Are you still taking the metformin, 1,000 mg twice a day?",
+      "redacted_text": "That's common. Are you still taking the metformin, 1,000 mg twice a day?",
+      "redaction_spans": []
+    },
+    {
+      "id": "s10",
+      "speaker": "patient",
+      "start": 55.0,
+      "end": 63.5,
+      "text": "Mostly. I skipped the evening dose sometimes because it upsets my stomach. Maybe 3 or 4 times a week I miss it.",
+      "redacted_text": "Mostly. I skipped the evening dose sometimes because it upsets my stomach. Maybe 3 or 4 times a week I miss it.",
+      "redaction_spans": []
+    },
+    {
+      "id": "s11",
+      "speaker": "doctor",
+      "start": 63.5,
+      "end": 65.5,
+      "text": "What kind of stomach upset?",
+      "redacted_text": "What kind of stomach upset?",
+      "redaction_spans": []
+    },
+    {
+      "id": "s12",
+      "speaker": "patient",
+      "start": 65.5,
+      "end": 71.0,
+      "text": "Cramping and loose stools, usually an hour or so after I take it.",
+      "redacted_text": "Cramping and loose stools, usually an hour or so after I take it.",
+      "redaction_spans": []
+    },
+    {
+      "id": "s13",
+      "speaker": "doctor",
+      "start": 71.0,
+      "end": 74.5,
+      "text": "Okay. What have your sugars been like at home?",
+      "redacted_text": "Okay. What have your sugars been like at home?",
+      "redaction_spans": []
+    },
+    {
+      "id": "s14",
+      "speaker": "patient",
+      "start": 74.5,
+      "end": 78.0,
+      "text": "In the mornings they're usually between 8 and 10.",
+      "redacted_text": "In the mornings they're usually between 8 and 10.",
+      "redaction_spans": []
+    },
+    {
+      "id": "s15",
+      "speaker": "doctor",
+      "start": 78.0,
+      "end": 80.0,
+      "text": "And exercise?",
+      "redacted_text": "And exercise?",
+      "redaction_spans": []
+    },
+    {
+      "id": "s16",
+      "speaker": "patient",
+      "start": 80.0,
+      "end": 85.0,
+      "text": "I walk the dog maybe twice a week, less since it got cold.",
+      "redacted_text": "I walk the dog maybe twice a week, less since it got cold.",
+      "redaction_spans": []
+    },
+    {
+      "id": "s17",
+      "speaker": "doctor",
+      "start": 85.0,
+      "end": 89.5,
+      "text": "Any chest pain, shortness of breath, or problems with your vision?",
+      "redacted_text": "Any chest pain, shortness of breath, or problems with your vision?",
+      "redaction_spans": []
+    },
+    {
+      "id": "s18",
+      "speaker": "patient",
+      "start": 89.5,
+      "end": 101.5,
+      "text": "No chest pain. My eyes seem fine, but I haven't had an eye exam in about 2 years. The one thing is my feet. Sometimes at night I get tingling in my toes.",
+      "redacted_text": "No chest pain. My eyes seem fine, but I haven't had an eye exam in about 2 years. The one thing is my feet. Sometimes at night I get tingling in my toes.",
+      "redaction_spans": []
+    },
+    {
+      "id": "s19",
+      "speaker": "doctor",
+      "start": 101.5,
+      "end": 103.0,
+      "text": "Both feet?",
+      "redacted_text": "Both feet?",
+      "redaction_spans": []
+    },
+    {
+      "id": "s20",
+      "speaker": "patient",
+      "start": 103.0,
+      "end": 105.0,
+      "text": "Yes, both.",
+      "redacted_text": "Yes, both.",
+      "redaction_spans": []
+    },
+    {
+      "id": "s21",
+      "speaker": "doctor",
+      "start": 105.0,
+      "end": 108.5,
+      "text": "Okay. Are you taking any supplements?",
+      "redacted_text": "Okay. Are you taking any supplements?",
+      "redaction_spans": []
+    },
+    {
+      "id": "s22",
+      "speaker": "patient",
+      "start": 108.5,
+      "end": 114.5,
+      "text": "My brother-in-law keeps telling me to try cinnamon pills, but I haven't started them.",
+      "redacted_text": "My brother-in-law keeps telling me to try cinnamon pills, but I haven't started them.",
+      "redaction_spans": []
+    },
+    {
+      "id": "s23",
+      "speaker": "doctor",
+      "start": 114.5,
+      "end": 125.0,
+      "text": "I'd hold off on those. There isn't good evidence that they help. Now, your A1C from last week came back at 8.1%. In the spring it was 7.4.",
+      "redacted_text": "I'd hold off on those. There isn't good evidence that they help. Now, your A1C from last week came back at 8.1%. In the spring it was 7.4.",
+      "redaction_spans": []
+    },
+    {
+      "id": "s24",
+      "speaker": "patient",
+      "start": 125.0,
+      "end": 127.5,
+      "text": "So it's going up.",
+      "redacted_text": "So it's going up.",
+      "redaction_spans": []
+    },
+    {
+      "id": "s25",
+      "speaker": "doctor",
+      "start": 127.5,
+      "end": 145.5,
+      "text": "It is. Your blood pressure today is 142/88, and your weight is 98 kg, up 2 from last time. On the foot exam, your pulses are good, but sensation with the monofilament is reduced at both big toes. That fits with early nerve changes from diabetes.",
+      "redacted_text": "It is. Your blood pressure today is 142/88, and your weight is 98 kg, up 2 from last time. On the foot exam, your pulses are good, but sensation with the monofilament is reduced at both big toes. That fits with early nerve changes from diabetes.",
+      "redaction_spans": []
+    },
+    {
+      "id": "s26",
+      "speaker": "patient",
+      "start": 145.5,
+      "end": 147.5,
+      "text": "That's worrying.",
+      "redacted_text": "That's worrying.",
+      "redaction_spans": []
+    },
+    {
+      "id": "s27",
+      "speaker": "doctor",
+      "start": 147.5,
+      "end": 169.0,
+      "text": "It's a sign we should tighten things up. Here's what I'd suggest. First, let's switch your metformin to the extended-release form, still 1,000 mg twice a day. It's usually easier on the stomach. Second, I'd like to add a medication called empagliflozin, 10 mg once a day. It lowers sugar and also protects the heart and kidneys.",
+      "redacted_text": "It's a sign we should tighten things up. Here's what I'd suggest. First, let's switch your metformin to the extended-release form, still 1,000 mg twice a day. It's usually easier on the stomach. Second, I'd like to add a medication called empagliflozin, 10 mg once a day. It lowers sugar and also protects the heart and kidneys.",
+      "redaction_spans": []
+    },
+    {
+      "id": "s28",
+      "speaker": "patient",
+      "start": 169.0,
+      "end": 171.0,
+      "text": "Any side effects?",
+      "redacted_text": "Any side effects?",
+      "redaction_spans": []
+    },
+    {
+      "id": "s29",
+      "speaker": "doctor",
+      "start": 171.0,
+      "end": 187.5,
+      "text": "It can cause genital yeast infections and make you pee more, so drink enough water. Third, I'm referring you to the diabetes education program to meet with a dietitian, and to an eye doctor for a retinal exam. We'll also do kidney function and a urine test today.",
+      "redacted_text": "It can cause genital yeast infections and make you pee more, so drink enough water. Third, I'm referring you to the diabetes education program to meet with a dietitian, and to an eye doctor for a retinal exam. We'll also do kidney function and a urine test today.",
+      "redaction_spans": []
+    },
+    {
+      "id": "s30",
+      "speaker": "patient",
+      "start": 187.5,
+      "end": 190.0,
+      "text": "And the blood pressure?",
+      "redacted_text": "And the blood pressure?",
+      "redaction_spans": []
+    },
+    {
+      "id": "s31",
+      "speaker": "doctor",
+      "start": 190.0,
+      "end": 199.5,
+      "text": "I'll recheck it at your next visit. If it's still above 130/80, we'll start a medication for it. Let's repeat the A1C in 3 months.",
+      "redacted_text": "I'll recheck it at your next visit. If it's still above 130/80, we'll start a medication for it. Let's repeat the A1C in 3 months.",
+      "redaction_spans": []
+    },
+    {
+      "id": "s32",
+      "speaker": "patient",
+      "start": 199.5,
+      "end": 204.0,
+      "text": "Okay. That's a lot, but it makes sense.",
+      "redacted_text": "Okay. That's a lot, but it makes sense.",
+      "redaction_spans": []
+    },
+    {
+      "id": "s33",
+      "speaker": "doctor",
+      "start": 204.0,
+      "end": 211.5,
+      "text": "Check your feet every day, and call us if you notice any sores. See you in 3 months, Mr. Mitchell.",
+      "redacted_text": "Check your feet every day, and call us if you notice any sores. See you in 3 months, Mr. [PERSON_1].",
+      "redaction_spans": [
+        {
+          "start": 89,
+          "end": 99,
+          "placeholder": "[PERSON_1]",
+          "entity_type": "PERSON"
+        }
+      ]
+    }
+  ],
+  "pii_entities": [
+    {
+      "placeholder": "[ADDRESS_1]",
+      "entity_type": "ADDRESS",
+      "value": "1187 Birchwood Drive, Mississauga, L5G 2K9",
+      "variants": [
+        "1187 Birchwood Drive, Mississauga, L5G 2K9"
+      ],
+      "occurrences": 1
+    },
+    {
+      "placeholder": "[DATE_OF_BIRTH_1]",
+      "entity_type": "DATE_OF_BIRTH",
+      "value": "July 19th, 1967",
+      "variants": [
+        "July 19th, 1967"
+      ],
+      "occurrences": 1
+    },
+    {
+      "placeholder": "[PERSON_1]",
+      "entity_type": "PERSON",
+      "value": "Mitchell",
+      "variants": [
+        "Mitchell"
+      ],
+      "occurrences": 2
+    },
+    {
+      "placeholder": "[PERSON_2]",
+      "entity_type": "PERSON",
+      "value": "Raman",
+      "variants": [
+        "Raman"
+      ],
+      "occurrences": 1
+    },
+    {
+      "placeholder": "[PERSON_3]",
+      "entity_type": "PERSON",
+      "value": "Linda",
+      "variants": [
+        "Linda"
+      ],
+      "occurrences": 1
+    },
+    {
+      "placeholder": "[PHONE_NUMBER_1]",
+      "entity_type": "PHONE_NUMBER",
+      "value": "905-555-0147",
+      "variants": [
+        "905-555-0147"
+      ],
+      "occurrences": 1
+    }
+  ],
+  "statements": [
+    {
+      "id": "subjective-1",
+      "section": "subjective",
+      "text": "The patient presents for a 3-month diabetes check.",
+      "source_segment_ids": [
+        "s7"
+      ],
+      "citations_repaired": false,
+      "support": "supported",
+      "support_reason": "Stated in s7."
+    },
+    {
+      "id": "subjective-2",
+      "section": "subjective",
+      "text": "The patient reports increased intake of bread and sweets over the holidays.",
+      "source_segment_ids": [
+        "s8"
+      ],
+      "citations_repaired": false,
+      "support": "supported",
+      "support_reason": "Stated in s8."
+    },
+    {
+      "id": "subjective-3",
+      "section": "subjective",
+      "text": "The patient takes metformin 1,000 mg twice daily but misses the evening dose 3 to 4 times a week due to stomach upset.",
+      "source_segment_ids": [
+        "s9",
+        "s10"
+      ],
+      "citations_repaired": false,
+      "support": "supported",
+      "support_reason": "Stated in s9 and s10."
+    },
+    {
+      "id": "subjective-4",
+      "section": "subjective",
+      "text": "The stomach upset consists of cramping and loose stools, usually about an hour after taking metformin.",
+      "source_segment_ids": [
+        "s11",
+        "s12"
+      ],
+      "citations_repaired": false,
+      "support": "supported",
+      "support_reason": "Stated in s12."
+    },
+    {
+      "id": "subjective-5",
+      "section": "subjective",
+      "text": "Home morning blood sugars are usually between 8 and 10.",
+      "source_segment_ids": [
+        "s13",
+        "s14"
+      ],
+      "citations_repaired": false,
+      "support": "supported",
+      "support_reason": "Stated in s14."
+    },
+    {
+      "id": "subjective-6",
+      "section": "subjective",
+      "text": "The patient walks the dog about twice a week, less since the weather turned cold.",
+      "source_segment_ids": [
+        "s15",
+        "s16"
+      ],
+      "citations_repaired": false,
+      "support": "supported",
+      "support_reason": "Stated in s16."
+    },
+    {
+      "id": "subjective-7",
+      "section": "subjective",
+      "text": "The patient denies chest pain and reports no vision problems.",
+      "source_segment_ids": [
+        "s17",
+        "s18"
+      ],
+      "citations_repaired": false,
+      "support": "supported",
+      "support_reason": "Stated in s18 in response to s17."
+    },
+    {
+      "id": "subjective-8",
+      "section": "subjective",
+      "text": "The patient has not had an eye exam in about 2 years.",
+      "source_segment_ids": [
+        "s18"
+      ],
+      "citations_repaired": false,
+      "support": "supported",
+      "support_reason": "Stated in s18."
+    },
+    {
+      "id": "subjective-9",
+      "section": "subjective",
+      "text": "The patient reports intermittent nighttime tingling in the toes of both feet.",
+      "source_segment_ids": [
+        "s18",
+        "s19",
+        "s20"
+      ],
+      "citations_repaired": false,
+      "support": "supported",
+      "support_reason": "Stated in s18 and s20."
+    },
+    {
+      "id": "subjective-10",
+      "section": "subjective",
+      "text": "The patient has considered cinnamon pills but has not started them.",
+      "source_segment_ids": [
+        "s21",
+        "s22"
+      ],
+      "citations_repaired": false,
+      "support": "supported",
+      "support_reason": "Stated in s22."
+    },
+    {
+      "id": "objective-1",
+      "section": "objective",
+      "text": "A1C from last week was 8.1%, up from 7.4% in the spring.",
+      "source_segment_ids": [
+        "s23"
+      ],
+      "citations_repaired": false,
+      "support": "supported",
+      "support_reason": "Stated in s23."
+    },
+    {
+      "id": "objective-2",
+      "section": "objective",
+      "text": "Blood pressure today is 142/88.",
+      "source_segment_ids": [
+        "s25"
+      ],
+      "citations_repaired": false,
+      "support": "supported",
+      "support_reason": "Stated in s25."
+    },
+    {
+      "id": "objective-3",
+      "section": "objective",
+      "text": "Weight is 98 kg, up 2 kg from the last visit.",
+      "source_segment_ids": [
+        "s25"
+      ],
+      "citations_repaired": false,
+      "support": "supported",
+      "support_reason": "Stated in s25."
+    },
+    {
+      "id": "objective-4",
+      "section": "objective",
+      "text": "Foot exam shows good pulses with reduced monofilament sensation at both big toes.",
+      "source_segment_ids": [
+        "s25"
+      ],
+      "citations_repaired": false,
+      "support": "supported",
+      "support_reason": "Stated in s25."
+    },
+    {
+      "id": "assessment-1",
+      "section": "assessment",
+      "text": "Diabetes control is worsening, with A1C rising from 7.4% to 8.1%.",
+      "source_segment_ids": [
+        "s23",
+        "s24",
+        "s25"
+      ],
+      "citations_repaired": false,
+      "support": "supported",
+      "support_reason": "Stated in s23 to s25."
+    },
+    {
+      "id": "assessment-2",
+      "section": "assessment",
+      "text": "Reduced foot sensation is consistent with early diabetic nerve changes.",
+      "source_segment_ids": [
+        "s25"
+      ],
+      "citations_repaired": false,
+      "support": "supported",
+      "support_reason": "Stated in s25."
+    },
+    {
+      "id": "assessment-3",
+      "section": "assessment",
+      "text": "Metformin is causing gastrointestinal side effects that are limiting adherence.",
+      "source_segment_ids": [
+        "s10",
+        "s12",
+        "s27"
+      ],
+      "citations_repaired": false,
+      "support": "supported",
+      "support_reason": "Stated in s10, s12 and s27."
+    },
+    {
+      "id": "plan-1",
+      "section": "plan",
+      "text": "Switch metformin to the extended-release form at 1,000 mg twice daily.",
+      "source_segment_ids": [
+        "s27"
+      ],
+      "citations_repaired": false,
+      "support": "supported",
+      "support_reason": "Stated in s27."
+    },
+    {
+      "id": "plan-2",
+      "section": "plan",
+      "text": "Start empagliflozin 10 mg once daily.",
+      "source_segment_ids": [
+        "s27"
+      ],
+      "citations_repaired": false,
+      "support": "supported",
+      "support_reason": "Stated in s27."
+    },
+    {
+      "id": "plan-3",
+      "section": "plan",
+      "text": "The patient was counseled that empagliflozin can cause genital yeast infections and increased urination, and was advised to drink enough water.",
+      "source_segment_ids": [
+        "s28",
+        "s29"
+      ],
+      "citations_repaired": false,
+      "support": "supported",
+      "support_reason": "Stated in s29."
+    },
+    {
+      "id": "plan-4",
+      "section": "plan",
+      "text": "The patient was advised to hold off on cinnamon pills due to lack of good evidence.",
+      "source_segment_ids": [
+        "s22",
+        "s23"
+      ],
+      "citations_repaired": false,
+      "support": "supported",
+      "support_reason": "Stated in s23."
+    },
+    {
+      "id": "plan-5",
+      "section": "plan",
+      "text": "Refer to the diabetes education program to meet with a dietitian.",
+      "source_segment_ids": [
+        "s29"
+      ],
+      "citations_repaired": false,
+      "support": "supported",
+      "support_reason": "Stated in s29."
+    },
+    {
+      "id": "plan-6",
+      "section": "plan",
+      "text": "Refer to an eye doctor for a retinal exam.",
+      "source_segment_ids": [
+        "s29"
+      ],
+      "citations_repaired": false,
+      "support": "supported",
+      "support_reason": "Stated in s29."
+    },
+    {
+      "id": "plan-7",
+      "section": "plan",
+      "text": "Kidney function and a urine test will be done today.",
+      "source_segment_ids": [
+        "s29"
+      ],
+      "citations_repaired": false,
+      "support": "supported",
+      "support_reason": "Stated in s29."
+    },
+    {
+      "id": "plan-8",
+      "section": "plan",
+      "text": "Recheck blood pressure at the next visit and start a blood pressure medication if it remains above 130/80.",
+      "source_segment_ids": [
+        "s30",
+        "s31"
+      ],
+      "citations_repaired": false,
+      "support": "supported",
+      "support_reason": "Stated in s31."
+    },
+    {
+      "id": "plan-9",
+      "section": "plan",
+      "text": "Repeat A1C in 3 months.",
+      "source_segment_ids": [
+        "s31"
+      ],
+      "citations_repaired": false,
+      "support": "supported",
+      "support_reason": "Stated in s31."
+    },
+    {
+      "id": "plan-10",
+      "section": "plan",
+      "text": "The patient was advised to check the feet daily and call if any sores appear.",
+      "source_segment_ids": [
+        "s33"
+      ],
+      "citations_repaired": false,
+      "support": "supported",
+      "support_reason": "Stated in s33."
+    },
+    {
+      "id": "plan-11",
+      "section": "plan",
+      "text": "Follow up in 3 months.",
+      "source_segment_ids": [
+        "s33"
+      ],
+      "citations_repaired": false,
+      "support": "supported",
+      "support_reason": "Stated in s33."
+    }
+  ],
+  "rejected_statements": [],
+  "model_calls": [
+    {
+      "created_at": "2026-11-11T00:22:58.501805+00:00",
+      "provider": "anthropic",
+      "model": "claude-opus-5-5",
+      "purpose": "soap_note",
+      "prompt_sha256": "4f40b1fc4c8da452adf5b27e9a679a5d34f5562371757e2bd138ec19c1e66b8c",
+      "input_tokens": 2646,
+      "output_tokens": 1288,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "cost_usd": "0.036344",
+      "latency_ms": 11443,
+      "status": "ok",
+      "error": null
+    },
+    {
+      "created_at": "2026-11-11T00:23:08.653865+00:00",
+      "provider": "anthropic",
+      "model": "claude-opus-5-5",
+      "purpose": "claim_check",
+      "prompt_sha256": "9592ab0233ef9268e71fc2b066dc360705b871ef52c99736cf7844cb940cd852",
+      "input_tokens": 3292,
+      "output_tokens": 1216,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "cost_usd": "0.037488",
+      "latency_ms": 10124,
+      "status": "ok",
+      "error": null
+    }
+  ]
+}

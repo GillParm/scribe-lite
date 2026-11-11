@@ -1,0 +1,170 @@
+{
+  "sample": "sore-throat",
+  "facts": 19,
+  "present": 19,
+  "partial": 0,
+  "absent": 0,
+  "coverage": 1.0,
+  "missing_verdicts": [],
+  "statements": 20,
+  "unsupported": 0,
+  "partially_supported": 1,
+  "unsupported_rate": 0.0,
+  "rejected": 0,
+  "verdicts": [
+    {
+      "fact_id": "F1",
+      "verdict": "present",
+      "statement_ids": [
+        "subjective-1"
+      ],
+      "reason": "The note states a sore throat for about 3 days."
+    },
+    {
+      "fact_id": "F2",
+      "verdict": "present",
+      "statement_ids": [
+        "subjective-1"
+      ],
+      "reason": "The note states pain on swallowing, even water."
+    },
+    {
+      "fact_id": "F3",
+      "verdict": "present",
+      "statement_ids": [
+        "subjective-2"
+      ],
+      "reason": "The note states a temperature of 38.5 last night with chills."
+    },
+    {
+      "fact_id": "F4",
+      "verdict": "present",
+      "statement_ids": [
+        "subjective-3"
+      ],
+      "reason": "The note says the patient denies cough and nasal symptoms."
+    },
+    {
+      "fact_id": "F5",
+      "verdict": "present",
+      "statement_ids": [
+        "subjective-4"
+      ],
+      "reason": "The note says the roommate was diagnosed with strep throat last week."
+    },
+    {
+      "fact_id": "F6",
+      "verdict": "present",
+      "statement_ids": [
+        "subjective-5"
+      ],
+      "reason": "The note gives the same ibuprofen dose and frequency, and 'slight relief' is roughly partial relief."
+    },
+    {
+      "fact_id": "F7",
+      "verdict": "present",
+      "statement_ids": [
+        "subjective-6"
+      ],
+      "reason": "The note records the penicillin allergy with hives from amoxicillin in childhood."
+    },
+    {
+      "fact_id": "F8",
+      "verdict": "present",
+      "statement_ids": [
+        "subjective-7"
+      ],
+      "reason": "The note states no other medical problems and no regular medications."
+    },
+    {
+      "fact_id": "F9",
+      "verdict": "present",
+      "statement_ids": [
+        "objective-1"
+      ],
+      "reason": "The note gives the same temperature, heart rate and blood pressure."
+    },
+    {
+      "fact_id": "F10",
+      "verdict": "present",
+      "statement_ids": [
+        "objective-2"
+      ],
+      "reason": "The note describes swollen tonsils with bilateral white exudate."
+    },
+    {
+      "fact_id": "F11",
+      "verdict": "present",
+      "statement_ids": [
+        "objective-3"
+      ],
+      "reason": "The note states enlarged, tender anterior cervical nodes."
+    },
+    {
+      "fact_id": "F12",
+      "verdict": "present",
+      "statement_ids": [
+        "objective-4"
+      ],
+      "reason": "The note states normal ears and clear lungs."
+    },
+    {
+      "fact_id": "F13",
+      "verdict": "present",
+      "statement_ids": [
+        "objective-5"
+      ],
+      "reason": "The note states the rapid strep test is positive."
+    },
+    {
+      "fact_id": "F14",
+      "verdict": "present",
+      "statement_ids": [
+        "assessment-1"
+      ],
+      "reason": "The assessment is strep pharyngitis."
+    },
+    {
+      "fact_id": "F15",
+      "verdict": "present",
+      "statement_ids": [
+        "plan-1",
+        "plan-2"
+      ],
+      "reason": "The note gives azithromycin 500 mg once daily for 5 days, chosen because of the amoxicillin hives history."
+    },
+    {
+      "fact_id": "F16",
+      "verdict": "present",
+      "statement_ids": [
+        "plan-3"
+      ],
+      "reason": "The note advises completing the full antibiotic course."
+    },
+    {
+      "fact_id": "F17",
+      "verdict": "present",
+      "statement_ids": [
+        "plan-4"
+      ],
+      "reason": "The note advises ibuprofen, fluids and warm salt water gargles."
+    },
+    {
+      "fact_id": "F18",
+      "verdict": "present",
+      "statement_ids": [
+        "plan-5"
+      ],
+      "reason": "The note gives the work restriction until 24 hours on antibiotics and fever-free, with a work note."
+    },
+    {
+      "fact_id": "F19",
+      "verdict": "present",
+      "statement_ids": [
+        "plan-6",
+        "plan-7"
+      ],
+      "reason": "The note gives all return precautions and the 48 to 72 hour callback."
+    }
+  ]
+}

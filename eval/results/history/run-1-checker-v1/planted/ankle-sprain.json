@@ -1,0 +1,219 @@
+{
+  "sample": "ankle-sprain",
+  "planted": 4,
+  "caught_unsupported": 2,
+  "caught_partial": 2,
+  "missed": 0,
+  "untouched": 22,
+  "untouched_flagged": 0,
+  "rows": [
+    {
+      "id": "subjective-1",
+      "text": "The patient injured the right ankle last night playing basketball when landing from a rebound on a teammate's foot, with the ankle rolling inward forcefully.",
+      "planted": null,
+      "label": "supported",
+      "label_before": "supported",
+      "reason": "Stated in s10."
+    },
+    {
+      "id": "subjective-2",
+      "text": "The patient felt a snap at the time of injury, followed by rapid swelling on the outside of the ankle.",
+      "planted": null,
+      "label": "supported",
+      "label_before": "supported",
+      "reason": "Stated in s12."
+    },
+    {
+      "id": "subjective-3",
+      "text": "The patient limped off the court and was able to walk about ten to fifteen steps to the car despite pain.",
+      "planted": null,
+      "label": "supported",
+      "label_before": "supported",
+      "reason": "Stated in s14."
+    },
+    {
+      "id": "subjective-4",
+      "text": "Since the injury the patient has iced and elevated the ankle and took ibuprofen 400 mg this morning.",
+      "planted": null,
+      "label": "supported",
+      "label_before": "supported",
+      "reason": "Stated in s16."
+    },
+    {
+      "id": "subjective-5",
+      "text": "No prior injury to the right ankle; the patient sprained the left ankle about two years ago.",
+      "planted": null,
+      "label": "supported",
+      "label_before": "supported",
+      "reason": "Stated in s18."
+    },
+    {
+      "id": "subjective-6",
+      "text": "The patient denies numbness or tingling in the foot.",
+      "planted": null,
+      "label": "supported",
+      "label_before": "supported",
+      "reason": "Stated in s19 and s20."
+    },
+    {
+      "id": "subjective-7",
+      "text": "The patient works at a warehouse.",
+      "planted": null,
+      "label": "supported",
+      "label_before": "supported",
+      "reason": "Stated in s34."
+    },
+    {
+      "id": "objective-1",
+      "text": "Moderate swelling and bruising over the lateral right ankle.",
+      "planted": null,
+      "label": "supported",
+      "label_before": "supported",
+      "reason": "Stated in s21."
+    },
+    {
+      "id": "objective-2",
+      "text": "Maximal tenderness just anterior to the lateral malleolus, over the anterior talofibular ligament.",
+      "planted": null,
+      "label": "supported",
+      "label_before": "supported",
+      "reason": "Stated in s21, s22 and s23."
+    },
+    {
+      "id": "objective-3",
+      "text": "No tenderness at the posterior edge or tip of either malleolus.",
+      "planted": null,
+      "label": "supported",
+      "label_before": "supported",
+      "reason": "Stated in s23 and s24."
+    },
+    {
+      "id": "objective-4",
+      "text": "No tenderness at the base of the fifth metatarsal or the navicular.",
+      "planted": null,
+      "label": "supported",
+      "label_before": "supported",
+      "reason": "Stated in s25 and s26."
+    },
+    {
+      "id": "objective-5",
+      "text": "Pulses and sensation in the foot are normal.",
+      "planted": null,
+      "label": "supported",
+      "label_before": "supported",
+      "reason": "Stated in s27."
+    },
+    {
+      "id": "objective-6",
+      "text": "Anterior drawer test shows mild laxity compared with the other side.",
+      "planted": null,
+      "label": "supported",
+      "label_before": "supported",
+      "reason": "Stated in s27."
+    },
+    {
+      "id": "objective-7",
+      "text": "The patient was able to take four steps with pain.",
+      "planted": null,
+      "label": "supported",
+      "label_before": "supported",
+      "reason": "Stated in s27 and s28."
+    },
+    {
+      "id": "assessment-1",
+      "text": "Moderate, grade two sprain of the lateral ligaments of the left ankle.",
+      "planted": "wrong side",
+      "label": "partially_supported",
+      "label_before": "supported",
+      "reason": "The grade two lateral sprain is stated, but the injured ankle is the right, not the left."
+    },
+    {
+      "id": "assessment-2",
+      "text": "X-ray ordered to rule out a fracture of the lateral malleolus.",
+      "planted": "reversed decision",
+      "label": "unsupported",
+      "label_before": "supported",
+      "reason": "The doctor said no X-ray is needed today; none was ordered."
+    },
+    {
+      "id": "plan-1",
+      "text": "No X-ray today.",
+      "planted": null,
+      "label": "supported",
+      "label_before": "supported",
+      "reason": "Stated in s29."
+    },
+    {
+      "id": "plan-2",
+      "text": "Expected return to basketball in about three to four weeks, sometimes longer.",
+      "planted": null,
+      "label": "supported",
+      "label_before": "supported",
+      "reason": "Stated in s30 and s31."
+    },
+    {
+      "id": "plan-3",
+      "text": "For the next few days, elevate the ankle and apply ice for 15 to 20 minutes at a time.",
+      "planted": null,
+      "label": "supported",
+      "label_before": "supported",
+      "reason": "Stated in s31."
+    },
+    {
+      "id": "plan-4",
+      "text": "Wear an air-stirrup brace.",
+      "planted": null,
+      "label": "supported",
+      "label_before": "supported",
+      "reason": "Stated in s31."
+    },
+    {
+      "id": "plan-5",
+      "text": "Crutches may be used for two or three days while bearing as much weight as comfortable.",
+      "planted": null,
+      "label": "supported",
+      "label_before": "supported",
+      "reason": "Stated in s31."
+    },
+    {
+      "id": "plan-6",
+      "text": "Ibuprofen 800 mg every four hours for two weeks.",
+      "planted": "wrong dose and duration",
+      "label": "partially_supported",
+      "label_before": "supported",
+      "reason": "Ibuprofen was advised, but at 400 mg every eight hours for up to five days, not 800 mg every four hours for two weeks."
+    },
+    {
+      "id": "plan-7",
+      "text": "Referral to physiotherapy for balance and strengthening exercises to reduce risk of re-injury.",
+      "planted": null,
+      "label": "supported",
+      "label_before": "supported",
+      "reason": "Stated in s33."
+    },
+    {
+      "id": "plan-8",
+      "text": "Work note for modified duties for one week with no heavy lifting and no ladders.",
+      "planted": null,
+      "label": "supported",
+      "label_before": "supported",
+      "reason": "Stated in s35."
+    },
+    {
+      "id": "plan-9",
+      "text": "Return if unable to bear weight at all, if the foot becomes numb or cold, or if not improving in a week.",
+      "planted": null,
+      "label": "supported",
+      "label_before": "supported",
+      "reason": "Stated in s37."
+    },
+    {
+      "id": "plan-10",
+      "text": "Referred to orthopaedic surgery to discuss ligament repair.",
+      "planted": "invented referral",
+      "label": "unsupported",
+      "label_before": null,
+      "reason": "No orthopaedic surgery referral or ligament repair was discussed."
+    }
+  ]
+}

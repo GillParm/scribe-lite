@@ -1,0 +1,203 @@
+{
+  "sample": "ankle-sprain",
+  "facts": 23,
+  "present": 23,
+  "partial": 0,
+  "absent": 0,
+  "coverage": 1.0,
+  "missing_verdicts": [],
+  "statements": 25,
+  "unsupported": 0,
+  "partially_supported": 0,
+  "unsupported_rate": 0.0,
+  "rejected": 0,
+  "verdicts": [
+    {
+      "fact_id": "F1",
+      "verdict": "present",
+      "statement_ids": [
+        "subjective-1"
+      ],
+      "reason": "The note describes a right ankle rolling inward last night playing basketball after landing on a teammate's foot."
+    },
+    {
+      "fact_id": "F2",
+      "verdict": "present",
+      "statement_ids": [
+        "subjective-2"
+      ],
+      "reason": "The note states a snap followed by rapid lateral swelling."
+    },
+    {
+      "fact_id": "F3",
+      "verdict": "present",
+      "statement_ids": [
+        "subjective-3"
+      ],
+      "reason": "The note says the patient limped and walked ten to fifteen steps."
+    },
+    {
+      "fact_id": "F4",
+      "verdict": "present",
+      "statement_ids": [
+        "subjective-4"
+      ],
+      "reason": "The note records ice, elevation and ibuprofen 400 mg this morning."
+    },
+    {
+      "fact_id": "F5",
+      "verdict": "present",
+      "statement_ids": [
+        "subjective-5"
+      ],
+      "reason": "The note states the left ankle sprain two years ago and no prior right ankle injury."
+    },
+    {
+      "fact_id": "F6",
+      "verdict": "present",
+      "statement_ids": [
+        "subjective-6"
+      ],
+      "reason": "The patient denies numbness or tingling."
+    },
+    {
+      "fact_id": "F7",
+      "verdict": "present",
+      "statement_ids": [
+        "subjective-7"
+      ],
+      "reason": "The note states the patient works at a warehouse."
+    },
+    {
+      "fact_id": "F8",
+      "verdict": "present",
+      "statement_ids": [
+        "objective-1"
+      ],
+      "reason": "The note matches moderate swelling and bruising over the lateral right ankle."
+    },
+    {
+      "fact_id": "F9",
+      "verdict": "present",
+      "statement_ids": [
+        "objective-2"
+      ],
+      "reason": "The note places maximal tenderness over the ATFL."
+    },
+    {
+      "fact_id": "F10",
+      "verdict": "present",
+      "statement_ids": [
+        "objective-3"
+      ],
+      "reason": "The note states no malleolar edge or tip tenderness."
+    },
+    {
+      "fact_id": "F11",
+      "verdict": "present",
+      "statement_ids": [
+        "objective-4"
+      ],
+      "reason": "The note states no tenderness at the fifth metatarsal base or navicular."
+    },
+    {
+      "fact_id": "F12",
+      "verdict": "present",
+      "statement_ids": [
+        "objective-5"
+      ],
+      "reason": "The note states pulses and sensation are normal."
+    },
+    {
+      "fact_id": "F13",
+      "verdict": "present",
+      "statement_ids": [
+        "objective-6"
+      ],
+      "reason": "The note states mild laxity on anterior drawer compared with the other side."
+    },
+    {
+      "fact_id": "F14",
+      "verdict": "present",
+      "statement_ids": [
+        "objective-7",
+        "assessment-2"
+      ],
+      "reason": "The note says the patient took four steps and could bear weight."
+    },
+    {
+      "fact_id": "F15",
+      "verdict": "present",
+      "statement_ids": [
+        "assessment-1"
+      ],
+      "reason": "The note gives a grade two lateral right ankle sprain."
+    },
+    {
+      "fact_id": "F16",
+      "verdict": "present",
+      "statement_ids": [
+        "assessment-2",
+        "plan-1"
+      ],
+      "reason": "The note says Ottawa rules do not indicate an X-ray and none is done today."
+    },
+    {
+      "fact_id": "F17",
+      "verdict": "present",
+      "statement_ids": [
+        "plan-3"
+      ],
+      "reason": "The note advises elevation and ice for 15 to 20 minutes at a time."
+    },
+    {
+      "fact_id": "F18",
+      "verdict": "present",
+      "statement_ids": [
+        "plan-4",
+        "plan-5"
+      ],
+      "reason": "The note covers the air-stirrup brace, crutches for two or three days and weight bearing as tolerated."
+    },
+    {
+      "fact_id": "F19",
+      "verdict": "present",
+      "statement_ids": [
+        "plan-6"
+      ],
+      "reason": "The ibuprofen regimen matches."
+    },
+    {
+      "fact_id": "F20",
+      "verdict": "present",
+      "statement_ids": [
+        "plan-7"
+      ],
+      "reason": "The note includes a physiotherapy referral for balance and strengthening."
+    },
+    {
+      "fact_id": "F21",
+      "verdict": "present",
+      "statement_ids": [
+        "plan-2"
+      ],
+      "reason": "The note expects three to four weeks before return to basketball."
+    },
+    {
+      "fact_id": "F22",
+      "verdict": "present",
+      "statement_ids": [
+        "plan-8"
+      ],
+      "reason": "The note provides a work note for one week with no heavy lifting or ladders."
+    },
+    {
+      "fact_id": "F23",
+      "verdict": "present",
+      "statement_ids": [
+        "plan-9"
+      ],
+      "reason": "The return precautions match."
+    }
+  ]
+}

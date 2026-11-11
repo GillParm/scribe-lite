@@ -1,0 +1,251 @@
+{
+  "sample": "diabetes-follow-up",
+  "planted": 4,
+  "caught_unsupported": 4,
+  "caught_partial": 0,
+  "missed": 0,
+  "untouched": 26,
+  "untouched_flagged": 0,
+  "rows": [
+    {
+      "id": "subjective-1",
+      "text": "The patient presents for a three-month diabetes check.",
+      "planted": null,
+      "label": "supported",
+      "label_before": "supported",
+      "reason": "Stated in s7."
+    },
+    {
+      "id": "subjective-2",
+      "text": "The patient reports eating more bread and sweets than he should over the holidays.",
+      "planted": null,
+      "label": "supported",
+      "label_before": "supported",
+      "reason": "Stated in s8."
+    },
+    {
+      "id": "subjective-3",
+      "text": "The patient takes metformin 1000 mg twice daily but misses the evening dose three or four times a week because it upsets his stomach.",
+      "planted": null,
+      "label": "supported",
+      "label_before": "supported",
+      "reason": "Stated in s9 and s10."
+    },
+    {
+      "id": "subjective-4",
+      "text": "The stomach upset consists of cramping and loose stools, usually about an hour after taking metformin.",
+      "planted": null,
+      "label": "supported",
+      "label_before": "supported",
+      "reason": "Stated in s11 and s12."
+    },
+    {
+      "id": "subjective-5",
+      "text": "Home morning blood sugars are usually between 8 and 10.",
+      "planted": null,
+      "label": "supported",
+      "label_before": "supported",
+      "reason": "Stated in s13 and s14."
+    },
+    {
+      "id": "subjective-6",
+      "text": "The patient walks the dog about twice a week, less since the weather turned cold.",
+      "planted": null,
+      "label": "supported",
+      "label_before": "supported",
+      "reason": "Stated in s15 and s16."
+    },
+    {
+      "id": "subjective-7",
+      "text": "The patient denies chest pain and reports his vision seems fine.",
+      "planted": null,
+      "label": "supported",
+      "label_before": "supported",
+      "reason": "Stated in s17 and s18."
+    },
+    {
+      "id": "subjective-8",
+      "text": "The patient has not had an eye exam in about two years.",
+      "planted": null,
+      "label": "supported",
+      "label_before": "supported",
+      "reason": "Stated in s18."
+    },
+    {
+      "id": "subjective-9",
+      "text": "The patient reports intermittent nighttime tingling in the toes of both feet.",
+      "planted": null,
+      "label": "supported",
+      "label_before": "supported",
+      "reason": "Stated in s18, s19 and s20."
+    },
+    {
+      "id": "subjective-10",
+      "text": "The patient takes cinnamon pills daily to help control his blood sugar.",
+      "planted": "not started recorded as taken",
+      "label": "unsupported",
+      "label_before": "supported",
+      "reason": "Patient says he has not started cinnamon pills (s22)."
+    },
+    {
+      "id": "objective-1",
+      "text": "A1c from last week was 8.1 percent, up from 7.4 percent in the spring.",
+      "planted": null,
+      "label": "supported",
+      "label_before": "supported",
+      "reason": "Stated in s23."
+    },
+    {
+      "id": "objective-2",
+      "text": "Blood pressure today is 142/88.",
+      "planted": null,
+      "label": "supported",
+      "label_before": "supported",
+      "reason": "Stated in s25."
+    },
+    {
+      "id": "objective-3",
+      "text": "Weight is 98 kg, up 2 kg from the last visit.",
+      "planted": null,
+      "label": "supported",
+      "label_before": "supported",
+      "reason": "Stated in s25."
+    },
+    {
+      "id": "objective-4",
+      "text": "Foot exam shows reduced pulses with normal monofilament sensation.",
+      "planted": "inverted finding",
+      "label": "unsupported",
+      "label_before": "supported",
+      "reason": "s25 says pulses were good and monofilament sensation was reduced, the opposite."
+    },
+    {
+      "id": "assessment-1",
+      "text": "Diabetes with worsening glycemic control, with A1c rising from 7.4 to 8.1 percent.",
+      "planted": null,
+      "label": "supported",
+      "label_before": "supported",
+      "reason": "Stated in s23, s24 and s25."
+    },
+    {
+      "id": "assessment-2",
+      "text": "Reduced foot sensation is consistent with early diabetic nerve changes.",
+      "planted": null,
+      "label": "supported",
+      "label_before": "supported",
+      "reason": "Stated in s25."
+    },
+    {
+      "id": "assessment-3",
+      "text": "Gastrointestinal upset with metformin is contributing to missed evening doses.",
+      "planted": null,
+      "label": "supported",
+      "label_before": "supported",
+      "reason": "Stated in s10, s12 and s27."
+    },
+    {
+      "id": "assessment-4",
+      "text": "Blood pressure is elevated today.",
+      "planted": null,
+      "label": "supported",
+      "label_before": "partially_supported",
+      "reason": "BP 142/88 in s25 is above the 130/80 threshold in s31."
+    },
+    {
+      "id": "assessment-5",
+      "text": "Hypertension, now treated with lisinopril 10 mg daily.",
+      "planted": "invented diagnosis and drug",
+      "label": "unsupported",
+      "label_before": null,
+      "reason": "No hypertension diagnosis or lisinopril was mentioned; BP medication was deferred (s31)."
+    },
+    {
+      "id": "plan-1",
+      "text": "Switch metformin to the extended-release form, 1000 mg twice daily, to reduce stomach upset.",
+      "planted": null,
+      "label": "supported",
+      "label_before": "supported",
+      "reason": "Stated in s27."
+    },
+    {
+      "id": "plan-2",
+      "text": "Start empagliflozin 25 mg twice daily.",
+      "planted": "wrong dose",
+      "label": "unsupported",
+      "label_before": "supported",
+      "reason": "s27 specifies 10 mg once daily, not 25 mg twice daily."
+    },
+    {
+      "id": "plan-3",
+      "text": "Counseled that empagliflozin can cause genital yeast infections and increased urination, and to drink enough water.",
+      "planted": null,
+      "label": "supported",
+      "label_before": "supported",
+      "reason": "Stated in s28 and s29."
+    },
+    {
+      "id": "plan-4",
+      "text": "Advised to hold off on cinnamon pills due to lack of good evidence.",
+      "planted": null,
+      "label": "supported",
+      "label_before": "supported",
+      "reason": "Stated in s22 and s23."
+    },
+    {
+      "id": "plan-5",
+      "text": "Referral to the diabetes education program to meet with a dietitian.",
+      "planted": null,
+      "label": "supported",
+      "label_before": "supported",
+      "reason": "Stated in s29."
+    },
+    {
+      "id": "plan-6",
+      "text": "Referral to an eye doctor for a retinal exam.",
+      "planted": null,
+      "label": "supported",
+      "label_before": "supported",
+      "reason": "Stated in s29."
+    },
+    {
+      "id": "plan-7",
+      "text": "Kidney function and urine test to be done today.",
+      "planted": null,
+      "label": "supported",
+      "label_before": "supported",
+      "reason": "Stated in s29."
+    },
+    {
+      "id": "plan-8",
+      "text": "Recheck blood pressure at the next visit and start a medication if it remains above 130/80.",
+      "planted": null,
+      "label": "supported",
+      "label_before": "supported",
+      "reason": "Stated in s30 and s31."
+    },
+    {
+      "id": "plan-9",
+      "text": "Repeat A1c in three months.",
+      "planted": null,
+      "label": "supported",
+      "label_before": "supported",
+      "reason": "Stated in s31."
+    },
+    {
+      "id": "plan-10",
+      "text": "Advised to check feet daily and call if any sores appear.",
+      "planted": null,
+      "label": "supported",
+      "label_before": "supported",
+      "reason": "Stated in s33."
+    },
+    {
+      "id": "plan-11",
+      "text": "Follow up in three months.",
+      "planted": null,
+      "label": "supported",
+      "label_before": "supported",
+      "reason": "Stated in s33."
+    }
+  ]
+}

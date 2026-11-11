@@ -1,0 +1,187 @@
+{
+  "sample": "sore-throat",
+  "planted": 4,
+  "caught_unsupported": 2,
+  "caught_partial": 2,
+  "missed": 0,
+  "untouched": 18,
+  "untouched_flagged": 0,
+  "rows": [
+    {
+      "id": "subjective-1",
+      "text": "The patient reports a sore throat for about three days with severe pain on swallowing, even water.",
+      "planted": null,
+      "label": "supported",
+      "label_before": "supported",
+      "reason": "Stated in s8."
+    },
+    {
+      "id": "subjective-2",
+      "text": "The patient reports a temperature of 38.5 last night and chills.",
+      "planted": null,
+      "label": "supported",
+      "label_before": "supported",
+      "reason": "Stated in s10."
+    },
+    {
+      "id": "subjective-3",
+      "text": "The patient reports a productive cough and a runny nose.",
+      "planted": "flipped negation",
+      "label": "unsupported",
+      "label_before": "supported",
+      "reason": "Patient denied cough and runny nose in s12."
+    },
+    {
+      "id": "subjective-4",
+      "text": "The patient reports that the neck feels swollen.",
+      "planted": null,
+      "label": "supported",
+      "label_before": "supported",
+      "reason": "Stated in s12."
+    },
+    {
+      "id": "subjective-5",
+      "text": "The patient's roommate was diagnosed with strep throat last week.",
+      "planted": null,
+      "label": "supported",
+      "label_before": "supported",
+      "reason": "Stated in s14."
+    },
+    {
+      "id": "subjective-6",
+      "text": "The patient has been taking ibuprofen 400 mg about twice a day with slight relief.",
+      "planted": null,
+      "label": "supported",
+      "label_before": "supported",
+      "reason": "Stated in s16."
+    },
+    {
+      "id": "subjective-7",
+      "text": "The patient is allergic to penicillin, with hives from amoxicillin as a child.",
+      "planted": null,
+      "label": "supported",
+      "label_before": "supported",
+      "reason": "Stated in s18."
+    },
+    {
+      "id": "subjective-8",
+      "text": "The patient has no other medical problems and takes no regular medications.",
+      "planted": null,
+      "label": "supported",
+      "label_before": "supported",
+      "reason": "Stated in s20."
+    },
+    {
+      "id": "objective-1",
+      "text": "Temperature 39.4, heart rate 96, blood pressure 118/76.",
+      "planted": "wrong number",
+      "label": "partially_supported",
+      "label_before": "supported",
+      "reason": "Temperature was 38.3, not 39.4; heart rate and blood pressure match s21."
+    },
+    {
+      "id": "objective-2",
+      "text": "Tonsils are swollen with bilateral white exudate.",
+      "planted": null,
+      "label": "supported",
+      "label_before": "supported",
+      "reason": "Stated in s21."
+    },
+    {
+      "id": "objective-3",
+      "text": "Anterior cervical lymph nodes are enlarged and tender.",
+      "planted": null,
+      "label": "supported",
+      "label_before": "supported",
+      "reason": "Stated in s21."
+    },
+    {
+      "id": "objective-4",
+      "text": "Ears are normal and lungs are clear.",
+      "planted": null,
+      "label": "supported",
+      "label_before": "supported",
+      "reason": "Stated in s21."
+    },
+    {
+      "id": "objective-5",
+      "text": "Rapid strep test is positive.",
+      "planted": null,
+      "label": "supported",
+      "label_before": "supported",
+      "reason": "Stated in s23."
+    },
+    {
+      "id": "assessment-1",
+      "text": "Strep pharyngitis, supported by fever, tonsillar exudate, tender anterior cervical nodes, absence of cough, and a positive rapid strep test.",
+      "planted": null,
+      "label": "supported",
+      "label_before": "partially_supported",
+      "reason": "Stated in s23 and s25."
+    },
+    {
+      "id": "plan-1",
+      "text": "Amoxicillin was considered but not given because of the patient's history of hives with amoxicillin.",
+      "planted": null,
+      "label": "supported",
+      "label_before": "supported",
+      "reason": "Stated in s25."
+    },
+    {
+      "id": "plan-2",
+      "text": "Azithromycin 250 mg once daily for five days was prescribed and sent to the patient's pharmacy.",
+      "planted": "wrong dose",
+      "label": "partially_supported",
+      "label_before": "supported",
+      "reason": "Dose was 500 mg, not 250 mg."
+    },
+    {
+      "id": "plan-3",
+      "text": "The patient was advised to finish the full antibiotic course even if feeling better, with improvement expected within two to three days.",
+      "planted": null,
+      "label": "supported",
+      "label_before": "supported",
+      "reason": "Stated in s27."
+    },
+    {
+      "id": "plan-4",
+      "text": "The patient may continue ibuprofen for pain and fever, drink plenty of fluids, and use warm salt water gargles.",
+      "planted": null,
+      "label": "supported",
+      "label_before": "supported",
+      "reason": "Stated in s27."
+    },
+    {
+      "id": "plan-5",
+      "text": "The patient should stay home from work until on the antibiotic for at least 24 hours and fever-free, and a work note will be provided.",
+      "planted": null,
+      "label": "supported",
+      "label_before": "supported",
+      "reason": "Stated in s29."
+    },
+    {
+      "id": "plan-6",
+      "text": "The patient should return or go to the emergency department for trouble breathing, inability to swallow saliva, or inability to fully open the mouth.",
+      "planted": null,
+      "label": "supported",
+      "label_before": "supported",
+      "reason": "Stated in s31."
+    },
+    {
+      "id": "plan-7",
+      "text": "The patient should call if not improving within 48 to 72 hours.",
+      "planted": null,
+      "label": "supported",
+      "label_before": "supported",
+      "reason": "Stated in s31."
+    },
+    {
+      "id": "plan-8",
+      "text": "A chest X-ray was ordered to rule out pneumonia.",
+      "planted": "invented order",
+      "label": "unsupported",
+      "label_before": null,
+      "reason": "No chest X-ray was ordered; lungs were clear."
+    }
+  ]
+}

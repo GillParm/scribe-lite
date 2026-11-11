@@ -1,0 +1,211 @@
+{
+  "sample": "diabetes-follow-up",
+  "facts": 24,
+  "present": 21,
+  "partial": 3,
+  "absent": 0,
+  "coverage": 0.9375,
+  "missing_verdicts": [],
+  "statements": 29,
+  "unsupported": 0,
+  "partially_supported": 1,
+  "unsupported_rate": 0.0,
+  "rejected": 0,
+  "verdicts": [
+    {
+      "fact_id": "F1",
+      "verdict": "partial",
+      "statement_ids": [
+        "subjective-1"
+      ],
+      "reason": "The note mentions a three-month diabetes check but never says type 2."
+    },
+    {
+      "fact_id": "F2",
+      "verdict": "present",
+      "statement_ids": [
+        "subjective-2"
+      ],
+      "reason": "The note states holiday overeating of bread and sweets."
+    },
+    {
+      "fact_id": "F3",
+      "verdict": "present",
+      "statement_ids": [
+        "subjective-3"
+      ],
+      "reason": "Dose, frequency and missed evening doses all match."
+    },
+    {
+      "fact_id": "F4",
+      "verdict": "present",
+      "statement_ids": [
+        "subjective-4"
+      ],
+      "reason": "Cramping and loose stools about an hour after the dose are stated."
+    },
+    {
+      "fact_id": "F5",
+      "verdict": "present",
+      "statement_ids": [
+        "subjective-5"
+      ],
+      "reason": "Morning home readings of 8 to 10 are stated."
+    },
+    {
+      "fact_id": "F6",
+      "verdict": "present",
+      "statement_ids": [
+        "subjective-6"
+      ],
+      "reason": "Walking about twice a week, less since the cold, is stated."
+    },
+    {
+      "fact_id": "F7",
+      "verdict": "present",
+      "statement_ids": [
+        "subjective-7"
+      ],
+      "reason": "The patient denies chest pain."
+    },
+    {
+      "fact_id": "F8",
+      "verdict": "present",
+      "statement_ids": [
+        "subjective-8"
+      ],
+      "reason": "No eye exam in about two years is stated."
+    },
+    {
+      "fact_id": "F9",
+      "verdict": "present",
+      "statement_ids": [
+        "subjective-9"
+      ],
+      "reason": "Nighttime tingling in the toes of both feet is stated."
+    },
+    {
+      "fact_id": "F10",
+      "verdict": "present",
+      "statement_ids": [
+        "subjective-10",
+        "plan-4"
+      ],
+      "reason": "The note says he has not started cinnamon and was advised to hold off."
+    },
+    {
+      "fact_id": "F11",
+      "verdict": "present",
+      "statement_ids": [
+        "objective-1"
+      ],
+      "reason": "A1c 8.1% up from 7.4% in the spring is stated."
+    },
+    {
+      "fact_id": "F12",
+      "verdict": "present",
+      "statement_ids": [
+        "objective-2"
+      ],
+      "reason": "Blood pressure 142/88 is stated."
+    },
+    {
+      "fact_id": "F13",
+      "verdict": "present",
+      "statement_ids": [
+        "objective-3"
+      ],
+      "reason": "Weight 98 kg, up 2 kg, is stated."
+    },
+    {
+      "fact_id": "F14",
+      "verdict": "present",
+      "statement_ids": [
+        "objective-4"
+      ],
+      "reason": "Good pulses and reduced monofilament sensation at both big toes are stated."
+    },
+    {
+      "fact_id": "F15",
+      "verdict": "partial",
+      "statement_ids": [
+        "assessment-1"
+      ],
+      "reason": "Worsening glycemic control is stated, but the diabetes is not specified as type 2."
+    },
+    {
+      "fact_id": "F16",
+      "verdict": "present",
+      "statement_ids": [
+        "assessment-2"
+      ],
+      "reason": "Early diabetic nerve changes is equivalent to early peripheral neuropathy."
+    },
+    {
+      "fact_id": "F17",
+      "verdict": "partial",
+      "statement_ids": [
+        "assessment-4"
+      ],
+      "reason": "Blood pressure is called elevated, but not framed as above target."
+    },
+    {
+      "fact_id": "F18",
+      "verdict": "present",
+      "statement_ids": [
+        "plan-1"
+      ],
+      "reason": "Switch to extended-release 1000 mg twice daily for stomach upset is stated."
+    },
+    {
+      "fact_id": "F19",
+      "verdict": "present",
+      "statement_ids": [
+        "plan-2",
+        "plan-3"
+      ],
+      "reason": "Empagliflozin 10 mg daily is started with the counselling points included."
+    },
+    {
+      "fact_id": "F20",
+      "verdict": "present",
+      "statement_ids": [
+        "plan-5"
+      ],
+      "reason": "Referral to diabetes education with a dietitian is stated."
+    },
+    {
+      "fact_id": "F21",
+      "verdict": "present",
+      "statement_ids": [
+        "plan-6"
+      ],
+      "reason": "Referral to an eye doctor for a retinal exam is stated."
+    },
+    {
+      "fact_id": "F22",
+      "verdict": "present",
+      "statement_ids": [
+        "plan-7"
+      ],
+      "reason": "Kidney function and urine test today is stated."
+    },
+    {
+      "fact_id": "F23",
+      "verdict": "present",
+      "statement_ids": [
+        "plan-8"
+      ],
+      "reason": "BP recheck next visit with medication if above 130/80 is stated."
+    },
+    {
+      "fact_id": "F24",
+      "verdict": "present",
+      "statement_ids": [
+        "plan-9",
+        "plan-10"
+      ],
+      "reason": "Repeat A1c in three months and daily foot checks with a call about sores are stated."
+    }
+  ]
+}

@@ -1,0 +1,358 @@
+{
+  "generated_at": "2026-11-11",
+  "note_model": "claude-opus-5-5",
+  "note_effort": "medium",
+  "check_effort": "medium",
+  "judge_model": "claude-opus-5-5",
+  "conditions": {
+    "reference": [
+      {
+        "sample": "ankle-sprain",
+        "facts": 23,
+        "present": 23,
+        "partial": 0,
+        "absent": 0,
+        "coverage": 1.0,
+        "missing_verdicts": [],
+        "statements": 25,
+        "unsupported": 0,
+        "partially_supported": 0,
+        "unsupported_rate": 0.0,
+        "rejected": 0
+      },
+      {
+        "sample": "diabetes-follow-up",
+        "facts": 24,
+        "present": 21,
+        "partial": 3,
+        "absent": 0,
+        "coverage": 0.9375,
+        "missing_verdicts": [],
+        "statements": 29,
+        "unsupported": 0,
+        "partially_supported": 1,
+        "unsupported_rate": 0.0,
+        "rejected": 0
+      },
+      {
+        "sample": "sore-throat",
+        "facts": 19,
+        "present": 19,
+        "partial": 0,
+        "absent": 0,
+        "coverage": 1.0,
+        "missing_verdicts": [],
+        "statements": 21,
+        "unsupported": 0,
+        "partially_supported": 1,
+        "unsupported_rate": 0.0,
+        "rejected": 0
+      }
+    ],
+    "gemini": [
+      {
+        "sample": "ankle-sprain",
+        "facts": 23,
+        "present": 23,
+        "partial": 0,
+        "absent": 0,
+        "coverage": 1.0,
+        "missing_verdicts": [],
+        "statements": 24,
+        "unsupported": 0,
+        "partially_supported": 0,
+        "unsupported_rate": 0.0,
+        "rejected": 0
+      },
+      {
+        "sample": "diabetes-follow-up",
+        "facts": 24,
+        "present": 24,
+        "partial": 0,
+        "absent": 0,
+        "coverage": 1.0,
+        "missing_verdicts": [],
+        "statements": 28,
+        "unsupported": 0,
+        "partially_supported": 0,
+        "unsupported_rate": 0.0,
+        "rejected": 0
+      },
+      {
+        "sample": "sore-throat",
+        "facts": 19,
+        "present": 19,
+        "partial": 0,
+        "absent": 0,
+        "coverage": 1.0,
+        "missing_verdicts": [],
+        "statements": 20,
+        "unsupported": 0,
+        "partially_supported": 1,
+        "unsupported_rate": 0.0,
+        "rejected": 0
+      }
+    ]
+  },
+  "totals": {
+    "reference": {
+      "facts": 66,
+      "present": 63,
+      "partial": 3,
+      "absent": 0,
+      "statements": 75,
+      "unsupported": 0,
+      "partially_supported": 2,
+      "rejected": 0,
+      "coverage": 0.9772727272727273,
+      "unsupported_rate": 0.0
+    },
+    "gemini": {
+      "facts": 66,
+      "present": 66,
+      "partial": 0,
+      "absent": 0,
+      "statements": 72,
+      "unsupported": 0,
+      "partially_supported": 1,
+      "rejected": 0,
+      "coverage": 1.0,
+      "unsupported_rate": 0.0
+    }
+  },
+  "planted": [
+    {
+      "sample": "ankle-sprain",
+      "planted": 4,
+      "caught_unsupported": 2,
+      "caught_partial": 2,
+      "missed": 0,
+      "untouched": 22,
+      "untouched_flagged": 0
+    },
+    {
+      "sample": "diabetes-follow-up",
+      "planted": 4,
+      "caught_unsupported": 4,
+      "caught_partial": 0,
+      "missed": 0,
+      "untouched": 26,
+      "untouched_flagged": 0
+    },
+    {
+      "sample": "sore-throat",
+      "planted": 4,
+      "caught_unsupported": 2,
+      "caught_partial": 2,
+      "missed": 0,
+      "untouched": 18,
+      "untouched_flagged": 0
+    }
+  ],
+  "planted_totals": {
+    "planted": 12,
+    "caught_unsupported": 8,
+    "caught_partial": 4,
+    "missed": 0,
+    "untouched": 66,
+    "untouched_flagged": 0
+  },
+  "gemini_pii_leaks": {
+    "ankle-sprain": 0,
+    "diabetes-follow-up": 0,
+    "sore-throat": 0
+  },
+  "eval_calls_log": [
+    {
+      "created_at": "2026-11-11T00:22:09.904287+00:00",
+      "provider": "anthropic",
+      "model": "claude-opus-5-5",
+      "purpose": "soap_note",
+      "prompt_sha256": "e00d9cd6ab4e6a50364160c3873f69b15d97b8466785fd1956935d66f28f418e",
+      "input_tokens": 2672,
+      "output_tokens": 1183,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "cost_usd": "0.034348",
+      "latency_ms": 13129,
+      "status": "ok",
+      "error": null
+    },
+    {
+      "created_at": "2026-11-11T00:22:16.227409+00:00",
+      "provider": "anthropic",
+      "model": "claude-opus-5-5",
+      "purpose": "claim_check",
+      "prompt_sha256": "4dd7062c5a48fa77e5c11ccfa8dc8c5b878ed0195808e68e1ecde298c0ce1a55",
+      "input_tokens": 3245,
+      "output_tokens": 805,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "cost_usd": "0.029080",
+      "latency_ms": 6314,
+      "status": "ok",
+      "error": null
+    },
+    {
+      "created_at": "2026-11-11T00:22:58.501805+00:00",
+      "provider": "anthropic",
+      "model": "claude-opus-5-5",
+      "purpose": "soap_note",
+      "prompt_sha256": "4f40b1fc4c8da452adf5b27e9a679a5d34f5562371757e2bd138ec19c1e66b8c",
+      "input_tokens": 2646,
+      "output_tokens": 1288,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "cost_usd": "0.036344",
+      "latency_ms": 11443,
+      "status": "ok",
+      "error": null
+    },
+    {
+      "created_at": "2026-11-11T00:23:08.653865+00:00",
+      "provider": "anthropic",
+      "model": "claude-opus-5-5",
+      "purpose": "claim_check",
+      "prompt_sha256": "9592ab0233ef9268e71fc2b066dc360705b871ef52c99736cf7844cb940cd852",
+      "input_tokens": 3292,
+      "output_tokens": 1216,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "cost_usd": "0.037488",
+      "latency_ms": 10124,
+      "status": "ok",
+      "error": null
+    },
+    {
+      "created_at": "2026-11-11T00:23:46.168977+00:00",
+      "provider": "anthropic",
+      "model": "claude-opus-5-5",
+      "purpose": "soap_note",
+      "prompt_sha256": "64092669d813aab57b4f2170140761f410c8bde44aa10761bd5fcbe5f6189de1",
+      "input_tokens": 2623,
+      "output_tokens": 1038,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "cost_usd": "0.031252",
+      "latency_ms": 8297,
+      "status": "ok",
+      "error": null
+    },
+    {
+      "created_at": "2026-11-11T00:23:54.911253+00:00",
+      "provider": "anthropic",
+      "model": "claude-opus-5-5",
+      "purpose": "claim_check",
+      "prompt_sha256": "ecfc21cc3a1949676a7b518a3aeeb7927610fbfda21d6ccd99ee0aa2b34271f7",
+      "input_tokens": 3086,
+      "output_tokens": 1021,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "cost_usd": "0.032764",
+      "latency_ms": 8637,
+      "status": "ok",
+      "error": null
+    },
+    {
+      "created_at": "2026-11-11T00:21:56.672123+00:00",
+      "model": "claude-opus-5-5",
+      "purpose": "eval_coverage",
+      "input_tokens": 2317,
+      "output_tokens": 1361,
+      "cost_usd": "0.036488",
+      "latency_ms": 16117,
+      "status": "ok",
+      "prompt_sha256": "023738d67a44d7b93657d669479b112f225e5d8dbe9aab2318eadc78fc879607"
+    },
+    {
+      "created_at": "2026-11-11T00:22:31.017755+00:00",
+      "model": "claude-opus-5-5",
+      "purpose": "eval_coverage",
+      "input_tokens": 2295,
+      "output_tokens": 1318,
+      "cost_usd": "0.035540",
+      "latency_ms": 14768,
+      "status": "ok",
+      "prompt_sha256": "96a43c7b691f148e77881f32aa6423e4c1d2b35a9e7d4ba24fcaa5900c320d89"
+    },
+    {
+      "created_at": "2026-11-11T00:22:46.957794+00:00",
+      "model": "claude-opus-5-5",
+      "purpose": "eval_coverage",
+      "input_tokens": 2344,
+      "output_tokens": 1422,
+      "cost_usd": "0.037816",
+      "latency_ms": 15939,
+      "status": "ok",
+      "prompt_sha256": "063fce635d93f07de57c485a6f2293c3f61603924fe657d75186666d4b97d5f7"
+    },
+    {
+      "created_at": "2026-11-11T00:23:25.672252+00:00",
+      "model": "claude-opus-5-5",
+      "purpose": "eval_coverage",
+      "input_tokens": 2324,
+      "output_tokens": 1880,
+      "cost_usd": "0.046896",
+      "latency_ms": 16992,
+      "status": "ok",
+      "prompt_sha256": "cea4820ac063256c250da2a4314154aa120d1c8ea818474c5a156d7764dd6262"
+    },
+    {
+      "created_at": "2026-11-11T00:23:37.744916+00:00",
+      "model": "claude-opus-5-5",
+      "purpose": "eval_coverage",
+      "input_tokens": 2082,
+      "output_tokens": 1139,
+      "cost_usd": "0.031108",
+      "latency_ms": 12069,
+      "status": "ok",
+      "prompt_sha256": "e392ef7519ea8c8d3c33846b17ac18cfe21bc70b5d28c8895794669757c5fb64"
+    },
+    {
+      "created_at": "2026-11-11T00:24:04.564277+00:00",
+      "model": "claude-opus-5-5",
+      "purpose": "eval_coverage",
+      "input_tokens": 2073,
+      "output_tokens": 1137,
+      "cost_usd": "0.031032",
+      "latency_ms": 9639,
+      "status": "ok",
+      "prompt_sha256": "2611a0d9316a163dc76f75ca6a90038bfe8bad8e6e0a7888b11f78f11a106928"
+    },
+    {
+      "created_at": "2026-11-11T00:24:12.139110+00:00",
+      "model": "claude-opus-5-5",
+      "purpose": "claim_check",
+      "input_tokens": 3272,
+      "output_tokens": 954,
+      "cost_usd": "0.032168",
+      "latency_ms": 7573,
+      "status": "ok",
+      "prompt_sha256": "b8de108a70dbf132f80f0637297404aa0c40dff3e2e087a2b3df4af6ca6efe9c"
+    },
+    {
+      "created_at": "2026-11-11T00:24:25.032985+00:00",
+      "model": "claude-opus-5-5",
+      "purpose": "claim_check",
+      "input_tokens": 3347,
+      "output_tokens": 1117,
+      "cost_usd": "0.035728",
+      "latency_ms": 12888,
+      "status": "ok",
+      "prompt_sha256": "f13db4585e2497437a93f653f4cfa0c02e21e4ae22c10846a80d59998f151903"
+    },
+    {
+      "created_at": "2026-11-11T00:24:34.005619+00:00",
+      "model": "claude-opus-5-5",
+      "purpose": "claim_check",
+      "input_tokens": 3122,
+      "output_tokens": 771,
+      "cost_usd": "0.027908",
+      "latency_ms": 8970,
+      "status": "ok",
+      "prompt_sha256": "bfb9b96de04cf19ad991755b4ec0856ff7640c449e92eaddf5e5c14a17653dc1"
+    }
+  ],
+  "eval_calls": 15,
+  "eval_cost_usd": "0.515960"
+}
