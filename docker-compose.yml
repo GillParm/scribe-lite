@@ -1,5 +1,9 @@
 name: scribe-lite
 
+# Demo only. Not for clinical use.
+#   docker compose up --build      web on :3400, API on :8400, Postgres on :5434
+# Keys come from .env if present; without them the three samples still work.
+
 services:
   db:
     image: postgres:17
@@ -17,5 +21,41 @@ services:
       timeout: 3s
       retries: 30
 
+  api:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    env_file:
+      - path: .env
+        required: false
+    environment:
+      DATABASE_URL: postgresql+psycopg://scribe:scribe@db:5432/scribe
+      PORT: "8400"
+      CORS_ORIGINS: '["http://localhost:3400"]'
+    ports:
+      - "8400:8400"
+    volumes:
+      - audio:/data
+    depends_on:
+      db:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8400/api/health')"]
+      interval: 5s
+      timeout: 3s
+      retries: 30
+
+  web:
+    build: frontend
+    environment:
+      API_URL: http://api:8400
+      PORT: "3400"
+    ports:
+      - "3400:3400"
+    depends_on:
+      api:
+        condition: service_healthy
+
 volumes:
   pgdata:
+  audio:
