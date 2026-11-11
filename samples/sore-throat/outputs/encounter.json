@@ -2,7 +2,7 @@
   "version": 1,
   "sample_slug": "sore-throat",
   "title": "Sore throat, three days",
-  "processed_at": "2026-11-11T00:05:30.842002+00:00",
+  "processed_at": "2026-11-11T00:26:40.163629+00:00",
   "transcriber": "reference",
   "note_model": "claude-opus-5-5",
   "check_model": "claude-opus-5-5",
@@ -430,7 +430,6 @@
       "section": "subjective",
       "text": "The patient reports a sore throat for about three days with severe pain on swallowing, even water.",
       "source_segment_ids": [
-        "s7",
         "s8"
       ],
       "citations_repaired": false,
@@ -452,7 +451,7 @@
     {
       "id": "subjective-3",
       "section": "subjective",
-      "text": "The patient denies cough, runny nose, or stuffy nose.",
+      "text": "The patient denies cough, runny nose, or nasal congestion.",
       "source_segment_ids": [
         "s11",
         "s12"
@@ -464,7 +463,7 @@
     {
       "id": "subjective-4",
       "section": "subjective",
-      "text": "The patient reports that the neck feels swollen.",
+      "text": "The patient reports a feeling of neck swelling.",
       "source_segment_ids": [
         "s12"
       ],
@@ -499,7 +498,7 @@
     {
       "id": "subjective-7",
       "section": "subjective",
-      "text": "The patient is allergic to penicillin, with hives from amoxicillin as a child.",
+      "text": "The patient is allergic to penicillin, having developed hives from amoxicillin as a child.",
       "source_segment_ids": [
         "s17",
         "s18"
@@ -567,7 +566,7 @@
     {
       "id": "objective-5",
       "section": "objective",
-      "text": "Rapid strep test is positive.",
+      "text": "Rapid strep test was positive.",
       "source_segment_ids": [
         "s23"
       ],
@@ -585,7 +584,7 @@
       ],
       "citations_repaired": false,
       "support": "partially_supported",
-      "support_reason": "Tender nodes were only described as swollen in s23; tenderness and anterior location appear only in uncited s21."
+      "support_reason": "s23 mentions swollen nodes but not tenderness or anterior location; those details are only in s21, which is not cited."
     },
     {
       "id": "plan-1",
@@ -601,7 +600,7 @@
     {
       "id": "plan-2",
       "section": "plan",
-      "text": "Azithromycin 500 mg once daily for five days was prescribed and sent to the patient's pharmacy.",
+      "text": "Prescribed azithromycin 500 mg once daily for five days, sent to the patient's pharmacy.",
       "source_segment_ids": [
         "s25",
         "s33"
@@ -613,9 +612,8 @@
     {
       "id": "plan-3",
       "section": "plan",
-      "text": "The patient was advised to finish the full antibiotic course even if feeling better, with improvement expected within two to three days.",
+      "text": "The patient was advised to complete the full antibiotic course even if feeling better.",
       "source_segment_ids": [
-        "s26",
         "s27"
       ],
       "citations_repaired": false,
@@ -625,7 +623,7 @@
     {
       "id": "plan-4",
       "section": "plan",
-      "text": "The patient may continue ibuprofen for pain and fever, drink plenty of fluids, and use warm salt water gargles.",
+      "text": "The patient may continue ibuprofen for pain and fever, should drink plenty of fluids, and may use warm salt water gargles.",
       "source_segment_ids": [
         "s27"
       ],
@@ -636,7 +634,7 @@
     {
       "id": "plan-5",
       "section": "plan",
-      "text": "The patient should stay home from work until on the antibiotic for at least 24 hours and fever-free, and a work note will be provided.",
+      "text": "The patient should stay home from work until on the antibiotic for at least 24 hours and afebrile, and a work note will be provided.",
       "source_segment_ids": [
         "s28",
         "s29",
@@ -672,32 +670,32 @@
   "rejected_statements": [],
   "model_calls": [
     {
-      "created_at": "2026-11-11T00:05:21.576351+00:00",
+      "created_at": "2026-11-11T00:26:34.295939+00:00",
       "provider": "anthropic",
       "model": "claude-opus-5-5",
       "purpose": "soap_note",
       "prompt_sha256": "b73bd2b725f804b668aae578d15298c166b482d5b921a1627ede8c7186c02194",
       "input_tokens": 2618,
-      "output_tokens": 1059,
+      "output_tokens": 1045,
       "cache_read_tokens": 0,
       "cache_write_tokens": 0,
-      "cost_usd": "0.031652",
-      "latency_ms": 13645,
+      "cost_usd": "0.031372",
+      "latency_ms": 12163,
       "status": "ok",
       "error": null
     },
     {
-      "created_at": "2026-11-11T00:05:30.838591+00:00",
+      "created_at": "2026-11-11T00:26:40.160582+00:00",
       "provider": "anthropic",
       "model": "claude-opus-5-5",
       "purpose": "claim_check",
-      "prompt_sha256": "e339649f7478cd0b42db41bcdd73496cc78cb4613106dfe037ac5d218966ae59",
-      "input_tokens": 3094,
-      "output_tokens": 712,
+      "prompt_sha256": "5aa1f6a4f603a97a4d4bebb26ef004049683d48b8648432e0cec45ca351991c3",
+      "input_tokens": 3131,
+      "output_tokens": 714,
       "cache_read_tokens": 0,
       "cache_write_tokens": 0,
-      "cost_usd": "0.026616",
-      "latency_ms": 9259,
+      "cost_usd": "0.026804",
+      "latency_ms": 5860,
       "status": "ok",
       "error": null
     }

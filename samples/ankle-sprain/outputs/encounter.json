@@ -2,7 +2,7 @@
   "version": 1,
   "sample_slug": "ankle-sprain",
   "title": "Right ankle injury playing basketball",
-  "processed_at": "2026-11-11T00:06:05.410721+00:00",
+  "processed_at": "2026-11-11T00:25:55.962146+00:00",
   "transcriber": "reference",
   "note_model": "claude-opus-5-5",
   "check_model": "claude-opus-5-5",
@@ -458,7 +458,7 @@
       ],
       "citations_repaired": false,
       "support": "supported",
-      "support_reason": "Stated in s9 and s10."
+      "support_reason": "Stated in s10."
     },
     {
       "id": "subjective-2",
@@ -470,7 +470,7 @@
       ],
       "citations_repaired": false,
       "support": "supported",
-      "support_reason": "Stated in s11 and s12."
+      "support_reason": "Stated in s12."
     },
     {
       "id": "subjective-3",
@@ -482,7 +482,7 @@
       ],
       "citations_repaired": false,
       "support": "supported",
-      "support_reason": "Stated in s13 and s14."
+      "support_reason": "Stated in s14."
     },
     {
       "id": "subjective-4",
@@ -494,7 +494,7 @@
       ],
       "citations_repaired": false,
       "support": "supported",
-      "support_reason": "Stated in s15 and s16."
+      "support_reason": "Stated in s16."
     },
     {
       "id": "subjective-5",
@@ -506,7 +506,7 @@
       ],
       "citations_repaired": false,
       "support": "supported",
-      "support_reason": "Stated in s17 and s18."
+      "support_reason": "Stated in s18."
     },
     {
       "id": "subjective-6",
@@ -582,7 +582,7 @@
     {
       "id": "objective-5",
       "section": "objective",
-      "text": "Pulses and sensation in the foot are normal.",
+      "text": "Foot pulses and sensation are normal.",
       "source_segment_ids": [
         "s27"
       ],
@@ -621,13 +621,13 @@
         "s29"
       ],
       "citations_repaired": false,
-      "support": "supported",
-      "support_reason": "Stated in s29, with the right ankle established in s21."
+      "support": "partially_supported",
+      "support_reason": "s29 does not specify the right ankle; laterality is only in uncited s10 and s21."
     },
     {
       "id": "assessment-2",
       "section": "assessment",
-      "text": "X-ray not indicated per Ottawa ankle rules given no bony tenderness and ability to bear weight.",
+      "text": "No X-ray needed per the Ottawa ankle rules, given no bony tenderness and ability to bear weight.",
       "source_segment_ids": [
         "s29"
       ],
@@ -638,16 +638,61 @@
     {
       "id": "plan-1",
       "section": "plan",
-      "text": "No X-ray today.",
+      "text": "Keep the ankle elevated and apply ice for 15 to 20 minutes at a time over the next few days.",
       "source_segment_ids": [
-        "s29"
+        "s31"
       ],
       "citations_repaired": false,
       "support": "supported",
-      "support_reason": "Stated in s29."
+      "support_reason": "Stated in s31."
     },
     {
       "id": "plan-2",
+      "section": "plan",
+      "text": "Wear an air-stirrup brace.",
+      "source_segment_ids": [
+        "s31"
+      ],
+      "citations_repaired": false,
+      "support": "supported",
+      "support_reason": "Stated in s31."
+    },
+    {
+      "id": "plan-3",
+      "section": "plan",
+      "text": "Crutches may be used for two or three days, with as much weight-bearing as comfortably tolerated.",
+      "source_segment_ids": [
+        "s31"
+      ],
+      "citations_repaired": false,
+      "support": "supported",
+      "support_reason": "Stated in s31."
+    },
+    {
+      "id": "plan-4",
+      "section": "plan",
+      "text": "Ibuprofen 400 mg every eight hours with food for up to five days.",
+      "source_segment_ids": [
+        "s32",
+        "s33"
+      ],
+      "citations_repaired": false,
+      "support": "supported",
+      "support_reason": "Stated in s33."
+    },
+    {
+      "id": "plan-5",
+      "section": "plan",
+      "text": "Referral to physiotherapy for balance and strengthening exercises to reduce the risk of re-injury.",
+      "source_segment_ids": [
+        "s33"
+      ],
+      "citations_repaired": false,
+      "support": "supported",
+      "support_reason": "Stated in s33."
+    },
+    {
+      "id": "plan-6",
       "section": "plan",
       "text": "Expected return to basketball in about three to four weeks, sometimes longer.",
       "source_segment_ids": [
@@ -659,77 +704,21 @@
       "support_reason": "Stated in s30 and s31."
     },
     {
-      "id": "plan-3",
-      "section": "plan",
-      "text": "For the next few days, elevate the ankle and apply ice for 15 to 20 minutes at a time.",
-      "source_segment_ids": [
-        "s31"
-      ],
-      "citations_repaired": false,
-      "support": "supported",
-      "support_reason": "Stated in s31."
-    },
-    {
-      "id": "plan-4",
-      "section": "plan",
-      "text": "Wear an air-stirrup brace.",
-      "source_segment_ids": [
-        "s31"
-      ],
-      "citations_repaired": false,
-      "support": "supported",
-      "support_reason": "Stated in s31."
-    },
-    {
-      "id": "plan-5",
-      "section": "plan",
-      "text": "Crutches may be used for two or three days while bearing as much weight as comfortable.",
-      "source_segment_ids": [
-        "s31"
-      ],
-      "citations_repaired": false,
-      "support": "supported",
-      "support_reason": "Stated in s31."
-    },
-    {
-      "id": "plan-6",
-      "section": "plan",
-      "text": "Ibuprofen 400 mg every eight hours with food for up to five days.",
-      "source_segment_ids": [
-        "s32",
-        "s33"
-      ],
-      "citations_repaired": false,
-      "support": "supported",
-      "support_reason": "Stated in s32 and s33."
-    },
-    {
       "id": "plan-7",
       "section": "plan",
-      "text": "Referral to physiotherapy for balance and strengthening exercises to reduce risk of re-injury.",
-      "source_segment_ids": [
-        "s33"
-      ],
-      "citations_repaired": false,
-      "support": "supported",
-      "support_reason": "Stated in s33."
-    },
-    {
-      "id": "plan-8",
-      "section": "plan",
-      "text": "Work note for modified duties for one week with no heavy lifting and no ladders.",
+      "text": "Work note for modified duties for one week, with no heavy lifting and no ladders.",
       "source_segment_ids": [
         "s34",
         "s35"
       ],
       "citations_repaired": false,
       "support": "supported",
-      "support_reason": "Stated in s34 and s35."
+      "support_reason": "Stated in s35."
     },
     {
-      "id": "plan-9",
+      "id": "plan-8",
       "section": "plan",
-      "text": "Return if unable to bear weight at all, if the foot becomes numb or cold, or if not improving in a week.",
+      "text": "Return if unable to bear weight at all, if the foot becomes numb or cold, or if not improving within a week.",
       "source_segment_ids": [
         "s37"
       ],
@@ -741,32 +730,32 @@
   "rejected_statements": [],
   "model_calls": [
     {
-      "created_at": "2026-11-11T00:05:57.672736+00:00",
+      "created_at": "2026-11-11T00:25:43.107902+00:00",
       "provider": "anthropic",
       "model": "claude-opus-5-5",
       "purpose": "soap_note",
       "prompt_sha256": "eefa8910cb9bfe28e17e5cdabbc159dca929f7831dd8582290134d7de010bf4e",
       "input_tokens": 2653,
-      "output_tokens": 1218,
+      "output_tokens": 1200,
       "cache_read_tokens": 0,
       "cache_write_tokens": 0,
-      "cost_usd": "0.034972",
-      "latency_ms": 14228,
+      "cost_usd": "0.034612",
+      "latency_ms": 14209,
       "status": "ok",
       "error": null
     },
     {
-      "created_at": "2026-11-11T00:06:05.397547+00:00",
+      "created_at": "2026-11-11T00:25:55.956245+00:00",
       "provider": "anthropic",
       "model": "claude-opus-5-5",
       "purpose": "claim_check",
-      "prompt_sha256": "a80493ad41dff2da5097c2c54114bcaeafded39fb47eb137c19a03406b57eef4",
-      "input_tokens": 3252,
-      "output_tokens": 862,
+      "prompt_sha256": "47e1b6d90e1c3f0fb040c88e8d30dfd40783f135a7c1423efee01946834fa28b",
+      "input_tokens": 3294,
+      "output_tokens": 1229,
       "cache_read_tokens": 0,
       "cache_write_tokens": 0,
-      "cost_usd": "0.030248",
-      "latency_ms": 7721,
+      "cost_usd": "0.037756",
+      "latency_ms": 12839,
       "status": "ok",
       "error": null
     }

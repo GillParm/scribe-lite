@@ -2,7 +2,7 @@
   "version": 1,
   "sample_slug": "diabetes-follow-up",
   "title": "Type 2 diabetes, three-month follow-up",
-  "processed_at": "2026-11-11T00:06:28.076354+00:00",
+  "processed_at": "2026-11-11T00:26:21.590242+00:00",
   "transcriber": "reference",
   "note_model": "claude-opus-5-5",
   "check_model": "claude-opus-5-5",
@@ -425,7 +425,7 @@
     {
       "id": "subjective-2",
       "section": "subjective",
-      "text": "The patient reports eating more bread and sweets than he should over the holidays.",
+      "text": "The patient reports eating more bread and sweets over the holidays.",
       "source_segment_ids": [
         "s8"
       ],
@@ -436,7 +436,7 @@
     {
       "id": "subjective-3",
       "section": "subjective",
-      "text": "The patient takes metformin 1000 mg twice daily but misses the evening dose three or four times a week because it upsets his stomach.",
+      "text": "The patient takes metformin 1000 mg twice daily but misses the evening dose three to four times a week due to stomach upset.",
       "source_segment_ids": [
         "s9",
         "s10"
@@ -448,7 +448,7 @@
     {
       "id": "subjective-4",
       "section": "subjective",
-      "text": "The stomach upset consists of cramping and loose stools, usually about an hour after taking metformin.",
+      "text": "The patient describes cramping and loose stools about an hour after taking metformin.",
       "source_segment_ids": [
         "s11",
         "s12"
@@ -484,7 +484,7 @@
     {
       "id": "subjective-7",
       "section": "subjective",
-      "text": "The patient denies chest pain and reports his vision seems fine.",
+      "text": "The patient denies chest pain and reports no vision problems.",
       "source_segment_ids": [
         "s17",
         "s18"
@@ -520,14 +520,14 @@
     {
       "id": "subjective-10",
       "section": "subjective",
-      "text": "The patient has been advised by a relative to try cinnamon pills but has not started them.",
+      "text": "The patient has considered cinnamon pills but has not started them.",
       "source_segment_ids": [
         "s21",
         "s22"
       ],
       "citations_repaired": false,
-      "support": "supported",
-      "support_reason": "Stated in s22."
+      "support": "partially_supported",
+      "support_reason": "The patient says his brother-in-law suggested the pills, not that he considered taking them himself."
     },
     {
       "id": "objective-1",
@@ -576,7 +576,7 @@
     {
       "id": "assessment-1",
       "section": "assessment",
-      "text": "Diabetes with worsening glycemic control, with A1c rising from 7.4 to 8.1 percent.",
+      "text": "Diabetes control is worsening, with rising A1c.",
       "source_segment_ids": [
         "s23",
         "s24",
@@ -584,7 +584,7 @@
       ],
       "citations_repaired": false,
       "support": "supported",
-      "support_reason": "Stated in s23 and s24, with the doctor confirming in s25."
+      "support_reason": "Stated in s23 and s24, with the doctor's agreement in s25."
     },
     {
       "id": "assessment-2",
@@ -600,7 +600,7 @@
     {
       "id": "assessment-3",
       "section": "assessment",
-      "text": "Gastrointestinal upset with metformin is contributing to missed evening doses.",
+      "text": "Metformin is causing gastrointestinal side effects leading to missed doses.",
       "source_segment_ids": [
         "s10",
         "s12",
@@ -608,24 +608,12 @@
       ],
       "citations_repaired": false,
       "support": "supported",
-      "support_reason": "Patient states in s10 that he skips the dose because it upsets his stomach."
-    },
-    {
-      "id": "assessment-4",
-      "section": "assessment",
-      "text": "Blood pressure is elevated today.",
-      "source_segment_ids": [
-        "s25",
-        "s31"
-      ],
-      "citations_repaired": false,
-      "support": "partially_supported",
-      "support_reason": "The reading 142/88 and the 130/80 threshold are stated, but nobody calls the blood pressure elevated aloud."
+      "support_reason": "Stated in s10 and s12."
     },
     {
       "id": "plan-1",
       "section": "plan",
-      "text": "Switch metformin to the extended-release form, 1000 mg twice daily, to reduce stomach upset.",
+      "text": "Switch metformin to the extended-release form, 1000 mg twice daily, to improve stomach tolerance.",
       "source_segment_ids": [
         "s27"
       ],
@@ -647,7 +635,7 @@
     {
       "id": "plan-3",
       "section": "plan",
-      "text": "Counseled that empagliflozin can cause genital yeast infections and increased urination, and to drink enough water.",
+      "text": "The patient was counseled that empagliflozin can cause genital yeast infections and increased urination and advised to drink enough water.",
       "source_segment_ids": [
         "s28",
         "s29"
@@ -659,7 +647,7 @@
     {
       "id": "plan-4",
       "section": "plan",
-      "text": "Advised to hold off on cinnamon pills due to lack of good evidence.",
+      "text": "The patient was advised to hold off on cinnamon pills due to lack of good evidence.",
       "source_segment_ids": [
         "s22",
         "s23"
@@ -671,7 +659,7 @@
     {
       "id": "plan-5",
       "section": "plan",
-      "text": "Referral to the diabetes education program to meet with a dietitian.",
+      "text": "Refer to the diabetes education program to meet with a dietitian.",
       "source_segment_ids": [
         "s29"
       ],
@@ -682,7 +670,7 @@
     {
       "id": "plan-6",
       "section": "plan",
-      "text": "Referral to an eye doctor for a retinal exam.",
+      "text": "Refer to an eye doctor for a retinal exam.",
       "source_segment_ids": [
         "s29"
       ],
@@ -693,7 +681,7 @@
     {
       "id": "plan-7",
       "section": "plan",
-      "text": "Kidney function and urine test to be done today.",
+      "text": "Kidney function and urine tests to be done today.",
       "source_segment_ids": [
         "s29"
       ],
@@ -704,7 +692,7 @@
     {
       "id": "plan-8",
       "section": "plan",
-      "text": "Recheck blood pressure at the next visit and start a medication if it remains above 130/80.",
+      "text": "Recheck blood pressure at the next visit and start a blood pressure medication if still above 130/80.",
       "source_segment_ids": [
         "s30",
         "s31"
@@ -727,7 +715,7 @@
     {
       "id": "plan-10",
       "section": "plan",
-      "text": "Advised to check feet daily and call if any sores appear.",
+      "text": "The patient was advised to check feet daily and call if any sores appear.",
       "source_segment_ids": [
         "s33"
       ],
@@ -750,32 +738,32 @@
   "rejected_statements": [],
   "model_calls": [
     {
-      "created_at": "2026-11-11T00:06:16.826093+00:00",
+      "created_at": "2026-11-11T00:26:06.828606+00:00",
       "provider": "anthropic",
       "model": "claude-opus-5-5",
       "purpose": "soap_note",
       "prompt_sha256": "63b3f231adfeed119c8a820a1495a348e82f69c73f55cf51775c895154052a8b",
       "input_tokens": 2644,
-      "output_tokens": 1323,
+      "output_tokens": 1263,
       "cache_read_tokens": 0,
       "cache_write_tokens": 0,
-      "cost_usd": "0.037036",
-      "latency_ms": 10847,
+      "cost_usd": "0.035836",
+      "latency_ms": 10178,
       "status": "ok",
       "error": null
     },
     {
-      "created_at": "2026-11-11T00:06:28.064013+00:00",
+      "created_at": "2026-11-11T00:26:21.566615+00:00",
       "provider": "anthropic",
       "model": "claude-opus-5-5",
       "purpose": "claim_check",
-      "prompt_sha256": "14b4eaee7c5f2806bd463c0dcc52fadd872bea9b052f898d5d834fc88a06ddd0",
-      "input_tokens": 3317,
-      "output_tokens": 1387,
+      "prompt_sha256": "29cc227d9d7734cfb720772208b1807fa7e9213ed614dfe6c0b5110cb1f118da",
+      "input_tokens": 3316,
+      "output_tokens": 1275,
       "cache_read_tokens": 0,
       "cache_write_tokens": 0,
-      "cost_usd": "0.041008",
-      "latency_ms": 11221,
+      "cost_usd": "0.038764",
+      "latency_ms": 14727,
       "status": "ok",
       "error": null
     }
