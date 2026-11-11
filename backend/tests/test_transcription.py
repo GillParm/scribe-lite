@@ -31,20 +31,21 @@ def seg(id_: str, speaker: str, start: float, end: float, text: str) -> Transcri
     return TranscriptSegment(id=id_, speaker=Speaker(speaker), start=start, end=end, text=text)
 
 
-def test_normalize_sorts_cleans_and_renumbers() -> None:
+def test_normalize_keeps_order_cleans_and_renumbers() -> None:
     raw = [
-        seg("x9", "patient", 5.0, 7.0, "  It hurts   when I swallow. "),
         seg("x1", "doctor", 0.0, 4.0, "What brings you in?"),
+        seg("x9", "patient", 5.0, 7.0, "  It hurts   when I swallow. "),
         seg("x2", "doctor", 4.5, 4.6, "   "),
-        seg("x3", "patient", 9.0, 8.0, "Three days."),
+        seg("x3", "doctor", 3.0, 2.0, "Any fever?"),  # out-of-order, inverted time
     ]
     out = normalize_segments(raw)
     assert [(s.id, s.speaker.value, s.text) for s in out] == [
         ("s1", "doctor", "What brings you in?"),
         ("s2", "patient", "It hurts when I swallow."),
-        ("s3", "patient", "Three days."),
+        ("s3", "doctor", "Any fever?"),
     ]
-    assert out[2].end == out[2].start == 9.0
+    # Times never go backwards, and end is never before start.
+    assert (out[2].start, out[2].end) == (5.0, 5.0)
 
 
 def test_reference_transcriber_matches_slug_or_hash() -> None:

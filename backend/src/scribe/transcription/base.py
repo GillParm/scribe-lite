@@ -46,21 +46,30 @@ class Transcriber(Protocol):
 
 
 def normalize_segments(segments: Iterable[TranscriptSegment]) -> list[TranscriptSegment]:
-    """Sort by start time, drop empty turns, fix inverted times and renumber `s1..sN`.
+    """Drop empty turns, make times monotonic and renumber `s1..sN`, keeping the order.
 
-    Provider IDs are never trusted: the note cites segment IDs, so they must be unique
-    and stable, and only this function assigns them.
+    The provider's order is kept even when its timestamps disagree with it: an LLM
+    transcriber gets the sequence of turns right far more often than their times, and
+    sorting by bad times scrambles the conversation. Provider IDs are never trusted: the
+    note cites segment IDs, so they must be unique and stable, and only this function
+    assigns them.
     """
-    cleaned = []
+    cleaned: list[TranscriptSegment] = []
+    previous_start = 0.0
     for segment in segments:
         text = " ".join(segment.text.split())
         if not text:
             continue
-        start = max(0.0, segment.start)
+        start = max(previous_start, segment.start)
         end = max(start, segment.end)
-        cleaned.append((start, end, segment.speaker, text))
-    cleaned.sort(key=lambda item: (item[0], item[1]))
-    return [
-        TranscriptSegment(id=f"s{index}", speaker=speaker, start=start, end=end, text=text)
-        for index, (start, end, speaker, text) in enumerate(cleaned, start=1)
-    ]
+        previous_start = start
+        cleaned.append(
+            TranscriptSegment(
+                id=f"s{len(cleaned) + 1}",
+                speaker=segment.speaker,
+                start=start,
+                end=end,
+                text=text,
+            )
+        )
+    return cleaned
