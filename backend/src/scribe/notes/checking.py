@@ -32,12 +32,13 @@ Check every statement of the SOAP note below against the transcript.
 For each statement return its statement_id, a label and a reason.
 - supported: the transcript states everything in the statement. Paraphrase is fine, but \
 numbers, doses, frequencies, durations, body sides and negations must match.
-- partially_supported: some of the statement is backed by the transcript, but a detail \
-is missing, wrong or overstated, or the support is only in segments the statement does \
-not cite.
-- unsupported: the transcript does not say this, or says the opposite. A diagnosis, \
-finding or instruction that nobody said aloud is unsupported, even if it is clinically \
-reasonable.
+- partially_supported: nothing in the statement contradicts the transcript, but a \
+detail is not in the transcript or is overstated, or the support is only in segments \
+the statement does not cite.
+- unsupported: the transcript does not say this, or any part of it contradicts the \
+transcript. One wrong number, dose, frequency, duration, body side or negation makes \
+the whole statement unsupported, even if the rest is right. A diagnosis, finding or \
+instruction that nobody said aloud is unsupported, even if it is clinically reasonable.
 
 Read the cited segments first, then the rest of the transcript. Keep each reason to one \
 short sentence. For supported statements, name the segments (for example "Stated in \
