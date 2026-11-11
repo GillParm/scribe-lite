@@ -30,6 +30,7 @@ from presidio_analyzer.predefined_recognizers import (
 from scribe.models import Speaker
 from scribe.redaction.recognizers import (
     DateOfBirthRecognizer,
+    GreetingNameRecognizer,
     NorthAmericanPhoneRecognizer,
     StreetAddressRecognizer,
     TitledNameRecognizer,
@@ -177,6 +178,7 @@ class Redactor:
             DateOfBirthRecognizer(),
             StreetAddressRecognizer(),
             TitledNameRecognizer(),
+            GreetingNameRecognizer(),
             NorthAmericanPhoneRecognizer(),
         ):
             registry.add_recognizer(recognizer)

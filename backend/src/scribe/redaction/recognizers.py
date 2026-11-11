@@ -124,3 +124,28 @@ class NorthAmericanPhoneRecognizer(PatternRecognizer):
                 ),
             ],
         )
+
+
+_GREETING = re.compile(
+    r"\b(?:Hi|Hello|Hey|Thanks|Thank you|Bye|Goodbye|Morning|"
+    r"Good (?:morning|afternoon|evening)),?\s+"
+    r"(?P<name>[A-Z][a-z'-]+)(?=\s*[,.!?])"
+)
+_NOT_GREETED_NAMES = {"There", "Everyone", "Again", "Doctor", "Nurse", "So", "Okay"}
+
+
+class GreetingNameRecognizer(EntityRecognizer):
+    """A capitalised word right after a greeting: 'Hi Priya,' or 'Thanks, Maria.'"""
+
+    def __init__(self) -> None:
+        super().__init__(supported_entities=["PERSON"], name="GreetingNameRecognizer")
+
+    def load(self) -> None:
+        pass
+
+    def analyze(self, text: str, entities: list[str], nlp_artifacts: Any = None) -> list[Any]:
+        return [
+            RecognizerResult("PERSON", m.start("name"), m.end("name"), 0.7)
+            for m in _GREETING.finditer(text)
+            if m.group("name") not in _NOT_GREETED_NAMES
+        ]

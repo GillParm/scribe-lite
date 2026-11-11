@@ -42,6 +42,18 @@ def test_title_stays_readable(redactor: Redactor) -> None:
     assert vault.entries["[PERSON_1]"].value == "Raman"
 
 
+@pytest.mark.parametrize(
+    ("sentence", "expected"),
+    [
+        ("Hi Priya, any cough?", "Hi [PERSON_1], any cough?"),
+        ("Thanks, Omar. Next question.", "Thanks, [PERSON_1]. Next question."),
+        ("Hi there, how are you?", "Hi there, how are you?"),
+    ],
+)
+def test_name_after_a_greeting(redactor: Redactor, sentence: str, expected: str) -> None:
+    assert redactor.redact_text(sentence)[0] == expected
+
+
 def test_possessive_is_kept_outside_the_placeholder(redactor: Redactor) -> None:
     text, _ = redactor.redact_text("I landed on my teammate Marcus's foot.")
     assert text == "I landed on my teammate [PERSON_1]'s foot."
@@ -141,3 +153,18 @@ def test_recall_on_samples(redactor: Redactor, sample: object) -> None:
     report = measure_recall(redactor, sample.transcript.segments, sample.script.pii)
     assert report.recall == 1.0, report.missed
     assert report.extra == []
+
+
+@pytest.mark.parametrize("sample", SAMPLES, ids=lambda s: s.slug)
+def test_precomputed_outputs_match_the_current_redactor(redactor: Redactor, sample: object) -> None:
+    """If redaction changes, the committed sample outputs must be rebuilt."""
+    import json
+
+    from scribe.samples import Sample
+
+    assert isinstance(sample, Sample)
+    outputs = json.loads((sample.outputs_dir / "encounter.json").read_text())
+    current = redactor.redact_segments(sample.transcript.segments)
+    assert [s["redacted_text"] for s in outputs["segments"]] == [
+        s.redacted_text for s in current.segments
+    ]
