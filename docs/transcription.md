@@ -50,9 +50,10 @@ run.
 - **Timestamps are generated, not measured.** The model writes times as text. They can
   drift, overlap or go backwards, as flash-lite showed. A dedicated ASR with word-level
   alignment gives reliable times; this demo only uses times to seek the audio.
-- **Names can be misheard.** Both models wrote "Tyler Nguyen" as something else on one
-  sample ("Guyon", "Gion"). A misheard name is still a name for redaction, but recall was
-  only measured on the scripted transcripts, where the spellings are known.
+- **Names can be misheard.** Neither model spelled "Nguyen" correctly in the ankle
+  sprain sample ("Guyen" and "Guyan" in the recorded run). A misheard name is still a
+  name for redaction, but recall was only measured on the scripted transcripts, where the
+  spellings are known.
 - **Three samples is a smoke test.** Each model ran once per sample. Treat the table as
   a sanity check, not a benchmark.
 
