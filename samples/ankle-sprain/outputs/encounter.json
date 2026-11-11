@@ -1,0 +1,774 @@
+{
+  "version": 1,
+  "sample_slug": "ankle-sprain",
+  "title": "Right ankle injury playing basketball",
+  "processed_at": "2026-11-11T00:06:05.410721+00:00",
+  "transcriber": "reference",
+  "note_model": "claude-opus-5-5",
+  "check_model": "claude-opus-5-5",
+  "duration_seconds": 200.58,
+  "segments": [
+    {
+      "id": "s1",
+      "speaker": "doctor",
+      "start": 0.4,
+      "end": 3.95,
+      "text": "Hi there, I'm Doctor Brooks. You must be Tyler?",
+      "redacted_text": "Hi there, I'm Doctor [PERSON_1]. You must be [PERSON_2]?",
+      "redaction_spans": [
+        {
+          "start": 21,
+          "end": 31,
+          "placeholder": "[PERSON_1]",
+          "entity_type": "PERSON"
+        },
+        {
+          "start": 45,
+          "end": 55,
+          "placeholder": "[PERSON_2]",
+          "entity_type": "PERSON"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "speaker": "patient",
+      "start": 4.55,
+      "end": 6.44,
+      "text": "Yeah, Tyler Nguyen.",
+      "redacted_text": "Yeah, [PERSON_2].",
+      "redaction_spans": [
+        {
+          "start": 6,
+          "end": 16,
+          "placeholder": "[PERSON_2]",
+          "entity_type": "PERSON"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "speaker": "doctor",
+      "start": 7.04,
+      "end": 8.97,
+      "text": "Can you give me your date of birth?",
+      "redacted_text": "Can you give me your date of birth?",
+      "redaction_spans": []
+    },
+    {
+      "id": "s4",
+      "speaker": "patient",
+      "start": 9.57,
+      "end": 13.15,
+      "text": "November 22nd, 2001.",
+      "redacted_text": "[DATE_OF_BIRTH_1].",
+      "redaction_spans": [
+        {
+          "start": 0,
+          "end": 17,
+          "placeholder": "[DATE_OF_BIRTH_1]",
+          "entity_type": "DATE_OF_BIRTH"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "speaker": "doctor",
+      "start": 13.75,
+      "end": 16.13,
+      "text": "And a phone number we can reach you at?",
+      "redacted_text": "And a phone number we can reach you at?",
+      "redaction_spans": []
+    },
+    {
+      "id": "s6",
+      "speaker": "patient",
+      "start": 16.73,
+      "end": 22.59,
+      "text": "647-555-0119.",
+      "redacted_text": "[PHONE_NUMBER_1].",
+      "redaction_spans": [
+        {
+          "start": 0,
+          "end": 16,
+          "placeholder": "[PHONE_NUMBER_1]",
+          "entity_type": "PHONE_NUMBER"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "speaker": "doctor",
+      "start": 23.19,
+      "end": 29.47,
+      "text": "Thanks. And your address is 305 Harbourview Lane, Unit 12, Toronto?",
+      "redacted_text": "Thanks. And your address is [ADDRESS_1]?",
+      "redaction_spans": [
+        {
+          "start": 28,
+          "end": 39,
+          "placeholder": "[ADDRESS_1]",
+          "entity_type": "ADDRESS"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "speaker": "patient",
+      "start": 30.07,
+      "end": 31.53,
+      "text": "Yep, that's it.",
+      "redacted_text": "Yep, that's it.",
+      "redaction_spans": []
+    },
+    {
+      "id": "s9",
+      "speaker": "doctor",
+      "start": 32.13,
+      "end": 34.07,
+      "text": "So what happened to your ankle?",
+      "redacted_text": "So what happened to your ankle?",
+      "redaction_spans": []
+    },
+    {
+      "id": "s10",
+      "speaker": "patient",
+      "start": 34.67,
+      "end": 43.45,
+      "text": "I was playing basketball last night and came down from a rebound on my teammate Marcus's foot. My right ankle rolled inward really hard.",
+      "redacted_text": "I was playing basketball last night and came down from a rebound on my teammate [PERSON_3]'s foot. My right ankle rolled inward really hard.",
+      "redaction_spans": [
+        {
+          "start": 80,
+          "end": 90,
+          "placeholder": "[PERSON_3]",
+          "entity_type": "PERSON"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "speaker": "doctor",
+      "start": 44.05,
+      "end": 45.74,
+      "text": "Did you hear or feel a pop?",
+      "redacted_text": "Did you hear or feel a pop?",
+      "redaction_spans": []
+    },
+    {
+      "id": "s12",
+      "speaker": "patient",
+      "start": 46.34,
+      "end": 52.17,
+      "text": "I felt something, kind of a snap, and then it swelled up pretty fast on the outside.",
+      "redacted_text": "I felt something, kind of a snap, and then it swelled up pretty fast on the outside.",
+      "redaction_spans": []
+    },
+    {
+      "id": "s13",
+      "speaker": "doctor",
+      "start": 52.77,
+      "end": 55.25,
+      "text": "Were you able to walk on it afterwards?",
+      "redacted_text": "Were you able to walk on it afterwards?",
+      "redaction_spans": []
+    },
+    {
+      "id": "s14",
+      "speaker": "patient",
+      "start": 55.85,
+      "end": 62.49,
+      "text": "I limped off the court. It hurt, but I could walk to the car, maybe ten or fifteen steps.",
+      "redacted_text": "I limped off the court. It hurt, but I could walk to the car, maybe ten or fifteen steps.",
+      "redaction_spans": []
+    },
+    {
+      "id": "s15",
+      "speaker": "doctor",
+      "start": 63.09,
+      "end": 64.86,
+      "text": "What have you done for it since?",
+      "redacted_text": "What have you done for it since?",
+      "redaction_spans": []
+    },
+    {
+      "id": "s16",
+      "speaker": "patient",
+      "start": 65.46,
+      "end": 72.34,
+      "text": "I iced it last night and kept it up on a pillow, and I took 400 milligrams of ibuprofen this morning.",
+      "redacted_text": "I iced it last night and kept it up on a pillow, and I took 400 milligrams of ibuprofen this morning.",
+      "redaction_spans": []
+    },
+    {
+      "id": "s17",
+      "speaker": "doctor",
+      "start": 72.94,
+      "end": 75.24,
+      "text": "Have you ever hurt this ankle before?",
+      "redacted_text": "Have you ever hurt this ankle before?",
+      "redaction_spans": []
+    },
+    {
+      "id": "s18",
+      "speaker": "patient",
+      "start": 75.84,
+      "end": 80.39,
+      "text": "Not this one. I sprained my left ankle about two years ago.",
+      "redacted_text": "Not this one. I sprained my left ankle about two years ago.",
+      "redaction_spans": []
+    },
+    {
+      "id": "s19",
+      "speaker": "doctor",
+      "start": 80.99,
+      "end": 83.31,
+      "text": "Any numbness or tingling in your foot?",
+      "redacted_text": "Any numbness or tingling in your foot?",
+      "redaction_spans": []
+    },
+    {
+      "id": "s20",
+      "speaker": "patient",
+      "start": 83.91,
+      "end": 85.88,
+      "text": "No, nothing like that.",
+      "redacted_text": "No, nothing like that.",
+      "redaction_spans": []
+    },
+    {
+      "id": "s21",
+      "speaker": "doctor",
+      "start": 86.48,
+      "end": 97.05,
+      "text": "Okay, let's take a look. There's moderate swelling and some bruising over the outside of your right ankle. Tell me where it hurts. Here, just in front of the ankle bone?",
+      "redacted_text": "Okay, let's take a look. There's moderate swelling and some bruising over the outside of your right ankle. Tell me where it hurts. Here, just in front of the ankle bone?",
+      "redaction_spans": []
+    },
+    {
+      "id": "s22",
+      "speaker": "patient",
+      "start": 97.65,
+      "end": 100.74,
+      "text": "Yeah, right there. That's the worst spot.",
+      "redacted_text": "Yeah, right there. That's the worst spot.",
+      "redaction_spans": []
+    },
+    {
+      "id": "s23",
+      "speaker": "doctor",
+      "start": 101.34,
+      "end": 109.02,
+      "text": "That's over the anterior talofibular ligament. Now I'm pressing on the back edge and the tip of both ankle bones. Any pain?",
+      "redacted_text": "That's over the anterior talofibular ligament. Now I'm pressing on the back edge and the tip of both ankle bones. Any pain?",
+      "redaction_spans": []
+    },
+    {
+      "id": "s24",
+      "speaker": "patient",
+      "start": 109.62,
+      "end": 111.23,
+      "text": "No, not really.",
+      "redacted_text": "No, not really.",
+      "redaction_spans": []
+    },
+    {
+      "id": "s25",
+      "speaker": "doctor",
+      "start": 111.83,
+      "end": 116.76,
+      "text": "And the base of the fifth metatarsal here, and the navicular on the inside of your foot?",
+      "redacted_text": "And the base of the fifth metatarsal here, and the navicular on the inside of your foot?",
+      "redaction_spans": []
+    },
+    {
+      "id": "s26",
+      "speaker": "patient",
+      "start": 117.36,
+      "end": 118.55,
+      "text": "That's fine.",
+      "redacted_text": "That's fine.",
+      "redaction_spans": []
+    },
+    {
+      "id": "s27",
+      "speaker": "doctor",
+      "start": 119.15,
+      "end": 128.85,
+      "text": "Your pulses and sensation in the foot are normal. The anterior drawer test shows a bit of laxity compared with the other side. Can you take four steps for me?",
+      "redacted_text": "Your pulses and sensation in the foot are normal. The anterior drawer test shows a bit of laxity compared with the other side. Can you take four steps for me?",
+      "redaction_spans": []
+    },
+    {
+      "id": "s28",
+      "speaker": "patient",
+      "start": 129.45,
+      "end": 132.2,
+      "text": "It hurts, but yes, I can do it.",
+      "redacted_text": "It hurts, but yes, I can do it.",
+      "redaction_spans": []
+    },
+    {
+      "id": "s29",
+      "speaker": "doctor",
+      "start": 132.8,
+      "end": 145.09,
+      "text": "Good. Based on the Ottawa ankle rules, you don't need an X-ray today. There's no bony tenderness, and you can bear weight. This looks like a moderate, grade two sprain of the lateral ligaments.",
+      "redacted_text": "Good. Based on the Ottawa ankle rules, you don't need an X-ray today. There's no bony tenderness, and you can bear weight. This looks like a moderate, grade two sprain of the lateral ligaments.",
+      "redaction_spans": []
+    },
+    {
+      "id": "s30",
+      "speaker": "patient",
+      "start": 145.69,
+      "end": 148.37,
+      "text": "How long will I be out of basketball?",
+      "redacted_text": "How long will I be out of basketball?",
+      "redaction_spans": []
+    },
+    {
+      "id": "s31",
+      "speaker": "doctor",
+      "start": 148.97,
+      "end": 165.4,
+      "text": "Usually three to four weeks, sometimes a bit longer. For the next few days, keep it elevated, use ice for 15 to 20 minutes at a time, and wear an air-stirrup brace. Crutches are fine for two or three days, but put as much weight on it as you comfortably can.",
+      "redacted_text": "Usually three to four weeks, sometimes a bit longer. For the next few days, keep it elevated, use ice for 15 to 20 minutes at a time, and wear an air-stirrup brace. Crutches are fine for two or three days, but put as much weight on it as you comfortably can.",
+      "redaction_spans": []
+    },
+    {
+      "id": "s32",
+      "speaker": "patient",
+      "start": 166.0,
+      "end": 168.66,
+      "text": "Can I keep taking the ibuprofen?",
+      "redacted_text": "Can I keep taking the ibuprofen?",
+      "redaction_spans": []
+    },
+    {
+      "id": "s33",
+      "speaker": "doctor",
+      "start": 169.26,
+      "end": 181.56,
+      "text": "Yes, 400 milligrams every eight hours with food, for up to five days. I'm also referring you to physiotherapy for balance and strengthening exercises, which lowers the chance of spraining it again.",
+      "redacted_text": "Yes, 400 milligrams every eight hours with food, for up to five days. I'm also referring you to physiotherapy for balance and strengthening exercises, which lowers the chance of spraining it again.",
+      "redaction_spans": []
+    },
+    {
+      "id": "s34",
+      "speaker": "patient",
+      "start": 182.16,
+      "end": 185.53,
+      "text": "I work at a warehouse. Can I still go in?",
+      "redacted_text": "I work at a warehouse. Can I still go in?",
+      "redaction_spans": []
+    },
+    {
+      "id": "s35",
+      "speaker": "doctor",
+      "start": 186.13,
+      "end": 191.16,
+      "text": "I'll write a note for modified duties for one week. No heavy lifting and no ladders.",
+      "redacted_text": "I'll write a note for modified duties for one week. No heavy lifting and no ladders.",
+      "redaction_spans": []
+    },
+    {
+      "id": "s36",
+      "speaker": "patient",
+      "start": 191.76,
+      "end": 193.43,
+      "text": "Okay, thanks.",
+      "redacted_text": "Okay, thanks.",
+      "redaction_spans": []
+    },
+    {
+      "id": "s37",
+      "speaker": "doctor",
+      "start": 194.03,
+      "end": 200.58,
+      "text": "Come back if you can't bear weight at all, if your foot gets numb or cold, or if it's not getting better in a week.",
+      "redacted_text": "Come back if you can't bear weight at all, if your foot gets numb or cold, or if it's not getting better in a week.",
+      "redaction_spans": []
+    }
+  ],
+  "pii_entities": [
+    {
+      "placeholder": "[ADDRESS_1]",
+      "entity_type": "ADDRESS",
+      "value": "305 Harbourview Lane, Unit 12, Toronto",
+      "variants": [
+        "305 Harbourview Lane, Unit 12, Toronto"
+      ],
+      "occurrences": 1
+    },
+    {
+      "placeholder": "[DATE_OF_BIRTH_1]",
+      "entity_type": "DATE_OF_BIRTH",
+      "value": "November 22nd, 2001",
+      "variants": [
+        "November 22nd, 2001"
+      ],
+      "occurrences": 1
+    },
+    {
+      "placeholder": "[PERSON_1]",
+      "entity_type": "PERSON",
+      "value": "Brooks",
+      "variants": [
+        "Brooks"
+      ],
+      "occurrences": 1
+    },
+    {
+      "placeholder": "[PERSON_2]",
+      "entity_type": "PERSON",
+      "value": "Tyler Nguyen",
+      "variants": [
+        "Tyler",
+        "Tyler Nguyen"
+      ],
+      "occurrences": 2
+    },
+    {
+      "placeholder": "[PERSON_3]",
+      "entity_type": "PERSON",
+      "value": "Marcus",
+      "variants": [
+        "Marcus"
+      ],
+      "occurrences": 1
+    },
+    {
+      "placeholder": "[PHONE_NUMBER_1]",
+      "entity_type": "PHONE_NUMBER",
+      "value": "647-555-0119",
+      "variants": [
+        "647-555-0119"
+      ],
+      "occurrences": 1
+    }
+  ],
+  "statements": [
+    {
+      "id": "subjective-1",
+      "section": "subjective",
+      "text": "The patient injured the right ankle last night playing basketball when landing from a rebound on a teammate's foot, with the ankle rolling inward forcefully.",
+      "source_segment_ids": [
+        "s9",
+        "s10"
+      ],
+      "citations_repaired": false,
+      "support": "supported",
+      "support_reason": "Stated in s9 and s10."
+    },
+    {
+      "id": "subjective-2",
+      "section": "subjective",
+      "text": "The patient felt a snap at the time of injury, followed by rapid swelling on the outside of the ankle.",
+      "source_segment_ids": [
+        "s11",
+        "s12"
+      ],
+      "citations_repaired": false,
+      "support": "supported",
+      "support_reason": "Stated in s11 and s12."
+    },
+    {
+      "id": "subjective-3",
+      "section": "subjective",
+      "text": "The patient limped off the court and was able to walk about ten to fifteen steps to the car despite pain.",
+      "source_segment_ids": [
+        "s13",
+        "s14"
+      ],
+      "citations_repaired": false,
+      "support": "supported",
+      "support_reason": "Stated in s13 and s14."
+    },
+    {
+      "id": "subjective-4",
+      "section": "subjective",
+      "text": "Since the injury the patient has iced and elevated the ankle and took ibuprofen 400 mg this morning.",
+      "source_segment_ids": [
+        "s15",
+        "s16"
+      ],
+      "citations_repaired": false,
+      "support": "supported",
+      "support_reason": "Stated in s15 and s16."
+    },
+    {
+      "id": "subjective-5",
+      "section": "subjective",
+      "text": "No prior injury to the right ankle; the patient sprained the left ankle about two years ago.",
+      "source_segment_ids": [
+        "s17",
+        "s18"
+      ],
+      "citations_repaired": false,
+      "support": "supported",
+      "support_reason": "Stated in s17 and s18."
+    },
+    {
+      "id": "subjective-6",
+      "section": "subjective",
+      "text": "The patient denies numbness or tingling in the foot.",
+      "source_segment_ids": [
+        "s19",
+        "s20"
+      ],
+      "citations_repaired": false,
+      "support": "supported",
+      "support_reason": "Stated in s19 and s20."
+    },
+    {
+      "id": "subjective-7",
+      "section": "subjective",
+      "text": "The patient works at a warehouse.",
+      "source_segment_ids": [
+        "s34"
+      ],
+      "citations_repaired": false,
+      "support": "supported",
+      "support_reason": "Stated in s34."
+    },
+    {
+      "id": "objective-1",
+      "section": "objective",
+      "text": "Moderate swelling and bruising over the lateral right ankle.",
+      "source_segment_ids": [
+        "s21"
+      ],
+      "citations_repaired": false,
+      "support": "supported",
+      "support_reason": "Stated in s21."
+    },
+    {
+      "id": "objective-2",
+      "section": "objective",
+      "text": "Maximal tenderness just anterior to the lateral malleolus, over the anterior talofibular ligament.",
+      "source_segment_ids": [
+        "s21",
+        "s22",
+        "s23"
+      ],
+      "citations_repaired": false,
+      "support": "supported",
+      "support_reason": "Stated in s21, s22 and s23."
+    },
+    {
+      "id": "objective-3",
+      "section": "objective",
+      "text": "No tenderness at the posterior edge or tip of either malleolus.",
+      "source_segment_ids": [
+        "s23",
+        "s24"
+      ],
+      "citations_repaired": false,
+      "support": "supported",
+      "support_reason": "Stated in s23 and s24."
+    },
+    {
+      "id": "objective-4",
+      "section": "objective",
+      "text": "No tenderness at the base of the fifth metatarsal or the navicular.",
+      "source_segment_ids": [
+        "s25",
+        "s26"
+      ],
+      "citations_repaired": false,
+      "support": "supported",
+      "support_reason": "Stated in s25 and s26."
+    },
+    {
+      "id": "objective-5",
+      "section": "objective",
+      "text": "Pulses and sensation in the foot are normal.",
+      "source_segment_ids": [
+        "s27"
+      ],
+      "citations_repaired": false,
+      "support": "supported",
+      "support_reason": "Stated in s27."
+    },
+    {
+      "id": "objective-6",
+      "section": "objective",
+      "text": "Anterior drawer test shows mild laxity compared with the other side.",
+      "source_segment_ids": [
+        "s27"
+      ],
+      "citations_repaired": false,
+      "support": "supported",
+      "support_reason": "Stated in s27."
+    },
+    {
+      "id": "objective-7",
+      "section": "objective",
+      "text": "The patient was able to take four steps with pain.",
+      "source_segment_ids": [
+        "s27",
+        "s28"
+      ],
+      "citations_repaired": false,
+      "support": "supported",
+      "support_reason": "Stated in s27 and s28."
+    },
+    {
+      "id": "assessment-1",
+      "section": "assessment",
+      "text": "Moderate, grade two sprain of the lateral ligaments of the right ankle.",
+      "source_segment_ids": [
+        "s29"
+      ],
+      "citations_repaired": false,
+      "support": "supported",
+      "support_reason": "Stated in s29, with the right ankle established in s21."
+    },
+    {
+      "id": "assessment-2",
+      "section": "assessment",
+      "text": "X-ray not indicated per Ottawa ankle rules given no bony tenderness and ability to bear weight.",
+      "source_segment_ids": [
+        "s29"
+      ],
+      "citations_repaired": false,
+      "support": "supported",
+      "support_reason": "Stated in s29."
+    },
+    {
+      "id": "plan-1",
+      "section": "plan",
+      "text": "No X-ray today.",
+      "source_segment_ids": [
+        "s29"
+      ],
+      "citations_repaired": false,
+      "support": "supported",
+      "support_reason": "Stated in s29."
+    },
+    {
+      "id": "plan-2",
+      "section": "plan",
+      "text": "Expected return to basketball in about three to four weeks, sometimes longer.",
+      "source_segment_ids": [
+        "s30",
+        "s31"
+      ],
+      "citations_repaired": false,
+      "support": "supported",
+      "support_reason": "Stated in s30 and s31."
+    },
+    {
+      "id": "plan-3",
+      "section": "plan",
+      "text": "For the next few days, elevate the ankle and apply ice for 15 to 20 minutes at a time.",
+      "source_segment_ids": [
+        "s31"
+      ],
+      "citations_repaired": false,
+      "support": "supported",
+      "support_reason": "Stated in s31."
+    },
+    {
+      "id": "plan-4",
+      "section": "plan",
+      "text": "Wear an air-stirrup brace.",
+      "source_segment_ids": [
+        "s31"
+      ],
+      "citations_repaired": false,
+      "support": "supported",
+      "support_reason": "Stated in s31."
+    },
+    {
+      "id": "plan-5",
+      "section": "plan",
+      "text": "Crutches may be used for two or three days while bearing as much weight as comfortable.",
+      "source_segment_ids": [
+        "s31"
+      ],
+      "citations_repaired": false,
+      "support": "supported",
+      "support_reason": "Stated in s31."
+    },
+    {
+      "id": "plan-6",
+      "section": "plan",
+      "text": "Ibuprofen 400 mg every eight hours with food for up to five days.",
+      "source_segment_ids": [
+        "s32",
+        "s33"
+      ],
+      "citations_repaired": false,
+      "support": "supported",
+      "support_reason": "Stated in s32 and s33."
+    },
+    {
+      "id": "plan-7",
+      "section": "plan",
+      "text": "Referral to physiotherapy for balance and strengthening exercises to reduce risk of re-injury.",
+      "source_segment_ids": [
+        "s33"
+      ],
+      "citations_repaired": false,
+      "support": "supported",
+      "support_reason": "Stated in s33."
+    },
+    {
+      "id": "plan-8",
+      "section": "plan",
+      "text": "Work note for modified duties for one week with no heavy lifting and no ladders.",
+      "source_segment_ids": [
+        "s34",
+        "s35"
+      ],
+      "citations_repaired": false,
+      "support": "supported",
+      "support_reason": "Stated in s34 and s35."
+    },
+    {
+      "id": "plan-9",
+      "section": "plan",
+      "text": "Return if unable to bear weight at all, if the foot becomes numb or cold, or if not improving in a week.",
+      "source_segment_ids": [
+        "s37"
+      ],
+      "citations_repaired": false,
+      "support": "supported",
+      "support_reason": "Stated in s37."
+    }
+  ],
+  "rejected_statements": [],
+  "model_calls": [
+    {
+      "created_at": "2026-11-11T00:05:57.672736+00:00",
+      "provider": "anthropic",
+      "model": "claude-opus-5-5",
+      "purpose": "soap_note",
+      "prompt_sha256": "eefa8910cb9bfe28e17e5cdabbc159dca929f7831dd8582290134d7de010bf4e",
+      "input_tokens": 2653,
+      "output_tokens": 1218,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "cost_usd": "0.034972",
+      "latency_ms": 14228,
+      "status": "ok",
+      "error": null
+    },
+    {
+      "created_at": "2026-11-11T00:06:05.397547+00:00",
+      "provider": "anthropic",
+      "model": "claude-opus-5-5",
+      "purpose": "claim_check",
+      "prompt_sha256": "a80493ad41dff2da5097c2c54114bcaeafded39fb47eb137c19a03406b57eef4",
+      "input_tokens": 3252,
+      "output_tokens": 862,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "cost_usd": "0.030248",
+      "latency_ms": 7721,
+      "status": "ok",
+      "error": null
+    }
+  ]
+}

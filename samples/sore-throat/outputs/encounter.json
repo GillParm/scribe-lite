@@ -1,0 +1,705 @@
+{
+  "version": 1,
+  "sample_slug": "sore-throat",
+  "title": "Sore throat, three days",
+  "processed_at": "2026-11-11T00:05:30.842002+00:00",
+  "transcriber": "reference",
+  "note_model": "claude-opus-5-5",
+  "check_model": "claude-opus-5-5",
+  "duration_seconds": 198.33,
+  "segments": [
+    {
+      "id": "s1",
+      "speaker": "doctor",
+      "start": 0.4,
+      "end": 6.37,
+      "text": "Good morning. I'm Doctor Kessler. Can I start by confirming your full name and date of birth?",
+      "redacted_text": "Good morning. I'm Doctor [PERSON_1]. Can I start by confirming your full name and date of birth?",
+      "redaction_spans": [
+        {
+          "start": 25,
+          "end": 35,
+          "placeholder": "[PERSON_1]",
+          "entity_type": "PERSON"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "speaker": "patient",
+      "start": 6.97,
+      "end": 12.39,
+      "text": "Sure. It's Maria Alvarez, and my date of birth is March 4th, 1988.",
+      "redacted_text": "Sure. It's [PERSON_2], and my date of birth is [DATE_OF_BIRTH_1].",
+      "redaction_spans": [
+        {
+          "start": 11,
+          "end": 21,
+          "placeholder": "[PERSON_2]",
+          "entity_type": "PERSON"
+        },
+        {
+          "start": 47,
+          "end": 64,
+          "placeholder": "[DATE_OF_BIRTH_1]",
+          "entity_type": "DATE_OF_BIRTH"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "speaker": "doctor",
+      "start": 12.99,
+      "end": 20.58,
+      "text": "Thanks, Maria. And is the best number to reach you still 416-555-0182?",
+      "redacted_text": "Thanks, [PERSON_2]. And is the best number to reach you still [PHONE_NUMBER_1]?",
+      "redaction_spans": [
+        {
+          "start": 8,
+          "end": 18,
+          "placeholder": "[PERSON_2]",
+          "entity_type": "PERSON"
+        },
+        {
+          "start": 62,
+          "end": 78,
+          "placeholder": "[PHONE_NUMBER_1]",
+          "entity_type": "PHONE_NUMBER"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "speaker": "patient",
+      "start": 21.18,
+      "end": 22.85,
+      "text": "Yes, that's my cell.",
+      "redacted_text": "Yes, that's my cell.",
+      "redaction_spans": []
+    },
+    {
+      "id": "s5",
+      "speaker": "doctor",
+      "start": 23.45,
+      "end": 28.24,
+      "text": "And you're still at 42 Maple Crescent, Apartment 3, Toronto?",
+      "redacted_text": "And you're still at [ADDRESS_1]?",
+      "redaction_spans": [
+        {
+          "start": 20,
+          "end": 31,
+          "placeholder": "[ADDRESS_1]",
+          "entity_type": "ADDRESS"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "speaker": "patient",
+      "start": 28.84,
+      "end": 29.67,
+      "text": "That's right.",
+      "redacted_text": "That's right.",
+      "redaction_spans": []
+    },
+    {
+      "id": "s7",
+      "speaker": "doctor",
+      "start": 30.27,
+      "end": 32.88,
+      "text": "Great. So what brings you in today?",
+      "redacted_text": "Great. So what brings you in today?",
+      "redaction_spans": []
+    },
+    {
+      "id": "s8",
+      "speaker": "patient",
+      "start": 33.48,
+      "end": 39.28,
+      "text": "My throat has been really sore for about three days now. It hurts a lot when I swallow, even water.",
+      "redacted_text": "My throat has been really sore for about three days now. It hurts a lot when I swallow, even water.",
+      "redaction_spans": []
+    },
+    {
+      "id": "s9",
+      "speaker": "doctor",
+      "start": 39.88,
+      "end": 41.13,
+      "text": "Have you had a fever?",
+      "redacted_text": "Have you had a fever?",
+      "redaction_spans": []
+    },
+    {
+      "id": "s10",
+      "speaker": "patient",
+      "start": 41.73,
+      "end": 47.86,
+      "text": "I think so. Last night I took my temperature and it was 38.5. I've also had chills.",
+      "redacted_text": "I think so. Last night I took my temperature and it was 38.5. I've also had chills.",
+      "redaction_spans": []
+    },
+    {
+      "id": "s11",
+      "speaker": "doctor",
+      "start": 48.46,
+      "end": 51.68,
+      "text": "Any cough, runny nose, or stuffy nose?",
+      "redacted_text": "Any cough, runny nose, or stuffy nose?",
+      "redaction_spans": []
+    },
+    {
+      "id": "s12",
+      "speaker": "patient",
+      "start": 52.28,
+      "end": 58.83,
+      "text": "No, not really. No cough at all. It's mostly just my throat, and my neck feels kind of swollen.",
+      "redacted_text": "No, not really. No cough at all. It's mostly just my throat, and my neck feels kind of swollen.",
+      "redaction_spans": []
+    },
+    {
+      "id": "s13",
+      "speaker": "doctor",
+      "start": 59.43,
+      "end": 61.47,
+      "text": "Has anyone around you been sick?",
+      "redacted_text": "Has anyone around you been sick?",
+      "redaction_spans": []
+    },
+    {
+      "id": "s14",
+      "speaker": "patient",
+      "start": 62.07,
+      "end": 66.21,
+      "text": "My roommate, Jenna, was diagnosed with strep throat last week.",
+      "redacted_text": "My roommate, [PERSON_3], was diagnosed with strep throat last week.",
+      "redaction_spans": [
+        {
+          "start": 13,
+          "end": 23,
+          "placeholder": "[PERSON_3]",
+          "entity_type": "PERSON"
+        }
+      ]
+    },
+    {
+      "id": "s15",
+      "speaker": "doctor",
+      "start": 66.81,
+      "end": 70.58,
+      "text": "Okay, that's helpful. Have you taken anything for it?",
+      "redacted_text": "Okay, that's helpful. Have you taken anything for it?",
+      "redaction_spans": []
+    },
+    {
+      "id": "s16",
+      "speaker": "patient",
+      "start": 71.18,
+      "end": 76.63,
+      "text": "Just ibuprofen, 400 milligrams, maybe twice a day. It helps a little.",
+      "redacted_text": "Just ibuprofen, 400 milligrams, maybe twice a day. It helps a little.",
+      "redaction_spans": []
+    },
+    {
+      "id": "s17",
+      "speaker": "doctor",
+      "start": 77.23,
+      "end": 79.36,
+      "text": "Any allergies to medications?",
+      "redacted_text": "Any allergies to medications?",
+      "redaction_spans": []
+    },
+    {
+      "id": "s18",
+      "speaker": "patient",
+      "start": 79.96,
+      "end": 84.33,
+      "text": "Yes, penicillin. I got hives from amoxicillin when I was a kid.",
+      "redacted_text": "Yes, penicillin. I got hives from amoxicillin when I was a kid.",
+      "redaction_spans": []
+    },
+    {
+      "id": "s19",
+      "speaker": "doctor",
+      "start": 84.93,
+      "end": 89.8,
+      "text": "Good to know. Any other medical problems, or medications you take regularly?",
+      "redacted_text": "Good to know. Any other medical problems, or medications you take regularly?",
+      "redaction_spans": []
+    },
+    {
+      "id": "s20",
+      "speaker": "patient",
+      "start": 90.4,
+      "end": 94.32,
+      "text": "No, I'm usually healthy. I don't take anything regularly.",
+      "redacted_text": "No, I'm usually healthy. I don't take anything regularly.",
+      "redaction_spans": []
+    },
+    {
+      "id": "s21",
+      "speaker": "doctor",
+      "start": 94.92,
+      "end": 116.74,
+      "text": "Alright, let me take a look. Your temperature here is 38.3, heart rate is 96, and blood pressure is 118 over 76. Open wide for me. Your tonsils are swollen and there's white exudate on both sides. The lymph nodes at the front of your neck are enlarged and tender. Your ears look normal, and your lungs are clear.",
+      "redacted_text": "Alright, let me take a look. Your temperature here is 38.3, heart rate is 96, and blood pressure is 118 over 76. Open wide for me. Your tonsils are swollen and there's white exudate on both sides. The lymph nodes at the front of your neck are enlarged and tender. Your ears look normal, and your lungs are clear.",
+      "redaction_spans": []
+    },
+    {
+      "id": "s22",
+      "speaker": "patient",
+      "start": 117.34,
+      "end": 118.25,
+      "text": "Is that bad?",
+      "redacted_text": "Is that bad?",
+      "redaction_spans": []
+    },
+    {
+      "id": "s23",
+      "speaker": "doctor",
+      "start": 118.85,
+      "end": 130.47,
+      "text": "It fits with strep throat. With the fever, the white patches, the swollen nodes and no cough, the chance is high, so I did a rapid strep swab while we were talking. It came back positive.",
+      "redacted_text": "It fits with strep throat. With the fever, the white patches, the swollen nodes and no cough, the chance is high, so I did a rapid strep swab while we were talking. It came back positive.",
+      "redaction_spans": []
+    },
+    {
+      "id": "s24",
+      "speaker": "patient",
+      "start": 131.07,
+      "end": 133.77,
+      "text": "Okay, so it is strep, like Jenna.",
+      "redacted_text": "Okay, so it is strep, like [PERSON_3].",
+      "redaction_spans": [
+        {
+          "start": 27,
+          "end": 37,
+          "placeholder": "[PERSON_3]",
+          "entity_type": "PERSON"
+        }
+      ]
+    },
+    {
+      "id": "s25",
+      "speaker": "doctor",
+      "start": 134.37,
+      "end": 146.85,
+      "text": "Yes, this is strep pharyngitis. Normally I'd give amoxicillin, but because you had hives with it, I'm going to prescribe azithromycin instead, 500 milligrams once a day for five days.",
+      "redacted_text": "Yes, this is strep pharyngitis. Normally I'd give amoxicillin, but because you had hives with it, I'm going to prescribe azithromycin instead, 500 milligrams once a day for five days.",
+      "redaction_spans": []
+    },
+    {
+      "id": "s26",
+      "speaker": "patient",
+      "start": 147.45,
+      "end": 149.86,
+      "text": "Okay. Will that clear it up quickly?",
+      "redacted_text": "Okay. Will that clear it up quickly?",
+      "redaction_spans": []
+    },
+    {
+      "id": "s27",
+      "speaker": "doctor",
+      "start": 150.46,
+      "end": 163.9,
+      "text": "Most people feel better within two or three days. Please finish the whole course even if you feel better. You can keep taking ibuprofen for pain and fever, drink plenty of fluids, and warm salt water gargles can help.",
+      "redacted_text": "Most people feel better within two or three days. Please finish the whole course even if you feel better. You can keep taking ibuprofen for pain and fever, drink plenty of fluids, and warm salt water gargles can help.",
+      "redaction_spans": []
+    },
+    {
+      "id": "s28",
+      "speaker": "patient",
+      "start": 164.5,
+      "end": 166.2,
+      "text": "Should I stay home from work?",
+      "redacted_text": "Should I stay home from work?",
+      "redaction_spans": []
+    },
+    {
+      "id": "s29",
+      "speaker": "doctor",
+      "start": 166.8,
+      "end": 175.32,
+      "text": "Yes. Stay home until you've been on the antibiotic for at least 24 hours and your fever is gone. I can give you a note for work.",
+      "redacted_text": "Yes. Stay home until you've been on the antibiotic for at least 24 hours and your fever is gone. I can give you a note for work.",
+      "redaction_spans": []
+    },
+    {
+      "id": "s30",
+      "speaker": "patient",
+      "start": 175.92,
+      "end": 177.83,
+      "text": "That would be great, thank you.",
+      "redacted_text": "That would be great, thank you.",
+      "redaction_spans": []
+    },
+    {
+      "id": "s31",
+      "speaker": "doctor",
+      "start": 178.43,
+      "end": 191.56,
+      "text": "Come back, or go to the emergency department, if you have trouble breathing, can't swallow your own saliva, or can't open your mouth fully. And if you're not improving in 48 to 72 hours, give us a call.",
+      "redacted_text": "Come back, or go to the emergency department, if you have trouble breathing, can't swallow your own saliva, or can't open your mouth fully. And if you're not improving in 48 to 72 hours, give us a call.",
+      "redaction_spans": []
+    },
+    {
+      "id": "s32",
+      "speaker": "patient",
+      "start": 192.16,
+      "end": 193.57,
+      "text": "Okay, I will.",
+      "redacted_text": "Okay, I will.",
+      "redaction_spans": []
+    },
+    {
+      "id": "s33",
+      "speaker": "doctor",
+      "start": 194.17,
+      "end": 198.33,
+      "text": "We'll send the prescription to your pharmacy. Feel better, Maria.",
+      "redacted_text": "We'll send the prescription to your pharmacy. Feel better, [PERSON_2].",
+      "redaction_spans": [
+        {
+          "start": 59,
+          "end": 69,
+          "placeholder": "[PERSON_2]",
+          "entity_type": "PERSON"
+        }
+      ]
+    }
+  ],
+  "pii_entities": [
+    {
+      "placeholder": "[ADDRESS_1]",
+      "entity_type": "ADDRESS",
+      "value": "42 Maple Crescent, Apartment 3, Toronto",
+      "variants": [
+        "42 Maple Crescent, Apartment 3, Toronto"
+      ],
+      "occurrences": 1
+    },
+    {
+      "placeholder": "[DATE_OF_BIRTH_1]",
+      "entity_type": "DATE_OF_BIRTH",
+      "value": "March 4th, 1988",
+      "variants": [
+        "March 4th, 1988"
+      ],
+      "occurrences": 1
+    },
+    {
+      "placeholder": "[PERSON_1]",
+      "entity_type": "PERSON",
+      "value": "Kessler",
+      "variants": [
+        "Kessler"
+      ],
+      "occurrences": 1
+    },
+    {
+      "placeholder": "[PERSON_2]",
+      "entity_type": "PERSON",
+      "value": "Maria Alvarez",
+      "variants": [
+        "Maria Alvarez",
+        "Maria"
+      ],
+      "occurrences": 3
+    },
+    {
+      "placeholder": "[PERSON_3]",
+      "entity_type": "PERSON",
+      "value": "Jenna",
+      "variants": [
+        "Jenna"
+      ],
+      "occurrences": 2
+    },
+    {
+      "placeholder": "[PHONE_NUMBER_1]",
+      "entity_type": "PHONE_NUMBER",
+      "value": "416-555-0182",
+      "variants": [
+        "416-555-0182"
+      ],
+      "occurrences": 1
+    }
+  ],
+  "statements": [
+    {
+      "id": "subjective-1",
+      "section": "subjective",
+      "text": "The patient reports a sore throat for about three days with severe pain on swallowing, even water.",
+      "source_segment_ids": [
+        "s7",
+        "s8"
+      ],
+      "citations_repaired": false,
+      "support": "supported",
+      "support_reason": "Stated in s8."
+    },
+    {
+      "id": "subjective-2",
+      "section": "subjective",
+      "text": "The patient reports a temperature of 38.5 last night and chills.",
+      "source_segment_ids": [
+        "s9",
+        "s10"
+      ],
+      "citations_repaired": false,
+      "support": "supported",
+      "support_reason": "Stated in s10."
+    },
+    {
+      "id": "subjective-3",
+      "section": "subjective",
+      "text": "The patient denies cough, runny nose, or stuffy nose.",
+      "source_segment_ids": [
+        "s11",
+        "s12"
+      ],
+      "citations_repaired": false,
+      "support": "supported",
+      "support_reason": "Stated in s11 and s12."
+    },
+    {
+      "id": "subjective-4",
+      "section": "subjective",
+      "text": "The patient reports that the neck feels swollen.",
+      "source_segment_ids": [
+        "s12"
+      ],
+      "citations_repaired": false,
+      "support": "supported",
+      "support_reason": "Stated in s12."
+    },
+    {
+      "id": "subjective-5",
+      "section": "subjective",
+      "text": "The patient's roommate was diagnosed with strep throat last week.",
+      "source_segment_ids": [
+        "s13",
+        "s14"
+      ],
+      "citations_repaired": false,
+      "support": "supported",
+      "support_reason": "Stated in s14."
+    },
+    {
+      "id": "subjective-6",
+      "section": "subjective",
+      "text": "The patient has been taking ibuprofen 400 mg about twice a day with slight relief.",
+      "source_segment_ids": [
+        "s15",
+        "s16"
+      ],
+      "citations_repaired": false,
+      "support": "supported",
+      "support_reason": "Stated in s16."
+    },
+    {
+      "id": "subjective-7",
+      "section": "subjective",
+      "text": "The patient is allergic to penicillin, with hives from amoxicillin as a child.",
+      "source_segment_ids": [
+        "s17",
+        "s18"
+      ],
+      "citations_repaired": false,
+      "support": "supported",
+      "support_reason": "Stated in s18."
+    },
+    {
+      "id": "subjective-8",
+      "section": "subjective",
+      "text": "The patient has no other medical problems and takes no regular medications.",
+      "source_segment_ids": [
+        "s19",
+        "s20"
+      ],
+      "citations_repaired": false,
+      "support": "supported",
+      "support_reason": "Stated in s20."
+    },
+    {
+      "id": "objective-1",
+      "section": "objective",
+      "text": "Temperature 38.3, heart rate 96, blood pressure 118/76.",
+      "source_segment_ids": [
+        "s21"
+      ],
+      "citations_repaired": false,
+      "support": "supported",
+      "support_reason": "Stated in s21."
+    },
+    {
+      "id": "objective-2",
+      "section": "objective",
+      "text": "Tonsils are swollen with bilateral white exudate.",
+      "source_segment_ids": [
+        "s21"
+      ],
+      "citations_repaired": false,
+      "support": "supported",
+      "support_reason": "Stated in s21."
+    },
+    {
+      "id": "objective-3",
+      "section": "objective",
+      "text": "Anterior cervical lymph nodes are enlarged and tender.",
+      "source_segment_ids": [
+        "s21"
+      ],
+      "citations_repaired": false,
+      "support": "supported",
+      "support_reason": "Stated in s21."
+    },
+    {
+      "id": "objective-4",
+      "section": "objective",
+      "text": "Ears are normal and lungs are clear.",
+      "source_segment_ids": [
+        "s21"
+      ],
+      "citations_repaired": false,
+      "support": "supported",
+      "support_reason": "Stated in s21."
+    },
+    {
+      "id": "objective-5",
+      "section": "objective",
+      "text": "Rapid strep test is positive.",
+      "source_segment_ids": [
+        "s23"
+      ],
+      "citations_repaired": false,
+      "support": "supported",
+      "support_reason": "Stated in s23."
+    },
+    {
+      "id": "assessment-1",
+      "section": "assessment",
+      "text": "Strep pharyngitis, supported by fever, tonsillar exudate, tender anterior cervical nodes, absence of cough, and a positive rapid strep test.",
+      "source_segment_ids": [
+        "s23",
+        "s25"
+      ],
+      "citations_repaired": false,
+      "support": "partially_supported",
+      "support_reason": "Tender nodes were only described as swollen in s23; tenderness and anterior location appear only in uncited s21."
+    },
+    {
+      "id": "plan-1",
+      "section": "plan",
+      "text": "Amoxicillin was considered but not given because of the patient's history of hives with amoxicillin.",
+      "source_segment_ids": [
+        "s25"
+      ],
+      "citations_repaired": false,
+      "support": "supported",
+      "support_reason": "Stated in s25."
+    },
+    {
+      "id": "plan-2",
+      "section": "plan",
+      "text": "Azithromycin 500 mg once daily for five days was prescribed and sent to the patient's pharmacy.",
+      "source_segment_ids": [
+        "s25",
+        "s33"
+      ],
+      "citations_repaired": false,
+      "support": "supported",
+      "support_reason": "Stated in s25 and s33."
+    },
+    {
+      "id": "plan-3",
+      "section": "plan",
+      "text": "The patient was advised to finish the full antibiotic course even if feeling better, with improvement expected within two to three days.",
+      "source_segment_ids": [
+        "s26",
+        "s27"
+      ],
+      "citations_repaired": false,
+      "support": "supported",
+      "support_reason": "Stated in s27."
+    },
+    {
+      "id": "plan-4",
+      "section": "plan",
+      "text": "The patient may continue ibuprofen for pain and fever, drink plenty of fluids, and use warm salt water gargles.",
+      "source_segment_ids": [
+        "s27"
+      ],
+      "citations_repaired": false,
+      "support": "supported",
+      "support_reason": "Stated in s27."
+    },
+    {
+      "id": "plan-5",
+      "section": "plan",
+      "text": "The patient should stay home from work until on the antibiotic for at least 24 hours and fever-free, and a work note will be provided.",
+      "source_segment_ids": [
+        "s28",
+        "s29",
+        "s30"
+      ],
+      "citations_repaired": false,
+      "support": "supported",
+      "support_reason": "Stated in s29."
+    },
+    {
+      "id": "plan-6",
+      "section": "plan",
+      "text": "The patient should return or go to the emergency department for trouble breathing, inability to swallow saliva, or inability to fully open the mouth.",
+      "source_segment_ids": [
+        "s31"
+      ],
+      "citations_repaired": false,
+      "support": "supported",
+      "support_reason": "Stated in s31."
+    },
+    {
+      "id": "plan-7",
+      "section": "plan",
+      "text": "The patient should call if not improving within 48 to 72 hours.",
+      "source_segment_ids": [
+        "s31"
+      ],
+      "citations_repaired": false,
+      "support": "supported",
+      "support_reason": "Stated in s31."
+    }
+  ],
+  "rejected_statements": [],
+  "model_calls": [
+    {
+      "created_at": "2026-11-11T00:05:21.576351+00:00",
+      "provider": "anthropic",
+      "model": "claude-opus-5-5",
+      "purpose": "soap_note",
+      "prompt_sha256": "b73bd2b725f804b668aae578d15298c166b482d5b921a1627ede8c7186c02194",
+      "input_tokens": 2618,
+      "output_tokens": 1059,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "cost_usd": "0.031652",
+      "latency_ms": 13645,
+      "status": "ok",
+      "error": null
+    },
+    {
+      "created_at": "2026-11-11T00:05:30.838591+00:00",
+      "provider": "anthropic",
+      "model": "claude-opus-5-5",
+      "purpose": "claim_check",
+      "prompt_sha256": "e339649f7478cd0b42db41bcdd73496cc78cb4613106dfe037ac5d218966ae59",
+      "input_tokens": 3094,
+      "output_tokens": 712,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "cost_usd": "0.026616",
+      "latency_ms": 9259,
+      "status": "ok",
+      "error": null
+    }
+  ]
+}
