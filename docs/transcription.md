@@ -31,7 +31,9 @@ turns, which means a missed speaker change.
 boundaries. `gemini-3.5-flash-lite` is about 20 times faster and recognised words just as
 well, but merged turns on two of the three samples and drifted by about 40 seconds on
 their timestamps, which would break click-to-seek. Set `GEMINI_TRANSCRIBE_MODEL` to
-switch. The latencies were measured on the free tier on 2026-11-10 and will vary.
+switch. The latencies were measured on the free tier on 2026-11-10 and will vary: in a
+later live upload through the Docker stack, gemini-3.8-flash answered three requests with
+503 and took 724 seconds on the fourth.
 
 An earlier run sorted segments by start time; flash-lite's overlapping timestamps on one
 sample scrambled the turn order under that rule, which is why the app now keeps the
