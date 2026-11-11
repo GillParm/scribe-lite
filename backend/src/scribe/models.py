@@ -233,6 +233,9 @@ class ModelCall(Base):
     latency_ms: Mapped[int] = mapped_column(Integer)
     status: Mapped[str] = mapped_column(String(16))
     error: Mapped[str | None] = mapped_column(Text)
+    # "live" for calls made by this deployment; "sample_import" for the recorded calls
+    # that produced the bundled sample outputs, imported with them.
+    origin: Mapped[str] = mapped_column(String(20), default="live", server_default="live")
 
 
 class RetentionDeletion(Base):
