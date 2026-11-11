@@ -17,12 +17,20 @@ class Answer(BaseModel):
     value: str
 
 
-def _client(db: Database, outcomes: list[object], fallbacks: bool = True) -> ClaudeClient:
-    return ClaudeClient(
+def _client_and_fake(
+    db: Database, outcomes: list[object], fallbacks: bool = True
+) -> tuple[ClaudeClient, FakeAnthropic]:
+    fake = FakeAnthropic(outcomes)
+    client = ClaudeClient(
         audit=AuditLog(db),
         fallbacks=fallbacks,
-        client=FakeAnthropic(outcomes),  # type: ignore[arg-type]
+        client=fake,  # type: ignore[arg-type]
     )
+    return client, fake
+
+
+def _client(db: Database, outcomes: list[object], fallbacks: bool = True) -> ClaudeClient:
+    return _client_and_fake(db, outcomes, fallbacks)[0]
 
 
 def _call(client: ClaudeClient) -> Answer:
@@ -42,11 +50,9 @@ def _rows(db: Database) -> list[ModelCall]:
 
 
 def test_parse_returns_model_and_audits(db: Database) -> None:
-    client = _client(db, [parsed_response(Answer(value="ok"))])
+    client, fake = _client_and_fake(db, [parsed_response(Answer(value="ok"))])
     assert _call(client) == Answer(value="ok")
 
-    fake = client.client
-    assert isinstance(fake, FakeAnthropic)
     request = fake.calls[0]
     assert request["output_format"] is Answer
     assert request["output_config"] == {"effort": "low"}
@@ -67,10 +73,8 @@ def test_parse_returns_model_and_audits(db: Database) -> None:
 
 
 def test_fallbacks_can_be_turned_off(db: Database) -> None:
-    client = _client(db, [parsed_response(Answer(value="ok"))], fallbacks=False)
+    client, fake = _client_and_fake(db, [parsed_response(Answer(value="ok"))], fallbacks=False)
     _call(client)
-    fake = client.client
-    assert isinstance(fake, FakeAnthropic)
     assert "fallbacks" not in fake.calls[0]
 
 

@@ -62,7 +62,7 @@ ignore = ["S101"]
 python_version = "3.12"
 strict = true
 mypy_path = "src"
-packages = ["scribe"]
+files = ["src", "tests", "../eval", "../samples/tools"]
 plugins = ["pydantic.mypy"]
 warn_unreachable = true
 

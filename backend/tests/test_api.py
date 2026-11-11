@@ -90,7 +90,8 @@ def client(app_parts: tuple[Settings, Services, FakeAnthropic]) -> Iterator[Test
 
 
 def sample_id(client: TestClient, slug: str) -> str:
-    return next(e["id"] for e in client.get("/api/encounters").json() if e["sample_slug"] == slug)
+    encounters = client.get("/api/encounters").json()
+    return str(next(e["id"] for e in encounters if e["sample_slug"] == slug))
 
 
 def test_health_and_config(client: TestClient) -> None:

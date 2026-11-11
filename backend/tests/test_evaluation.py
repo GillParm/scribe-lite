@@ -26,7 +26,9 @@ FACTS = [
 
 
 def verdict(fact_id: str, label: str) -> FactVerdict:
-    return FactVerdict(fact_id=fact_id, verdict=label, statement_ids=[], reason="r")  # type: ignore[arg-type]
+    return FactVerdict.model_validate(
+        {"fact_id": fact_id, "verdict": label, "statement_ids": [], "reason": "r"}
+    )
 
 
 def test_coverage_counts_partial_as_half() -> None:
