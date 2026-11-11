@@ -1,8 +1,8 @@
 {
   "sample": "sore-throat",
   "planted": 4,
-  "caught_unsupported": 2,
-  "caught_partial": 2,
+  "caught_unsupported": 4,
+  "caught_partial": 0,
   "missed": 0,
   "untouched": 18,
   "untouched_flagged": 0,
@@ -29,11 +29,11 @@
       "planted": "flipped negation",
       "label": "unsupported",
       "label_before": "supported",
-      "reason": "Patient denied cough and runny nose in s12."
+      "reason": "The patient denied cough and runny nose in s12."
     },
     {
       "id": "subjective-4",
-      "text": "The patient reports that the neck feels swollen.",
+      "text": "The patient reports a feeling of neck swelling.",
       "planted": null,
       "label": "supported",
       "label_before": "supported",
@@ -57,7 +57,7 @@
     },
     {
       "id": "subjective-7",
-      "text": "The patient is allergic to penicillin, with hives from amoxicillin as a child.",
+      "text": "The patient is allergic to penicillin, having developed hives from amoxicillin as a child.",
       "planted": null,
       "label": "supported",
       "label_before": "supported",
@@ -75,9 +75,9 @@
       "id": "objective-1",
       "text": "Temperature 39.4, heart rate 96, blood pressure 118/76.",
       "planted": "wrong number",
-      "label": "partially_supported",
+      "label": "unsupported",
       "label_before": "supported",
-      "reason": "Temperature was 38.3, not 39.4; heart rate and blood pressure match s21."
+      "reason": "The temperature was 38.3 in s21, not 39.4."
     },
     {
       "id": "objective-2",
@@ -105,7 +105,7 @@
     },
     {
       "id": "objective-5",
-      "text": "Rapid strep test is positive.",
+      "text": "Rapid strep test was positive.",
       "planted": null,
       "label": "supported",
       "label_before": "supported",
@@ -131,13 +131,13 @@
       "id": "plan-2",
       "text": "Azithromycin 250 mg once daily for five days was prescribed and sent to the patient's pharmacy.",
       "planted": "wrong dose",
-      "label": "partially_supported",
+      "label": "unsupported",
       "label_before": "supported",
-      "reason": "Dose was 500 mg, not 250 mg."
+      "reason": "The azithromycin dose was 500 mg in s25, not 250 mg."
     },
     {
       "id": "plan-3",
-      "text": "The patient was advised to finish the full antibiotic course even if feeling better, with improvement expected within two to three days.",
+      "text": "The patient was advised to complete the full antibiotic course even if feeling better.",
       "planted": null,
       "label": "supported",
       "label_before": "supported",
@@ -145,7 +145,7 @@
     },
     {
       "id": "plan-4",
-      "text": "The patient may continue ibuprofen for pain and fever, drink plenty of fluids, and use warm salt water gargles.",
+      "text": "The patient may continue ibuprofen for pain and fever, should drink plenty of fluids, and may use warm salt water gargles.",
       "planted": null,
       "label": "supported",
       "label_before": "supported",
@@ -153,11 +153,11 @@
     },
     {
       "id": "plan-5",
-      "text": "The patient should stay home from work until on the antibiotic for at least 24 hours and fever-free, and a work note will be provided.",
+      "text": "The patient should stay home from work until on the antibiotic for at least 24 hours and afebrile, and a work note will be provided.",
       "planted": null,
       "label": "supported",
       "label_before": "supported",
-      "reason": "Stated in s29."
+      "reason": "Stated in s29 and s30."
     },
     {
       "id": "plan-6",
@@ -181,7 +181,7 @@
       "planted": "invented order",
       "label": "unsupported",
       "label_before": null,
-      "reason": "No chest X-ray was ordered; lungs were clear."
+      "reason": "No chest X-ray was mentioned in the transcript."
     }
   ]
 }

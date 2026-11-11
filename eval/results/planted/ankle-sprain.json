@@ -1,10 +1,10 @@
 {
   "sample": "ankle-sprain",
   "planted": 4,
-  "caught_unsupported": 2,
-  "caught_partial": 2,
+  "caught_unsupported": 4,
+  "caught_partial": 0,
   "missed": 0,
-  "untouched": 22,
+  "untouched": 21,
   "untouched_flagged": 0,
   "rows": [
     {
@@ -53,7 +53,7 @@
       "planted": null,
       "label": "supported",
       "label_before": "supported",
-      "reason": "Stated in s19 and s20."
+      "reason": "Stated in s19-s20."
     },
     {
       "id": "subjective-7",
@@ -77,7 +77,7 @@
       "planted": null,
       "label": "supported",
       "label_before": "supported",
-      "reason": "Stated in s21, s22 and s23."
+      "reason": "Stated in s21-s23."
     },
     {
       "id": "objective-3",
@@ -85,7 +85,7 @@
       "planted": null,
       "label": "supported",
       "label_before": "supported",
-      "reason": "Stated in s23 and s24."
+      "reason": "Stated in s23-s24."
     },
     {
       "id": "objective-4",
@@ -93,11 +93,11 @@
       "planted": null,
       "label": "supported",
       "label_before": "supported",
-      "reason": "Stated in s25 and s26."
+      "reason": "Stated in s25-s26."
     },
     {
       "id": "objective-5",
-      "text": "Pulses and sensation in the foot are normal.",
+      "text": "Foot pulses and sensation are normal.",
       "planted": null,
       "label": "supported",
       "label_before": "supported",
@@ -109,7 +109,7 @@
       "planted": null,
       "label": "supported",
       "label_before": "supported",
-      "reason": "Stated in s27."
+      "reason": "Stated in s27 as 'a bit of laxity'."
     },
     {
       "id": "objective-7",
@@ -117,15 +117,15 @@
       "planted": null,
       "label": "supported",
       "label_before": "supported",
-      "reason": "Stated in s27 and s28."
+      "reason": "Stated in s27-s28."
     },
     {
       "id": "assessment-1",
       "text": "Moderate, grade two sprain of the lateral ligaments of the left ankle.",
       "planted": "wrong side",
-      "label": "partially_supported",
-      "label_before": "supported",
-      "reason": "The grade two lateral sprain is stated, but the injured ankle is the right, not the left."
+      "label": "unsupported",
+      "label_before": "partially_supported",
+      "reason": "The injured ankle is the right, not the left."
     },
     {
       "id": "assessment-2",
@@ -133,34 +133,18 @@
       "planted": "reversed decision",
       "label": "unsupported",
       "label_before": "supported",
-      "reason": "The doctor said no X-ray is needed today; none was ordered."
+      "reason": "The doctor said no X-ray is needed in s29."
     },
     {
       "id": "plan-1",
-      "text": "No X-ray today.",
-      "planted": null,
-      "label": "supported",
-      "label_before": "supported",
-      "reason": "Stated in s29."
-    },
-    {
-      "id": "plan-2",
-      "text": "Expected return to basketball in about three to four weeks, sometimes longer.",
-      "planted": null,
-      "label": "supported",
-      "label_before": "supported",
-      "reason": "Stated in s30 and s31."
-    },
-    {
-      "id": "plan-3",
-      "text": "For the next few days, elevate the ankle and apply ice for 15 to 20 minutes at a time.",
+      "text": "Keep the ankle elevated and apply ice for 15 to 20 minutes at a time over the next few days.",
       "planted": null,
       "label": "supported",
       "label_before": "supported",
       "reason": "Stated in s31."
     },
     {
-      "id": "plan-4",
+      "id": "plan-2",
       "text": "Wear an air-stirrup brace.",
       "planted": null,
       "label": "supported",
@@ -168,52 +152,60 @@
       "reason": "Stated in s31."
     },
     {
-      "id": "plan-5",
-      "text": "Crutches may be used for two or three days while bearing as much weight as comfortable.",
+      "id": "plan-3",
+      "text": "Crutches may be used for two or three days, with as much weight-bearing as comfortably tolerated.",
       "planted": null,
       "label": "supported",
       "label_before": "supported",
       "reason": "Stated in s31."
     },
     {
-      "id": "plan-6",
+      "id": "plan-4",
       "text": "Ibuprofen 800 mg every four hours for two weeks.",
       "planted": "wrong dose and duration",
-      "label": "partially_supported",
+      "label": "unsupported",
       "label_before": "supported",
-      "reason": "Ibuprofen was advised, but at 400 mg every eight hours for up to five days, not 800 mg every four hours for two weeks."
+      "reason": "The transcript gives 400 mg every eight hours for up to five days."
     },
     {
-      "id": "plan-7",
-      "text": "Referral to physiotherapy for balance and strengthening exercises to reduce risk of re-injury.",
+      "id": "plan-5",
+      "text": "Referral to physiotherapy for balance and strengthening exercises to reduce the risk of re-injury.",
       "planted": null,
       "label": "supported",
       "label_before": "supported",
       "reason": "Stated in s33."
     },
     {
-      "id": "plan-8",
-      "text": "Work note for modified duties for one week with no heavy lifting and no ladders.",
+      "id": "plan-6",
+      "text": "Expected return to basketball in about three to four weeks, sometimes longer.",
+      "planted": null,
+      "label": "supported",
+      "label_before": "supported",
+      "reason": "Stated in s30-s31."
+    },
+    {
+      "id": "plan-7",
+      "text": "Work note for modified duties for one week, with no heavy lifting and no ladders.",
       "planted": null,
       "label": "supported",
       "label_before": "supported",
       "reason": "Stated in s35."
     },
     {
-      "id": "plan-9",
-      "text": "Return if unable to bear weight at all, if the foot becomes numb or cold, or if not improving in a week.",
+      "id": "plan-8",
+      "text": "Return if unable to bear weight at all, if the foot becomes numb or cold, or if not improving within a week.",
       "planted": null,
       "label": "supported",
       "label_before": "supported",
       "reason": "Stated in s37."
     },
     {
-      "id": "plan-10",
+      "id": "plan-9",
       "text": "Referred to orthopaedic surgery to discuss ligament repair.",
       "planted": "invented referral",
       "label": "unsupported",
       "label_before": null,
-      "reason": "No orthopaedic surgery referral or ligament repair was discussed."
+      "reason": "No orthopaedic referral or ligament repair was discussed."
     }
   ]
 }

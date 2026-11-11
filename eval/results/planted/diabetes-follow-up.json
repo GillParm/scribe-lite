@@ -4,7 +4,7 @@
   "caught_unsupported": 4,
   "caught_partial": 0,
   "missed": 0,
-  "untouched": 26,
+  "untouched": 25,
   "untouched_flagged": 0,
   "rows": [
     {
@@ -17,7 +17,7 @@
     },
     {
       "id": "subjective-2",
-      "text": "The patient reports eating more bread and sweets than he should over the holidays.",
+      "text": "The patient reports eating more bread and sweets over the holidays.",
       "planted": null,
       "label": "supported",
       "label_before": "supported",
@@ -25,7 +25,7 @@
     },
     {
       "id": "subjective-3",
-      "text": "The patient takes metformin 1000 mg twice daily but misses the evening dose three or four times a week because it upsets his stomach.",
+      "text": "The patient takes metformin 1000 mg twice daily but misses the evening dose three to four times a week due to stomach upset.",
       "planted": null,
       "label": "supported",
       "label_before": "supported",
@@ -33,11 +33,11 @@
     },
     {
       "id": "subjective-4",
-      "text": "The stomach upset consists of cramping and loose stools, usually about an hour after taking metformin.",
+      "text": "The patient describes cramping and loose stools about an hour after taking metformin.",
       "planted": null,
       "label": "supported",
       "label_before": "supported",
-      "reason": "Stated in s11 and s12."
+      "reason": "Stated in s12."
     },
     {
       "id": "subjective-5",
@@ -45,7 +45,7 @@
       "planted": null,
       "label": "supported",
       "label_before": "supported",
-      "reason": "Stated in s13 and s14."
+      "reason": "Stated in s14."
     },
     {
       "id": "subjective-6",
@@ -53,15 +53,15 @@
       "planted": null,
       "label": "supported",
       "label_before": "supported",
-      "reason": "Stated in s15 and s16."
+      "reason": "Stated in s16."
     },
     {
       "id": "subjective-7",
-      "text": "The patient denies chest pain and reports his vision seems fine.",
+      "text": "The patient denies chest pain and reports no vision problems.",
       "planted": null,
       "label": "supported",
       "label_before": "supported",
-      "reason": "Stated in s17 and s18."
+      "reason": "Stated in s18."
     },
     {
       "id": "subjective-8",
@@ -77,15 +77,15 @@
       "planted": null,
       "label": "supported",
       "label_before": "supported",
-      "reason": "Stated in s18, s19 and s20."
+      "reason": "Stated in s18 and s20."
     },
     {
       "id": "subjective-10",
       "text": "The patient takes cinnamon pills daily to help control his blood sugar.",
       "planted": "not started recorded as taken",
       "label": "unsupported",
-      "label_before": "supported",
-      "reason": "Patient says he has not started cinnamon pills (s22)."
+      "label_before": "partially_supported",
+      "reason": "Patient says in s22 he has not started cinnamon pills."
     },
     {
       "id": "objective-1",
@@ -117,15 +117,15 @@
       "planted": "inverted finding",
       "label": "unsupported",
       "label_before": "supported",
-      "reason": "s25 says pulses were good and monofilament sensation was reduced, the opposite."
+      "reason": "s25 says pulses are good and monofilament sensation is reduced."
     },
     {
       "id": "assessment-1",
-      "text": "Diabetes with worsening glycemic control, with A1c rising from 7.4 to 8.1 percent.",
+      "text": "Diabetes control is worsening, with rising A1c.",
       "planted": null,
       "label": "supported",
       "label_before": "supported",
-      "reason": "Stated in s23, s24 and s25."
+      "reason": "Stated in s23 to s25."
     },
     {
       "id": "assessment-2",
@@ -137,7 +137,7 @@
     },
     {
       "id": "assessment-3",
-      "text": "Gastrointestinal upset with metformin is contributing to missed evening doses.",
+      "text": "Metformin is causing gastrointestinal side effects leading to missed doses.",
       "planted": null,
       "label": "supported",
       "label_before": "supported",
@@ -145,23 +145,15 @@
     },
     {
       "id": "assessment-4",
-      "text": "Blood pressure is elevated today.",
-      "planted": null,
-      "label": "supported",
-      "label_before": "partially_supported",
-      "reason": "BP 142/88 in s25 is above the 130/80 threshold in s31."
-    },
-    {
-      "id": "assessment-5",
       "text": "Hypertension, now treated with lisinopril 10 mg daily.",
       "planted": "invented diagnosis and drug",
       "label": "unsupported",
       "label_before": null,
-      "reason": "No hypertension diagnosis or lisinopril was mentioned; BP medication was deferred (s31)."
+      "reason": "No hypertension diagnosis or lisinopril was mentioned; BP treatment is deferred in s31."
     },
     {
       "id": "plan-1",
-      "text": "Switch metformin to the extended-release form, 1000 mg twice daily, to reduce stomach upset.",
+      "text": "Switch metformin to the extended-release form, 1000 mg twice daily, to improve stomach tolerance.",
       "planted": null,
       "label": "supported",
       "label_before": "supported",
@@ -173,27 +165,27 @@
       "planted": "wrong dose",
       "label": "unsupported",
       "label_before": "supported",
-      "reason": "s27 specifies 10 mg once daily, not 25 mg twice daily."
+      "reason": "s27 gives empagliflozin 10 mg once daily, not 25 mg twice daily."
     },
     {
       "id": "plan-3",
-      "text": "Counseled that empagliflozin can cause genital yeast infections and increased urination, and to drink enough water.",
+      "text": "The patient was counseled that empagliflozin can cause genital yeast infections and increased urination and advised to drink enough water.",
       "planted": null,
       "label": "supported",
       "label_before": "supported",
-      "reason": "Stated in s28 and s29."
+      "reason": "Stated in s29."
     },
     {
       "id": "plan-4",
-      "text": "Advised to hold off on cinnamon pills due to lack of good evidence.",
+      "text": "The patient was advised to hold off on cinnamon pills due to lack of good evidence.",
       "planted": null,
       "label": "supported",
       "label_before": "supported",
-      "reason": "Stated in s22 and s23."
+      "reason": "Stated in s23."
     },
     {
       "id": "plan-5",
-      "text": "Referral to the diabetes education program to meet with a dietitian.",
+      "text": "Refer to the diabetes education program to meet with a dietitian.",
       "planted": null,
       "label": "supported",
       "label_before": "supported",
@@ -201,7 +193,7 @@
     },
     {
       "id": "plan-6",
-      "text": "Referral to an eye doctor for a retinal exam.",
+      "text": "Refer to an eye doctor for a retinal exam.",
       "planted": null,
       "label": "supported",
       "label_before": "supported",
@@ -209,7 +201,7 @@
     },
     {
       "id": "plan-7",
-      "text": "Kidney function and urine test to be done today.",
+      "text": "Kidney function and urine tests to be done today.",
       "planted": null,
       "label": "supported",
       "label_before": "supported",
@@ -217,11 +209,11 @@
     },
     {
       "id": "plan-8",
-      "text": "Recheck blood pressure at the next visit and start a medication if it remains above 130/80.",
+      "text": "Recheck blood pressure at the next visit and start a blood pressure medication if still above 130/80.",
       "planted": null,
       "label": "supported",
       "label_before": "supported",
-      "reason": "Stated in s30 and s31."
+      "reason": "Stated in s31."
     },
     {
       "id": "plan-9",
@@ -233,7 +225,7 @@
     },
     {
       "id": "plan-10",
-      "text": "Advised to check feet daily and call if any sores appear.",
+      "text": "The patient was advised to check feet daily and call if any sores appear.",
       "planted": null,
       "label": "supported",
       "label_before": "supported",

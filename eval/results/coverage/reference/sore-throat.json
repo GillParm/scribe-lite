@@ -42,7 +42,7 @@
       "statement_ids": [
         "subjective-3"
       ],
-      "reason": "The note says the patient denies cough, runny nose and stuffy nose."
+      "reason": "The note says the patient denies cough and nasal symptoms."
     },
     {
       "fact_id": "F5",
@@ -50,7 +50,7 @@
       "statement_ids": [
         "subjective-5"
       ],
-      "reason": "The note says the roommate was diagnosed with strep throat last week."
+      "reason": "The roommate's strep diagnosis last week is stated."
     },
     {
       "fact_id": "F6",
@@ -58,7 +58,7 @@
       "statement_ids": [
         "subjective-6"
       ],
-      "reason": "The note gives ibuprofen 400 mg twice a day, and slight relief matches partial relief."
+      "reason": "Ibuprofen 400 mg twice a day with slight relief matches partial relief."
     },
     {
       "fact_id": "F7",
@@ -66,7 +66,7 @@
       "statement_ids": [
         "subjective-7"
       ],
-      "reason": "The note states a penicillin allergy with hives from amoxicillin as a child."
+      "reason": "The penicillin allergy with hives from amoxicillin as a child is stated."
     },
     {
       "fact_id": "F8",
@@ -82,7 +82,7 @@
       "statement_ids": [
         "objective-1"
       ],
-      "reason": "All three vital signs match."
+      "reason": "The vital signs match exactly."
     },
     {
       "fact_id": "F10",
@@ -98,7 +98,7 @@
       "statement_ids": [
         "objective-3"
       ],
-      "reason": "The note states enlarged, tender anterior cervical lymph nodes."
+      "reason": "The note states enlarged, tender anterior cervical nodes."
     },
     {
       "fact_id": "F12",
@@ -114,7 +114,7 @@
       "statement_ids": [
         "objective-5"
       ],
-      "reason": "The note states the rapid strep test is positive."
+      "reason": "The note states the rapid strep test was positive."
     },
     {
       "fact_id": "F14",
@@ -122,7 +122,7 @@
       "statement_ids": [
         "assessment-1"
       ],
-      "reason": "The assessment is strep pharyngitis."
+      "reason": "Strep pharyngitis is the stated diagnosis."
     },
     {
       "fact_id": "F15",
@@ -131,7 +131,7 @@
         "plan-1",
         "plan-2"
       ],
-      "reason": "Azithromycin 500 mg daily for five days was prescribed, and amoxicillin was avoided because of the allergy."
+      "reason": "Azithromycin is given at the correct dose and duration, chosen because of the allergy."
     },
     {
       "fact_id": "F16",
@@ -139,7 +139,7 @@
       "statement_ids": [
         "plan-3"
       ],
-      "reason": "The patient was advised to finish the full antibiotic course."
+      "reason": "The note advises completing the full antibiotic course."
     },
     {
       "fact_id": "F17",
@@ -147,7 +147,7 @@
       "statement_ids": [
         "plan-4"
       ],
-      "reason": "The plan includes ibuprofen for pain and fever, fluids and warm salt water gargles."
+      "reason": "Ibuprofen, fluids and warm salt water gargles are all stated."
     },
     {
       "fact_id": "F18",
@@ -155,7 +155,7 @@
       "statement_ids": [
         "plan-5"
       ],
-      "reason": "The plan says stay home until 24 hours on the antibiotic and fever-free, with a work note provided."
+      "reason": "Staying off work until 24 hours on antibiotics and afebrile, with a work note, is stated."
     },
     {
       "fact_id": "F19",
@@ -164,7 +164,7 @@
         "plan-6",
         "plan-7"
       ],
-      "reason": "All the return precautions and the 48 to 72 hour call-back advice are included."
+      "reason": "The return precautions and the 48 to 72 hour call instruction are both stated."
     }
   ]
 }

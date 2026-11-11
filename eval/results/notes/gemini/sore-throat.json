@@ -2,7 +2,7 @@
   "version": 1,
   "sample_slug": null,
   "title": "Sore throat, three days",
-  "processed_at": "2026-11-11T00:23:54.917331+00:00",
+  "processed_at": "2026-11-11T00:29:43.989709+00:00",
   "transcriber": "recorded gemini-3.8-flash transcript (gemini-3.8-flash)",
   "note_model": "claude-opus-5-5",
   "check_model": "claude-opus-5-5",
@@ -428,7 +428,7 @@
     {
       "id": "subjective-1",
       "section": "subjective",
-      "text": "The patient reports a sore throat for about 3 days with marked pain on swallowing, even water.",
+      "text": "The patient reports a sore throat for about 3 days with severe pain on swallowing, even water.",
       "source_segment_ids": [
         "s8"
       ],
@@ -451,7 +451,7 @@
     {
       "id": "subjective-3",
       "section": "subjective",
-      "text": "The patient denies cough, runny nose, or nasal congestion and reports a feeling of neck swelling.",
+      "text": "The patient denies cough, runny nose, or nasal congestion.",
       "source_segment_ids": [
         "s11",
         "s12"
@@ -463,6 +463,17 @@
     {
       "id": "subjective-4",
       "section": "subjective",
+      "text": "The patient reports that the neck feels swollen.",
+      "source_segment_ids": [
+        "s12"
+      ],
+      "citations_repaired": false,
+      "support": "supported",
+      "support_reason": "Stated in s12."
+    },
+    {
+      "id": "subjective-5",
+      "section": "subjective",
       "text": "The patient's roommate was diagnosed with strep throat last week.",
       "source_segment_ids": [
         "s13",
@@ -473,7 +484,7 @@
       "support_reason": "Stated in s14."
     },
     {
-      "id": "subjective-5",
+      "id": "subjective-6",
       "section": "subjective",
       "text": "The patient has been taking ibuprofen 400 mg about twice a day with slight relief.",
       "source_segment_ids": [
@@ -485,7 +496,7 @@
       "support_reason": "Stated in s16."
     },
     {
-      "id": "subjective-6",
+      "id": "subjective-7",
       "section": "subjective",
       "text": "The patient is allergic to penicillin, with hives from amoxicillin in childhood.",
       "source_segment_ids": [
@@ -497,7 +508,7 @@
       "support_reason": "Stated in s18."
     },
     {
-      "id": "subjective-7",
+      "id": "subjective-8",
       "section": "subjective",
       "text": "The patient has no other medical problems and takes no regular medications.",
       "source_segment_ids": [
@@ -555,7 +566,7 @@
     {
       "id": "objective-5",
       "section": "objective",
-      "text": "Rapid strep test is positive.",
+      "text": "Rapid strep test was positive.",
       "source_segment_ids": [
         "s23"
       ],
@@ -566,45 +577,42 @@
     {
       "id": "assessment-1",
       "section": "assessment",
-      "text": "Strep pharyngitis, supported by fever, tonsillar exudate, tender anterior cervical nodes, absence of cough, and positive rapid strep test.",
+      "text": "Strep pharyngitis, supported by fever, tonsillar exudate, tender anterior cervical lymphadenopathy, absence of cough, and a positive rapid strep test.",
       "source_segment_ids": [
         "s23",
         "s25"
       ],
       "citations_repaired": false,
       "support": "partially_supported",
-      "support_reason": "The cited s23 mentions only swollen nodes; the tender anterior cervical nodes appear in the uncited s21."
+      "support_reason": "Diagnosis and most features are in s23 and s25, but node tenderness and anterior location are only in uncited s21."
     },
     {
       "id": "plan-1",
       "section": "plan",
-      "text": "Amoxicillin would normally be used but was not prescribed due to the patient's history of hives with amoxicillin.",
+      "text": "Azithromycin 500 mg once daily for 5 days prescribed instead of amoxicillin due to the patient's amoxicillin allergy.",
       "source_segment_ids": [
-        "s18",
         "s25"
       ],
       "citations_repaired": false,
       "support": "supported",
-      "support_reason": "Stated in s18 and s25."
+      "support_reason": "Stated in s25."
     },
     {
       "id": "plan-2",
       "section": "plan",
-      "text": "Prescribed azithromycin 500 mg once daily for 5 days, sent to the patient's pharmacy.",
+      "text": "The patient was advised to finish the full antibiotic course even if feeling better.",
       "source_segment_ids": [
-        "s25",
-        "s33"
+        "s27"
       ],
       "citations_repaired": false,
       "support": "supported",
-      "support_reason": "Stated in s25 and s33."
+      "support_reason": "Stated in s27."
     },
     {
       "id": "plan-3",
       "section": "plan",
-      "text": "Advised to complete the full antibiotic course even if feeling better; improvement is expected within 2 to 3 days.",
+      "text": "The patient may continue ibuprofen for pain and fever, should drink plenty of fluids, and may use warm salt water gargles.",
       "source_segment_ids": [
-        "s26",
         "s27"
       ],
       "citations_repaired": false,
@@ -614,18 +622,7 @@
     {
       "id": "plan-4",
       "section": "plan",
-      "text": "May continue ibuprofen for pain and fever, drink plenty of fluids, and use warm salt water gargles.",
-      "source_segment_ids": [
-        "s27"
-      ],
-      "citations_repaired": false,
-      "support": "supported",
-      "support_reason": "Stated in s27."
-    },
-    {
-      "id": "plan-5",
-      "section": "plan",
-      "text": "Stay home from work until on the antibiotic for at least 24 hours and fever-free; work note provided.",
+      "text": "The patient should stay home from work until on the antibiotic for at least 24 hours and fever-free, and a work note will be provided.",
       "source_segment_ids": [
         "s28",
         "s29",
@@ -633,12 +630,23 @@
       ],
       "citations_repaired": false,
       "support": "supported",
-      "support_reason": "Stated in s29 and s30."
+      "support_reason": "Stated in s29."
+    },
+    {
+      "id": "plan-5",
+      "section": "plan",
+      "text": "The patient should return or go to the emergency department for trouble breathing, inability to swallow saliva, or inability to fully open the mouth.",
+      "source_segment_ids": [
+        "s31"
+      ],
+      "citations_repaired": false,
+      "support": "supported",
+      "support_reason": "Stated in s31."
     },
     {
       "id": "plan-6",
       "section": "plan",
-      "text": "Return or go to the emergency department for trouble breathing, inability to swallow saliva, or inability to fully open the mouth.",
+      "text": "The patient should call if not improving within 48 to 72 hours.",
       "source_segment_ids": [
         "s31"
       ],
@@ -649,44 +657,44 @@
     {
       "id": "plan-7",
       "section": "plan",
-      "text": "Call the clinic if not improving in 48 to 72 hours.",
+      "text": "The prescription will be sent to the patient's pharmacy.",
       "source_segment_ids": [
-        "s31"
+        "s33"
       ],
       "citations_repaired": false,
       "support": "supported",
-      "support_reason": "Stated in s31."
+      "support_reason": "Stated in s33."
     }
   ],
   "rejected_statements": [],
   "model_calls": [
     {
-      "created_at": "2026-11-11T00:23:46.168977+00:00",
+      "created_at": "2026-11-11T00:29:30.870039+00:00",
       "provider": "anthropic",
       "model": "claude-opus-5-5",
       "purpose": "soap_note",
       "prompt_sha256": "64092669d813aab57b4f2170140761f410c8bde44aa10761bd5fcbe5f6189de1",
       "input_tokens": 2623,
-      "output_tokens": 1038,
+      "output_tokens": 1051,
       "cache_read_tokens": 0,
       "cache_write_tokens": 0,
-      "cost_usd": "0.031252",
-      "latency_ms": 8297,
+      "cost_usd": "0.031512",
+      "latency_ms": 8187,
       "status": "ok",
       "error": null
     },
     {
-      "created_at": "2026-11-11T00:23:54.911253+00:00",
+      "created_at": "2026-11-11T00:29:43.984351+00:00",
       "provider": "anthropic",
       "model": "claude-opus-5-5",
       "purpose": "claim_check",
-      "prompt_sha256": "ecfc21cc3a1949676a7b518a3aeeb7927610fbfda21d6ccd99ee0aa2b34271f7",
-      "input_tokens": 3086,
-      "output_tokens": 1021,
+      "prompt_sha256": "a7a42192dca87fc7b145412f0bc1592ea3d9a71f11677b7bab49c5d4b053b0cb",
+      "input_tokens": 3142,
+      "output_tokens": 1069,
       "cache_read_tokens": 0,
       "cache_write_tokens": 0,
-      "cost_usd": "0.032764",
-      "latency_ms": 8637,
+      "cost_usd": "0.033948",
+      "latency_ms": 12993,
       "status": "ok",
       "error": null
     }

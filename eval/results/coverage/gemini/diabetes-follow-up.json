@@ -1,24 +1,24 @@
 {
   "sample": "diabetes-follow-up",
   "facts": 24,
-  "present": 24,
-  "partial": 0,
+  "present": 22,
+  "partial": 2,
   "absent": 0,
-  "coverage": 1.0,
+  "coverage": 0.9583,
   "missing_verdicts": [],
   "statements": 28,
   "unsupported": 0,
-  "partially_supported": 0,
+  "partially_supported": 1,
   "unsupported_rate": 0.0,
   "rejected": 0,
   "verdicts": [
     {
       "fact_id": "F1",
-      "verdict": "present",
+      "verdict": "partial",
       "statement_ids": [
         "subjective-1"
       ],
-      "reason": "The note states a 3-month diabetes check; the type 2 context is implied by the metformin and empagliflozin."
+      "reason": "The note gives a 3-month diabetes check but does not say type 2."
     },
     {
       "fact_id": "F2",
@@ -26,7 +26,7 @@
       "statement_ids": [
         "subjective-2"
       ],
-      "reason": "The note states increased bread and sweets intake over the holidays."
+      "reason": "The note states more bread and sweets over the holidays."
     },
     {
       "fact_id": "F3",
@@ -34,7 +34,7 @@
       "statement_ids": [
         "subjective-3"
       ],
-      "reason": "The dose, frequency and missed evening doses 3 to 4 times a week match."
+      "reason": "Dose, frequency and missed evening doses all match."
     },
     {
       "fact_id": "F4",
@@ -50,7 +50,7 @@
       "statement_ids": [
         "subjective-5"
       ],
-      "reason": "Morning sugars of 8 to 10 are stated."
+      "reason": "Morning readings of 8 to 10 are stated."
     },
     {
       "fact_id": "F6",
@@ -66,7 +66,7 @@
       "statement_ids": [
         "subjective-7"
       ],
-      "reason": "The patient denies chest pain."
+      "reason": "The note says the patient denies chest pain."
     },
     {
       "fact_id": "F8",
@@ -91,7 +91,7 @@
         "subjective-10",
         "plan-4"
       ],
-      "reason": "The patient has not started cinnamon and was advised to hold off."
+      "reason": "Cinnamon not started and advised to hold off."
     },
     {
       "fact_id": "F11",
@@ -99,7 +99,7 @@
       "statement_ids": [
         "objective-1"
       ],
-      "reason": "A1c 8.1% up from 7.4% in the spring is stated."
+      "reason": "A1C 8.1% up from 7.4% in the spring is stated."
     },
     {
       "fact_id": "F12",
@@ -107,7 +107,7 @@
       "statement_ids": [
         "objective-2"
       ],
-      "reason": "BP 142/88 is stated."
+      "reason": "Blood pressure 142/88 is stated."
     },
     {
       "fact_id": "F13",
@@ -127,11 +127,11 @@
     },
     {
       "fact_id": "F15",
-      "verdict": "present",
+      "verdict": "partial",
       "statement_ids": [
         "assessment-1"
       ],
-      "reason": "Worsening diabetes control is stated."
+      "reason": "Worsening control is stated but the diabetes type is not."
     },
     {
       "fact_id": "F16",
@@ -139,7 +139,7 @@
       "statement_ids": [
         "assessment-2"
       ],
-      "reason": "Findings consistent with early diabetic nerve changes are stated."
+      "reason": "Early diabetic nerve changes means early peripheral neuropathy."
     },
     {
       "fact_id": "F17",
@@ -148,7 +148,7 @@
         "objective-2",
         "plan-8"
       ],
-      "reason": "BP of 142/88 against a 130/80 threshold indicates above target."
+      "reason": "Blood pressure that 'remains above 130/80' implies it is above target."
     },
     {
       "fact_id": "F18",
@@ -157,7 +157,7 @@
         "plan-1",
         "assessment-3"
       ],
-      "reason": "The switch to ER 1000 mg twice daily is linked to GI side effects."
+      "reason": "Extended-release 1,000 mg twice daily is given in the context of GI side effects."
     },
     {
       "fact_id": "F19",
@@ -166,7 +166,7 @@
         "plan-2",
         "plan-3"
       ],
-      "reason": "Empagliflozin 10 mg daily with counseling on yeast infections, urination and hydration is stated."
+      "reason": "Dose and counselling on yeast infections, urination and hydration match."
     },
     {
       "fact_id": "F20",
@@ -198,7 +198,7 @@
       "statement_ids": [
         "plan-8"
       ],
-      "reason": "BP recheck and medication if above 130/80 are stated."
+      "reason": "Recheck at next visit and start medication if above 130/80."
     },
     {
       "fact_id": "F24",
@@ -207,7 +207,7 @@
         "plan-9",
         "plan-10"
       ],
-      "reason": "Repeat A1c in 3 months, daily foot checks and calling about sores are stated."
+      "reason": "Repeat A1C in 3 months, daily foot checks and calling about sores are stated."
     }
   ]
 }

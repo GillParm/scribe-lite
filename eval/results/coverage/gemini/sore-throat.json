@@ -6,7 +6,7 @@
   "absent": 0,
   "coverage": 1.0,
   "missing_verdicts": [],
-  "statements": 20,
+  "statements": 21,
   "unsupported": 0,
   "partially_supported": 1,
   "unsupported_rate": 0.0,
@@ -34,7 +34,7 @@
       "statement_ids": [
         "subjective-2"
       ],
-      "reason": "The note states a temperature of 38.5 last night with chills."
+      "reason": "The note states a self-measured temperature of 38.5 last night with chills."
     },
     {
       "fact_id": "F4",
@@ -42,37 +42,37 @@
       "statement_ids": [
         "subjective-3"
       ],
-      "reason": "The note says the patient denies cough and nasal symptoms."
+      "reason": "The patient denies cough and nasal symptoms."
     },
     {
       "fact_id": "F5",
       "verdict": "present",
       "statement_ids": [
-        "subjective-4"
+        "subjective-5"
       ],
-      "reason": "The note says the roommate was diagnosed with strep throat last week."
+      "reason": "The note states the roommate was diagnosed with strep throat last week."
     },
     {
       "fact_id": "F6",
       "verdict": "present",
       "statement_ids": [
-        "subjective-5"
+        "subjective-6"
       ],
-      "reason": "The note gives the same ibuprofen dose and frequency, and 'slight relief' is roughly partial relief."
+      "reason": "The note states ibuprofen 400 mg about twice a day with slight relief, equivalent to partial relief."
     },
     {
       "fact_id": "F7",
       "verdict": "present",
       "statement_ids": [
-        "subjective-6"
+        "subjective-7"
       ],
-      "reason": "The note records the penicillin allergy with hives from amoxicillin in childhood."
+      "reason": "The note states a penicillin allergy with hives from amoxicillin in childhood."
     },
     {
       "fact_id": "F8",
       "verdict": "present",
       "statement_ids": [
-        "subjective-7"
+        "subjective-8"
       ],
       "reason": "The note states no other medical problems and no regular medications."
     },
@@ -82,7 +82,7 @@
       "statement_ids": [
         "objective-1"
       ],
-      "reason": "The note gives the same temperature, heart rate and blood pressure."
+      "reason": "All vital sign values match."
     },
     {
       "fact_id": "F10",
@@ -90,7 +90,7 @@
       "statement_ids": [
         "objective-2"
       ],
-      "reason": "The note describes swollen tonsils with bilateral white exudate."
+      "reason": "The note states swollen tonsils with bilateral white exudate."
     },
     {
       "fact_id": "F11",
@@ -98,7 +98,7 @@
       "statement_ids": [
         "objective-3"
       ],
-      "reason": "The note states enlarged, tender anterior cervical nodes."
+      "reason": "The note states enlarged, tender anterior cervical lymph nodes."
     },
     {
       "fact_id": "F12",
@@ -106,7 +106,7 @@
       "statement_ids": [
         "objective-4"
       ],
-      "reason": "The note states normal ears and clear lungs."
+      "reason": "The note states ears normal and lungs clear."
     },
     {
       "fact_id": "F13",
@@ -114,7 +114,7 @@
       "statement_ids": [
         "objective-5"
       ],
-      "reason": "The note states the rapid strep test is positive."
+      "reason": "The note states the rapid strep test was positive."
     },
     {
       "fact_id": "F14",
@@ -128,43 +128,42 @@
       "fact_id": "F15",
       "verdict": "present",
       "statement_ids": [
-        "plan-1",
-        "plan-2"
+        "plan-1"
       ],
-      "reason": "The note gives azithromycin 500 mg once daily for 5 days, chosen because of the amoxicillin hives history."
+      "reason": "The dose, frequency and duration match, and the choice is due to the amoxicillin (penicillin-class) allergy."
     },
     {
       "fact_id": "F16",
       "verdict": "present",
       "statement_ids": [
-        "plan-3"
+        "plan-2"
       ],
-      "reason": "The note advises completing the full antibiotic course."
+      "reason": "The patient is advised to finish the full course."
     },
     {
       "fact_id": "F17",
       "verdict": "present",
       "statement_ids": [
-        "plan-4"
+        "plan-3"
       ],
-      "reason": "The note advises ibuprofen, fluids and warm salt water gargles."
+      "reason": "The note covers ibuprofen, fluids and salt water gargles."
     },
     {
       "fact_id": "F18",
       "verdict": "present",
       "statement_ids": [
-        "plan-5"
+        "plan-4"
       ],
-      "reason": "The note gives the work restriction until 24 hours on antibiotics and fever-free, with a work note."
+      "reason": "The work restriction criteria and work note match."
     },
     {
       "fact_id": "F19",
       "verdict": "present",
       "statement_ids": [
-        "plan-6",
-        "plan-7"
+        "plan-5",
+        "plan-6"
       ],
-      "reason": "The note gives all return precautions and the 48 to 72 hour callback."
+      "reason": "The note states the emergency return criteria and the 48-72 hour call instruction."
     }
   ]
 }

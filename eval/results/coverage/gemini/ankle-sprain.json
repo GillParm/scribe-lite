@@ -8,7 +8,7 @@
   "missing_verdicts": [],
   "statements": 24,
   "unsupported": 0,
-  "partially_supported": 0,
+  "partially_supported": 1,
   "unsupported_rate": 0.0,
   "rejected": 0,
   "verdicts": [
@@ -18,7 +18,7 @@
       "statement_ids": [
         "subjective-1"
       ],
-      "reason": "The note states a right ankle inversion injury playing basketball last night, landing on another player's foot."
+      "reason": "Right ankle inversion playing basketball last night landing on another player's foot."
     },
     {
       "fact_id": "F2",
@@ -26,7 +26,7 @@
       "statement_ids": [
         "subjective-2"
       ],
-      "reason": "The snap and rapid lateral swelling are stated."
+      "reason": "Snap and rapid lateral swelling stated."
     },
     {
       "fact_id": "F3",
@@ -34,7 +34,7 @@
       "statement_ids": [
         "subjective-3"
       ],
-      "reason": "The note says the patient limped and walked 10 to 15 steps."
+      "reason": "Limped and walked 10 to 15 steps."
     },
     {
       "fact_id": "F4",
@@ -42,7 +42,7 @@
       "statement_ids": [
         "subjective-4"
       ],
-      "reason": "Ice, elevation and ibuprofen 400 mg this morning are stated."
+      "reason": "Ice, elevation, ibuprofen 400 mg this morning."
     },
     {
       "fact_id": "F5",
@@ -50,7 +50,7 @@
       "statement_ids": [
         "subjective-5"
       ],
-      "reason": "The left ankle sprain 2 years ago and no prior right ankle injury are stated."
+      "reason": "Left sprain 2 years ago, no prior right injury."
     },
     {
       "fact_id": "F6",
@@ -58,7 +58,7 @@
       "statement_ids": [
         "subjective-6"
       ],
-      "reason": "The patient denies numbness or tingling."
+      "reason": "Denies numbness or tingling."
     },
     {
       "fact_id": "F7",
@@ -66,7 +66,7 @@
       "statement_ids": [
         "subjective-7"
       ],
-      "reason": "Warehouse work is stated."
+      "reason": "Works at warehouse."
     },
     {
       "fact_id": "F8",
@@ -74,7 +74,7 @@
       "statement_ids": [
         "objective-1"
       ],
-      "reason": "Moderate swelling and bruising over the lateral right ankle match."
+      "reason": "Matches."
     },
     {
       "fact_id": "F9",
@@ -82,7 +82,7 @@
       "statement_ids": [
         "objective-2"
       ],
-      "reason": "Maximal ATFL tenderness matches."
+      "reason": "Matches."
     },
     {
       "fact_id": "F10",
@@ -90,7 +90,7 @@
       "statement_ids": [
         "objective-3"
       ],
-      "reason": "No malleolar tenderness matches."
+      "reason": "Matches."
     },
     {
       "fact_id": "F11",
@@ -98,7 +98,7 @@
       "statement_ids": [
         "objective-4"
       ],
-      "reason": "No fifth metatarsal or navicular tenderness matches."
+      "reason": "Matches."
     },
     {
       "fact_id": "F12",
@@ -106,7 +106,7 @@
       "statement_ids": [
         "objective-5"
       ],
-      "reason": "Normal pulses and sensation match."
+      "reason": "Matches."
     },
     {
       "fact_id": "F13",
@@ -114,7 +114,7 @@
       "statement_ids": [
         "objective-6"
       ],
-      "reason": "Anterior drawer with mild laxity matches."
+      "reason": "Matches."
     },
     {
       "fact_id": "F14",
@@ -122,7 +122,7 @@
       "statement_ids": [
         "objective-7"
       ],
-      "reason": "The patient took 4 steps in clinic."
+      "reason": "Took 4 steps in clinic."
     },
     {
       "fact_id": "F15",
@@ -130,7 +130,7 @@
       "statement_ids": [
         "assessment-1"
       ],
-      "reason": "Grade 2 lateral sprain of the right ankle matches."
+      "reason": "Grade 2 lateral sprain right ankle."
     },
     {
       "fact_id": "F16",
@@ -138,7 +138,7 @@
       "statement_ids": [
         "assessment-2"
       ],
-      "reason": "X-ray is not indicated per the Ottawa rules."
+      "reason": "X-ray not indicated per Ottawa rules."
     },
     {
       "fact_id": "F17",
@@ -146,7 +146,7 @@
       "statement_ids": [
         "plan-1"
       ],
-      "reason": "Elevation and ice for 15 to 20 minutes at a time match."
+      "reason": "Ice 15-20 minutes and elevation."
     },
     {
       "fact_id": "F18",
@@ -155,7 +155,7 @@
         "plan-2",
         "plan-3"
       ],
-      "reason": "Stirrup brace, crutches for 2 or 3 days and weight bearing as tolerated match."
+      "reason": "Stirrup brace, crutches 2-3 days, weight bearing as tolerated."
     },
     {
       "fact_id": "F19",
@@ -163,7 +163,7 @@
       "statement_ids": [
         "plan-4"
       ],
-      "reason": "Ibuprofen dosing and duration match."
+      "reason": "Matches dose, frequency, duration."
     },
     {
       "fact_id": "F20",
@@ -171,7 +171,7 @@
       "statement_ids": [
         "plan-5"
       ],
-      "reason": "Physiotherapy referral for balance and strengthening matches."
+      "reason": "Physio referral for balance and strengthening."
     },
     {
       "fact_id": "F21",
@@ -179,7 +179,7 @@
       "statement_ids": [
         "plan-6"
       ],
-      "reason": "3 to 4 weeks out of basketball matches."
+      "reason": "3 to 4 weeks out of basketball."
     },
     {
       "fact_id": "F22",
@@ -187,7 +187,7 @@
       "statement_ids": [
         "plan-7"
       ],
-      "reason": "Modified duties for 1 week with no heavy lifting or ladders, and a work note, match."
+      "reason": "Work note, modified duties 1 week, no lifting or ladders."
     },
     {
       "fact_id": "F23",
@@ -195,7 +195,7 @@
       "statement_ids": [
         "plan-8"
       ],
-      "reason": "The return precautions match."
+      "reason": "Return precautions match."
     }
   ]
 }

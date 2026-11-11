@@ -6,7 +6,7 @@
   "absent": 0,
   "coverage": 0.9375,
   "missing_verdicts": [],
-  "statements": 29,
+  "statements": 28,
   "unsupported": 0,
   "partially_supported": 1,
   "unsupported_rate": 0.0,
@@ -18,7 +18,7 @@
       "statement_ids": [
         "subjective-1"
       ],
-      "reason": "The note mentions a three-month diabetes check but never says type 2."
+      "reason": "The note gives a three-month diabetes check but never says type 2."
     },
     {
       "fact_id": "F2",
@@ -26,7 +26,7 @@
       "statement_ids": [
         "subjective-2"
       ],
-      "reason": "The note states holiday overeating of bread and sweets."
+      "reason": "The note states more bread and sweets over the holidays."
     },
     {
       "fact_id": "F3",
@@ -34,7 +34,7 @@
       "statement_ids": [
         "subjective-3"
       ],
-      "reason": "Dose, frequency and missed evening doses all match."
+      "reason": "Dose, frequency and missed evening doses three to four times a week all match."
     },
     {
       "fact_id": "F4",
@@ -42,7 +42,7 @@
       "statement_ids": [
         "subjective-4"
       ],
-      "reason": "Cramping and loose stools about an hour after the dose are stated."
+      "reason": "Cramping and loose stools about an hour after a dose are stated."
     },
     {
       "fact_id": "F5",
@@ -50,7 +50,7 @@
       "statement_ids": [
         "subjective-5"
       ],
-      "reason": "Morning home readings of 8 to 10 are stated."
+      "reason": "Morning sugars usually 8 to 10 are stated."
     },
     {
       "fact_id": "F6",
@@ -58,7 +58,7 @@
       "statement_ids": [
         "subjective-6"
       ],
-      "reason": "Walking about twice a week, less since the cold, is stated."
+      "reason": "Walks about twice a week, less since the cold weather, is stated."
     },
     {
       "fact_id": "F7",
@@ -91,7 +91,7 @@
         "subjective-10",
         "plan-4"
       ],
-      "reason": "The note says he has not started cinnamon and was advised to hold off."
+      "reason": "Cinnamon was not started and the patient was advised against it."
     },
     {
       "fact_id": "F11",
@@ -131,7 +131,7 @@
       "statement_ids": [
         "assessment-1"
       ],
-      "reason": "Worsening glycemic control is stated, but the diabetes is not specified as type 2."
+      "reason": "Worsening control is stated but the diabetes type is not."
     },
     {
       "fact_id": "F16",
@@ -145,9 +145,10 @@
       "fact_id": "F17",
       "verdict": "partial",
       "statement_ids": [
-        "assessment-4"
+        "objective-2",
+        "plan-8"
       ],
-      "reason": "Blood pressure is called elevated, but not framed as above target."
+      "reason": "Above-target blood pressure is only implied by the plan, not explicitly assessed."
     },
     {
       "fact_id": "F18",
@@ -155,7 +156,7 @@
       "statement_ids": [
         "plan-1"
       ],
-      "reason": "Switch to extended-release 1000 mg twice daily for stomach upset is stated."
+      "reason": "The switch to extended-release 1000 mg twice daily for tolerance is stated."
     },
     {
       "fact_id": "F19",
@@ -164,7 +165,7 @@
         "plan-2",
         "plan-3"
       ],
-      "reason": "Empagliflozin 10 mg daily is started with the counselling points included."
+      "reason": "Empagliflozin 10 mg daily and the counselling points are stated."
     },
     {
       "fact_id": "F20",
@@ -172,7 +173,7 @@
       "statement_ids": [
         "plan-5"
       ],
-      "reason": "Referral to diabetes education with a dietitian is stated."
+      "reason": "Referral to the diabetes education program and a dietitian is stated."
     },
     {
       "fact_id": "F21",
@@ -188,7 +189,7 @@
       "statement_ids": [
         "plan-7"
       ],
-      "reason": "Kidney function and urine test today is stated."
+      "reason": "Kidney function and urine tests today are stated."
     },
     {
       "fact_id": "F23",
@@ -196,7 +197,7 @@
       "statement_ids": [
         "plan-8"
       ],
-      "reason": "BP recheck next visit with medication if above 130/80 is stated."
+      "reason": "Recheck blood pressure and start medication if above 130/80 is stated."
     },
     {
       "fact_id": "F24",
@@ -205,7 +206,7 @@
         "plan-9",
         "plan-10"
       ],
-      "reason": "Repeat A1c in three months and daily foot checks with a call about sores are stated."
+      "reason": "Repeat A1c in three months, daily foot checks and calling about sores are stated."
     }
   ]
 }

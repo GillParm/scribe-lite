@@ -2,7 +2,7 @@
   "version": 1,
   "sample_slug": null,
   "title": "Type 2 diabetes, three-month follow-up",
-  "processed_at": "2026-11-11T00:23:08.668447+00:00",
+  "processed_at": "2026-11-11T00:28:53.940734+00:00",
   "transcriber": "recorded gemini-3.8-flash transcript (gemini-3.8-flash)",
   "note_model": "claude-opus-5-5",
   "check_model": "claude-opus-5-5",
@@ -436,7 +436,7 @@
     {
       "id": "subjective-3",
       "section": "subjective",
-      "text": "The patient takes metformin 1,000 mg twice daily but misses the evening dose 3 to 4 times a week due to stomach upset.",
+      "text": "The patient takes metformin 1,000 mg twice daily but misses the evening dose 3 or 4 times a week due to stomach upset.",
       "source_segment_ids": [
         "s9",
         "s10"
@@ -472,7 +472,7 @@
     {
       "id": "subjective-6",
       "section": "subjective",
-      "text": "The patient walks the dog about twice a week, less since the weather turned cold.",
+      "text": "The patient walks the dog about twice a week, less since the weather got cold.",
       "source_segment_ids": [
         "s15",
         "s16"
@@ -491,7 +491,7 @@
       ],
       "citations_repaired": false,
       "support": "supported",
-      "support_reason": "Stated in s18 in response to s17."
+      "support_reason": "Stated in s18."
     },
     {
       "id": "subjective-8",
@@ -526,8 +526,8 @@
         "s22"
       ],
       "citations_repaired": false,
-      "support": "supported",
-      "support_reason": "Stated in s22."
+      "support": "partially_supported",
+      "support_reason": "The patient said his brother-in-law suggested the pills, not that he considered them himself."
     },
     {
       "id": "objective-1",
@@ -565,7 +565,7 @@
     {
       "id": "objective-4",
       "section": "objective",
-      "text": "Foot exam shows good pulses with reduced monofilament sensation at both big toes.",
+      "text": "Foot exam shows good pulses but reduced monofilament sensation at both big toes.",
       "source_segment_ids": [
         "s25"
       ],
@@ -584,12 +584,12 @@
       ],
       "citations_repaired": false,
       "support": "supported",
-      "support_reason": "Stated in s23 to s25."
+      "support_reason": "Stated in s23 and s24, and confirmed in s25."
     },
     {
       "id": "assessment-2",
       "section": "assessment",
-      "text": "Reduced foot sensation is consistent with early diabetic nerve changes.",
+      "text": "Reduced foot sensation fits with early diabetic nerve changes.",
       "source_segment_ids": [
         "s25"
       ],
@@ -600,7 +600,7 @@
     {
       "id": "assessment-3",
       "section": "assessment",
-      "text": "Metformin is causing gastrointestinal side effects that are limiting adherence.",
+      "text": "Metformin is causing gastrointestinal side effects that limit adherence.",
       "source_segment_ids": [
         "s10",
         "s12",
@@ -608,12 +608,12 @@
       ],
       "citations_repaired": false,
       "support": "supported",
-      "support_reason": "Stated in s10, s12 and s27."
+      "support_reason": "Stated in s10 and s12, with the extended-release switch for the stomach in s27."
     },
     {
       "id": "plan-1",
       "section": "plan",
-      "text": "Switch metformin to the extended-release form at 1,000 mg twice daily.",
+      "text": "Switch metformin to the extended-release form, 1,000 mg twice daily.",
       "source_segment_ids": [
         "s27"
       ],
@@ -635,7 +635,7 @@
     {
       "id": "plan-3",
       "section": "plan",
-      "text": "The patient was counseled that empagliflozin can cause genital yeast infections and increased urination, and was advised to drink enough water.",
+      "text": "The patient was counseled that empagliflozin can cause genital yeast infections and increased urination, and to drink enough water.",
       "source_segment_ids": [
         "s28",
         "s29"
@@ -715,7 +715,7 @@
     {
       "id": "plan-10",
       "section": "plan",
-      "text": "The patient was advised to check the feet daily and call if any sores appear.",
+      "text": "The patient should check the feet daily and call if any sores appear.",
       "source_segment_ids": [
         "s33"
       ],
@@ -738,32 +738,32 @@
   "rejected_statements": [],
   "model_calls": [
     {
-      "created_at": "2026-11-11T00:22:58.501805+00:00",
+      "created_at": "2026-11-11T00:28:37.365905+00:00",
       "provider": "anthropic",
       "model": "claude-opus-5-5",
       "purpose": "soap_note",
       "prompt_sha256": "4f40b1fc4c8da452adf5b27e9a679a5d34f5562371757e2bd138ec19c1e66b8c",
       "input_tokens": 2646,
-      "output_tokens": 1288,
+      "output_tokens": 1277,
       "cache_read_tokens": 0,
       "cache_write_tokens": 0,
-      "cost_usd": "0.036344",
-      "latency_ms": 11443,
+      "cost_usd": "0.036124",
+      "latency_ms": 9677,
       "status": "ok",
       "error": null
     },
     {
-      "created_at": "2026-11-11T00:23:08.653865+00:00",
+      "created_at": "2026-11-11T00:28:53.936821+00:00",
       "provider": "anthropic",
       "model": "claude-opus-5-5",
       "purpose": "claim_check",
-      "prompt_sha256": "9592ab0233ef9268e71fc2b066dc360705b871ef52c99736cf7844cb940cd852",
-      "input_tokens": 3292,
-      "output_tokens": 1216,
+      "prompt_sha256": "4e764c9a7cf9ae6ce63b833bc2b5286a69310fd652b4e10bea5a84a8b4cd4bba",
+      "input_tokens": 3332,
+      "output_tokens": 1397,
       "cache_read_tokens": 0,
       "cache_write_tokens": 0,
-      "cost_usd": "0.037488",
-      "latency_ms": 10124,
+      "cost_usd": "0.041268",
+      "latency_ms": 16566,
       "status": "ok",
       "error": null
     }
