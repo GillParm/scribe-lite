@@ -1,1 +1,87 @@
 @import "tailwindcss";
+
+@theme {
+  --color-desk: #e6ebee;
+  --color-paper: #ffffff;
+  --color-ink: #17212b;
+  --color-ink-soft: #4a5866;
+  --color-rule: #c9d3da;
+  --color-rule-soft: #e3e9ed;
+  --color-highlight: #ffe45c;
+  --color-highlight-soft: #fff4b8;
+  --color-unsupported: #bf3a2b;
+  --color-partial: #9a6400;
+  --color-supported: #1e6b5f;
+  --color-doctor: #2b5a86;
+  --color-patient: #7b3c6c;
+
+  --font-sans: var(--font-atkinson), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-source-serif), ui-serif, Georgia, serif;
+}
+
+@layer base {
+  html {
+    background: var(--color-desk);
+    color: var(--color-ink);
+    font-feature-settings: "tnum" 1;
+  }
+  :focus-visible {
+    outline: 2px solid var(--color-doctor);
+    outline-offset: 2px;
+  }
+}
+
+@layer components {
+  /* A highlighter-pen stroke: ragged ends, ink stays readable on top. */
+  .marker {
+    --hl: var(--color-highlight);
+    margin: 0 -0.15em;
+    padding: 0.05em 0.15em;
+    border-radius: 0.4em 0.15em;
+    background-image: linear-gradient(
+      100deg,
+      color-mix(in srgb, var(--hl) 55%, transparent) 0%,
+      var(--hl) 3%,
+      color-mix(in srgb, var(--hl) 88%, transparent) 50%,
+      var(--hl) 96%,
+      color-mix(in srgb, var(--hl) 60%, transparent) 100%
+    );
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+  }
+
+  /* Proofreading marks for statements the checker did not fully accept. */
+  .mark-unsupported {
+    text-decoration: underline wavy var(--color-unsupported);
+    text-decoration-thickness: 1.5px;
+    text-underline-offset: 4px;
+  }
+  .mark-partial {
+    text-decoration: underline dotted var(--color-partial);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 4px;
+  }
+  .mark-unchecked {
+    text-decoration: underline dashed var(--color-rule);
+    text-underline-offset: 4px;
+  }
+
+  /* Redaction tape: what the model saw in place of a personal detail. */
+  .tape {
+    background: var(--color-ink);
+    color: #fff;
+    border-radius: 2px;
+    padding: 0 0.3em;
+    font-size: 0.82em;
+    letter-spacing: 0.01em;
+    white-space: nowrap;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+    animation: none !important;
+    scroll-behavior: auto !important;
+  }
+}
