@@ -6,6 +6,7 @@ license = "MIT"
 requires-python = ">=3.12,<3.13"
 dependencies = [
     "alembic>=1.20.1",
+    "anthropic>=2.8.0",
     "en-core-web-md>=3.8.0",
     "fastapi>=0.162.4",
     "google-genai>=3.1.0",
