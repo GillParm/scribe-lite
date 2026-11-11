@@ -13,7 +13,7 @@ from datetime import datetime
 from decimal import Decimal
 from typing import Any, BinaryIO
 
-from sqlalchemy import select
+from sqlalchemy import select, update
 from sqlalchemy.orm import Session
 
 from scribe.db import Database
@@ -266,3 +266,31 @@ def seed_samples(
         created.append(import_sample(db, store, sample, outputs[sample.slug], max_bytes))
         log.info("seeded sample %s", sample.slug)
     return created
+
+
+INTERRUPTED = (
+    EncounterStatus.TRANSCRIBING,
+    EncounterStatus.REDACTING,
+    EncounterStatus.DRAFTING,
+    EncounterStatus.CHECKING,
+)
+
+
+def fail_interrupted(db: Database) -> int:
+    """Mark encounters left mid-pipeline by a restart as failed, so they can be re-run.
+
+    Processing runs in-process, so nothing resumes it after the server stops.
+    """
+    with db.session() as session:
+        result = session.execute(
+            update(Encounter)
+            .where(Encounter.status.in_(INTERRUPTED))
+            .values(
+                status=EncounterStatus.FAILED,
+                error="Processing was interrupted by a server restart. Process it again.",
+            )
+        )
+        count = int(getattr(result, "rowcount", 0) or 0)
+    if count:
+        log.warning("marked %d interrupted encounter(s) as failed", count)
+    return count

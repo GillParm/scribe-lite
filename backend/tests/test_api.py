@@ -272,3 +272,19 @@ def test_retention_run_and_status(client: TestClient, db: Database) -> None:
     assert status["retention_days"] == 30
     assert [d["encounter_id"] for d in status["recent_deletions"]] == [encounter_id]
     assert client.post(f"/api/encounters/{encounter_id}/process").status_code == 410
+
+
+def test_startup_fails_encounters_interrupted_mid_pipeline(
+    app_parts: tuple[Settings, Services, FakeAnthropic], db: Database
+) -> None:
+    settings, services, _ = app_parts
+    with TestClient(create_app(settings, services)) as first:
+        encounter_id = sample_id(first, "sore-throat")
+    with db.session() as session:
+        session.get_one(Encounter, encounter_id).status = EncounterStatus.TRANSCRIBING
+
+    with TestClient(create_app(settings, services)) as second:
+        detail = second.get(f"/api/encounters/{encounter_id}").json()
+        assert detail["status"] == "failed"
+        assert "interrupted" in detail["error"]
+        assert second.post(f"/api/encounters/{encounter_id}/process").status_code == 202

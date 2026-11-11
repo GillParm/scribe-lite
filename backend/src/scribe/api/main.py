@@ -17,7 +17,7 @@ from scribe.api.state import DEMO_NOTICE, AppState
 from scribe.clock import utcnow
 from scribe.config import Settings, get_settings
 from scribe.db import Database
-from scribe.encounters import seed_samples
+from scribe.encounters import fail_interrupted, seed_samples
 from scribe.pipeline import Pipeline, Services
 from scribe.retention import purge_expired_audio
 from scribe.samples import load_sample_outputs, load_samples
@@ -74,6 +74,7 @@ def create_app(settings: Settings | None = None, services: Services | None = Non
         built = services or build_services(settings, db)
         state = AppState(settings=settings, db=db, services=built, pipeline=Pipeline(built))
         app.state.scribe = state
+        await asyncio.to_thread(fail_interrupted, db)
         if settings.seed_samples:
             await asyncio.to_thread(_seed, state)
         task = None
