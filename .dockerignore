@@ -1,0 +1,19 @@
+# Build context for backend/Dockerfile is the repository root. Keep it small and keep
+# secrets out of it.
+.git
+.github
+.env
+.env.*
+!.env.example
+**/.venv
+**/node_modules
+**/.next
+**/__pycache__
+**/.pytest_cache
+**/.mypy_cache
+**/.ruff_cache
+**/data
+frontend
+docs
+eval
+samples/tools
