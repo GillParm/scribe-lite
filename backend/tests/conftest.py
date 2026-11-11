@@ -14,6 +14,7 @@ from pathlib import Path
 import pytest
 
 from scribe.db import Database
+from scribe.redaction import Redactor
 from scribe.storage import AudioStore
 
 
@@ -49,3 +50,9 @@ def db(tmp_path: Path) -> Iterator[Database]:
 @pytest.fixture
 def store(tmp_path: Path) -> AudioStore:
     return AudioStore(tmp_path / "audio")
+
+
+@pytest.fixture(scope="session")
+def redactor() -> Redactor:
+    # spaCy takes a couple of seconds to load; share one instance across the run.
+    return Redactor("en_core_web_md")

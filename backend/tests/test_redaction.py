@@ -12,11 +12,6 @@ from scribe.schemas import TranscriptSegment
 SAMPLES = load_samples(REPO_ROOT / "samples")
 
 
-@pytest.fixture(scope="module")
-def redactor() -> Redactor:
-    return Redactor("en_core_web_md")
-
-
 def turns(*texts: str) -> list[TranscriptSegment]:
     speakers = [Speaker.DOCTOR, Speaker.PATIENT]
     return [
