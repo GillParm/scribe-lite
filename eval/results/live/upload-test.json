@@ -1,0 +1,315 @@
+{
+  "notice": "Live upload test through the Docker Compose stack on 2026-11-11: a 38-second synthetic conversation voiced with macOS say, uploaded through the web UI. Redacted view, as the note model saw it; the API omits the real values in this view.",
+  "title": "Live test: headache (uploaded file)",
+  "source": "upload",
+  "sample_slug": null,
+  "status": "ready",
+  "error": null,
+  "created_at": "2026-11-11T00:41:18.544751Z",
+  "duration_seconds": 36.9,
+  "audio_available": true,
+  "audio_deleted_at": null,
+  "statement_count": 9,
+  "flagged_count": 0,
+  "view": "redacted",
+  "transcriber": "gemini:gemini-3.8-flash",
+  "note_model": "claude-opus-5-5",
+  "check_model": "claude-opus-5-5",
+  "audio_mime": "audio/wav",
+  "segments": [
+    {
+      "id": "s1",
+      "speaker": "doctor",
+      "start": 0.0,
+      "end": 3.7,
+      "text": "Hi, I'm Dr. [PERSON_1]. What brings you in today?",
+      "redactions": [
+        {
+          "start": 12,
+          "end": 22,
+          "placeholder": "[PERSON_1]",
+          "entity_type": "PERSON"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "speaker": "patient",
+      "start": 3.9,
+      "end": 9.6,
+      "text": "Hi, I'm [PERSON_2]. I've had a headache on and off for about a week, mostly in the afternoons.",
+      "redactions": [
+        {
+          "start": 8,
+          "end": 18,
+          "placeholder": "[PERSON_2]",
+          "entity_type": "PERSON"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "speaker": "doctor",
+      "start": 9.9,
+      "end": 13.8,
+      "text": "Any nausea, vision changes, or weakness?",
+      "redactions": []
+    },
+    {
+      "id": "s4",
+      "speaker": "patient",
+      "start": 14.2,
+      "end": 19.1,
+      "text": "No, none of that. I've been drinking a lot less water since I started a new job.",
+      "redactions": []
+    },
+    {
+      "id": "s5",
+      "speaker": "doctor",
+      "start": 19.4,
+      "end": 34.9,
+      "text": "Your blood pressure today is 122 over 78, and the neurological exam is normal. This sounds like a tension-type headache. Try acetaminophen 500 milligrams as needed, drink more water, and come back in 2 weeks if it isn't better.",
+      "redactions": []
+    },
+    {
+      "id": "s6",
+      "speaker": "patient",
+      "start": 35.2,
+      "end": 36.9,
+      "text": "Okay, thanks.",
+      "redactions": []
+    }
+  ],
+  "sections": [
+    {
+      "name": "subjective",
+      "statements": [
+        {
+          "id": "subjective-1",
+          "text": "The patient reports an intermittent headache for about one week, mostly in the afternoons.",
+          "source_segment_ids": [
+            "s2"
+          ],
+          "citations_repaired": false,
+          "support": "supported",
+          "support_reason": "Stated in s2."
+        },
+        {
+          "id": "subjective-2",
+          "text": "The patient denies nausea, vision changes, or weakness.",
+          "source_segment_ids": [
+            "s3",
+            "s4"
+          ],
+          "citations_repaired": false,
+          "support": "supported",
+          "support_reason": "Stated in s3 and s4."
+        },
+        {
+          "id": "subjective-3",
+          "text": "The patient reports drinking much less water since starting a new job.",
+          "source_segment_ids": [
+            "s4"
+          ],
+          "citations_repaired": false,
+          "support": "supported",
+          "support_reason": "Stated in s4."
+        }
+      ]
+    },
+    {
+      "name": "objective",
+      "statements": [
+        {
+          "id": "objective-1",
+          "text": "Blood pressure is 122/78.",
+          "source_segment_ids": [
+            "s5"
+          ],
+          "citations_repaired": false,
+          "support": "supported",
+          "support_reason": "Stated in s5."
+        },
+        {
+          "id": "objective-2",
+          "text": "Neurological exam is normal.",
+          "source_segment_ids": [
+            "s5"
+          ],
+          "citations_repaired": false,
+          "support": "supported",
+          "support_reason": "Stated in s5."
+        }
+      ]
+    },
+    {
+      "name": "assessment",
+      "statements": [
+        {
+          "id": "assessment-1",
+          "text": "Tension-type headache.",
+          "source_segment_ids": [
+            "s5"
+          ],
+          "citations_repaired": false,
+          "support": "supported",
+          "support_reason": "Stated in s5."
+        }
+      ]
+    },
+    {
+      "name": "plan",
+      "statements": [
+        {
+          "id": "plan-1",
+          "text": "Acetaminophen 500 mg as needed.",
+          "source_segment_ids": [
+            "s5"
+          ],
+          "citations_repaired": false,
+          "support": "supported",
+          "support_reason": "Stated in s5."
+        },
+        {
+          "id": "plan-2",
+          "text": "Increase water intake.",
+          "source_segment_ids": [
+            "s5"
+          ],
+          "citations_repaired": false,
+          "support": "supported",
+          "support_reason": "Stated in s5."
+        },
+        {
+          "id": "plan-3",
+          "text": "Return in 2 weeks if not improved.",
+          "source_segment_ids": [
+            "s5"
+          ],
+          "citations_repaired": false,
+          "support": "supported",
+          "support_reason": "Stated in s5."
+        }
+      ]
+    }
+  ],
+  "rejected_statements": [],
+  "pii": [
+    {
+      "placeholder": "[PERSON_1]",
+      "entity_type": "PERSON",
+      "occurrences": 1,
+      "value": null
+    },
+    {
+      "placeholder": "[PERSON_2]",
+      "entity_type": "PERSON",
+      "occurrences": 1,
+      "value": null
+    }
+  ],
+  "check_summary": {
+    "supported": 9,
+    "partially_supported": 0,
+    "unsupported": 0,
+    "unchecked": 0
+  },
+  "model_calls": [
+    {
+      "id": 7,
+      "created_at": "2026-11-11T00:41:32.364715Z",
+      "provider": "gemini",
+      "model": "gemini-3.8-flash",
+      "purpose": "transcription",
+      "encounter_id": "5c844f49-5631-4113-bee9-686d7c8c5def",
+      "prompt_sha256": "1be4c8272fbf430321047e7821b2df56066eda6aaf6b7790524d322d5d5eb04e",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": "0.000000",
+      "latency_ms": 13762,
+      "status": "error",
+      "error": "ServerError: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",
+      "origin": "live"
+    },
+    {
+      "id": 8,
+      "created_at": "2026-11-11T00:41:43.673535Z",
+      "provider": "gemini",
+      "model": "gemini-3.8-flash",
+      "purpose": "transcription",
+      "encounter_id": "5c844f49-5631-4113-bee9-686d7c8c5def",
+      "prompt_sha256": "1be4c8272fbf430321047e7821b2df56066eda6aaf6b7790524d322d5d5eb04e",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": "0.000000",
+      "latency_ms": 6299,
+      "status": "error",
+      "error": "ServerError: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",
+      "origin": "live"
+    },
+    {
+      "id": 9,
+      "created_at": "2026-11-11T00:42:04.011590Z",
+      "provider": "gemini",
+      "model": "gemini-3.8-flash",
+      "purpose": "transcription",
+      "encounter_id": "5c844f49-5631-4113-bee9-686d7c8c5def",
+      "prompt_sha256": "1be4c8272fbf430321047e7821b2df56066eda6aaf6b7790524d322d5d5eb04e",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": "0.000000",
+      "latency_ms": 10328,
+      "status": "error",
+      "error": "ServerError: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",
+      "origin": "live"
+    },
+    {
+      "id": 10,
+      "created_at": "2026-11-11T00:54:28.210015Z",
+      "provider": "gemini",
+      "model": "gemini-3.8-flash",
+      "purpose": "transcription",
+      "encounter_id": "5c844f49-5631-4113-bee9-686d7c8c5def",
+      "prompt_sha256": "1be4c8272fbf430321047e7821b2df56066eda6aaf6b7790524d322d5d5eb04e",
+      "input_tokens": 1140,
+      "output_tokens": 1112,
+      "cost_usd": "0.005025",
+      "latency_ms": 724192,
+      "status": "ok",
+      "error": null,
+      "origin": "live"
+    },
+    {
+      "id": 11,
+      "created_at": "2026-11-11T00:54:38.393681Z",
+      "provider": "anthropic",
+      "model": "claude-opus-5-5",
+      "purpose": "soap_note",
+      "encounter_id": "5c844f49-5631-4113-bee9-686d7c8c5def",
+      "prompt_sha256": "7bd3fe1902e4188fda55fb40e7b84e282385b5f04d687e2c9b322a58d20846e7",
+      "input_tokens": 1546,
+      "output_tokens": 344,
+      "cost_usd": "0.013064",
+      "latency_ms": 4927,
+      "status": "ok",
+      "error": null,
+      "origin": "live"
+    },
+    {
+      "id": 12,
+      "created_at": "2026-11-11T00:54:42.808346Z",
+      "provider": "anthropic",
+      "model": "claude-opus-5-5",
+      "purpose": "claim_check",
+      "encounter_id": "5c844f49-5631-4113-bee9-686d7c8c5def",
+      "prompt_sha256": "93284956378e89845e492b6cfdf956838f3b36ff60cb6783e26de5d49f23cb06",
+      "input_tokens": 1461,
+      "output_tokens": 299,
+      "cost_usd": "0.011824",
+      "latency_ms": 4140,
+      "status": "ok",
+      "error": null,
+      "origin": "live"
+    }
+  ]
+}
