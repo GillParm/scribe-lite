@@ -107,12 +107,12 @@ class GeminiTranscriber:
         audit: AuditLog,
         client: genai.Client | None = None,
         max_retries: int = 5,
-        timeout_s: float = 600.0,
+        timeout_s: float = 900.0,
         sleep: Callable[[float], None] = time.sleep,
     ) -> None:
         self.model = model
         self.audit = audit
-        # gemini-3.8-flash took up to six minutes per recording on the free tier; without a
+        # gemini-3.8-flash took up to 12 minutes per request on the free tier; without a
         # timeout a stalled request would hold a worker forever.
         self.client = client or genai.Client(
             api_key=api_key, http_options=types.HttpOptions(timeout=int(timeout_s * 1000))

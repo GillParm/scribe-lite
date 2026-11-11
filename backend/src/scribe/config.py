@@ -44,7 +44,7 @@ class Settings(BaseSettings):
     transcriber: TranscriberName = "auto"
     # Chosen by eval/compare_transcribers.py: better speaker labels, much slower.
     gemini_transcribe_model: str = "gemini-3.8-flash"
-    gemini_timeout_seconds: float = Field(default=600, gt=0)
+    gemini_timeout_seconds: float = Field(default=900, gt=0)
 
     spacy_model: str = "en_core_web_md"
 
