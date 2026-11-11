@@ -31,6 +31,7 @@ def build_services(settings: Settings, db: Database) -> Services:
             api_key=settings.gemini_api_key.get_secret_value(),
             model=settings.gemini_transcribe_model,
             audit=audit,
+            timeout_s=settings.gemini_timeout_seconds,
         )
     if settings.anthropic_api_key and settings.has_anthropic_key():
         llm = ClaudeClient(
