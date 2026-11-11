@@ -1,0 +1,191 @@
+{
+  "model": "gemini-3.5-flash-lite",
+  "wall_seconds": 8.7,
+  "calls": [
+    {
+      "status": "ok",
+      "input_tokens": 5488,
+      "output_tokens": 2116,
+      "cost_usd_at_paid_rates": "0.006936",
+      "latency_ms": 8680,
+      "prompt_sha256": "648dbfe24463d4dad3993b3e088997506c225ebc361ffd6517e1f216ac178d60"
+    }
+  ],
+  "segments": [
+    {
+      "id": "s1",
+      "speaker": "doctor",
+      "start": 0.0,
+      "end": 7.84,
+      "text": "Hi, Mr. Mitchell, I'm Dr. Raman. Good to see you again. Before we start, can you confirm your date of birth for me?"
+    },
+    {
+      "id": "s2",
+      "speaker": "patient",
+      "start": 8.44,
+      "end": 11.58,
+      "text": "July 19th, 1967."
+    },
+    {
+      "id": "s3",
+      "speaker": "doctor",
+      "start": 12.6,
+      "end": 21.67,
+      "text": "Thank you. And we have your address as 1187 Birchwood Drive, Missisuga, L5G 2K9. Is that still current?"
+    },
+    {
+      "id": "s4",
+      "speaker": "patient",
+      "start": 22.25,
+      "end": 24.16,
+      "text": "Still the same. Yes."
+    },
+    {
+      "id": "s5",
+      "speaker": "doctor",
+      "start": 25.13,
+      "end": 29.83,
+      "text": "And your phone number, 905-555-0147?"
+    },
+    {
+      "id": "s6",
+      "speaker": "patient",
+      "start": 31.06,
+      "end": 35.53,
+      "text": "That's the house phone. My wife, Linda, usually answers it."
+    },
+    {
+      "id": "s7",
+      "speaker": "doctor",
+      "start": 36.36,
+      "end": 40.89,
+      "text": "That's fine. So, this is your three month diabetes check. How have things been going?"
+    },
+    {
+      "id": "s8",
+      "speaker": "patient",
+      "start": 41.69,
+      "end": 48.44,
+      "text": "Honestly, not great. The holidays were rough. I've been eating a lot more bread and sweets than I should."
+    },
+    {
+      "id": "s9",
+      "speaker": "doctor",
+      "start": 49.33,
+      "end": 54.49,
+      "text": "That's common. Are you still taking the metformin, 1,000 milligrams twice a day?"
+    },
+    {
+      "id": "s10",
+      "speaker": "patient",
+      "start": 55.08,
+      "end": 103.01,
+      "text": "Mostly. I skip the evening dose sometimes because it upsets my stomach. Maybe three or four times a week I miss it. What kind of stomach upset? Cramping and loose stools, usually an hour or so after I take it."
+    },
+    {
+      "id": "s11",
+      "speaker": "doctor",
+      "start": 111.45,
+      "end": 114.15,
+      "text": "Okay. What have your sugars been like at home?"
+    },
+    {
+      "id": "s12",
+      "speaker": "patient",
+      "start": 114.92,
+      "end": 117.84,
+      "text": "In the mornings they're usually between 8 and 10."
+    },
+    {
+      "id": "s13",
+      "speaker": "doctor",
+      "start": 118.89,
+      "end": 119.64,
+      "text": "And exercise?"
+    },
+    {
+      "id": "s14",
+      "speaker": "patient",
+      "start": 120.31,
+      "end": 124.59,
+      "text": "I walk the dog maybe twice a week, less since it got cold."
+    },
+    {
+      "id": "s15",
+      "speaker": "doctor",
+      "start": 125.43,
+      "end": 129.54,
+      "text": "Any chest pain, shortness of breath, or problems with your vision?"
+    },
+    {
+      "id": "s16",
+      "speaker": "patient",
+      "start": 130.13,
+      "end": 141.05,
+      "text": "No chest pain. My eyes seem fine, but I haven't had an eye exam in about 2 years. The one thing is my feet. Sometimes at night I get tingling in my toes."
+    },
+    {
+      "id": "s17",
+      "speaker": "doctor",
+      "start": 141.87,
+      "end": 142.69,
+      "text": "Both feet?"
+    },
+    {
+      "id": "s18",
+      "speaker": "patient",
+      "start": 143.37,
+      "end": 144.47,
+      "text": "Yes, both."
+    },
+    {
+      "id": "s19",
+      "speaker": "doctor",
+      "start": 145.42,
+      "end": 148.16,
+      "text": "Okay. Are you taking any supplements?"
+    },
+    {
+      "id": "s20",
+      "speaker": "patient",
+      "start": 148.69,
+      "end": 154.02,
+      "text": "My brother-in-law keeps telling me to try cinnamon pills, but I haven't started them."
+    },
+    {
+      "id": "s21",
+      "speaker": "doctor",
+      "start": 154.7,
+      "end": 207.71,
+      "text": "I'd hold off on those. There isn't good evidence that they help. Now, your A1C from last week came back at 8.1%. In the spring it was 7.4. So it's going up. It is. Your blood pressure today is 142 over 88, and your weight is 98 kg, up two from last time. On the foot exam, your pulses are good, but sensation with the monofilament is reduced at both big toes. That fits with early nerve changes from diabetes."
+    },
+    {
+      "id": "s22",
+      "speaker": "patient",
+      "start": 208.28,
+      "end": 226.54,
+      "text": "That's worrying. It's a sign we should tighten things up. Here's what I'd suggest. First, let's switch your metformin to the extended release form, still 1,000 milligrams twice a day. It's usually easier on the stomach."
+    },
+    {
+      "id": "s23",
+      "speaker": "doctor",
+      "start": 227.08,
+      "end": 276.73,
+      "text": "Second, I'd like to add a medication called empagliflozin, 10 milligrams once a day. It lowers sugar and also protects the heart and kidneys. Any side effects? It can cause genital yeast infections and make you pee more. So drink enough water. Third, I'm referring you to the diabetes education program to meet with a dietician and to an eye doctor for a retinal exam. We'll also do kidney function and a urine test today."
+    },
+    {
+      "id": "s24",
+      "speaker": "patient",
+      "start": 277.29,
+      "end": 307.74,
+      "text": "And the blood pressure? I'll recheck it at your next visit. If it's still above 130 over 80, we'll start a medication for it. Let's repeat the A1C in three months. Okay. That's a lot, but it makes sense."
+    },
+    {
+      "id": "s25",
+      "speaker": "doctor",
+      "start": 308.31,
+      "end": 331.06,
+      "text": "Check your feet every day and call us if you notice any sores. See you in three months, Mr. Mitchell."
+    }
+  ]
+}

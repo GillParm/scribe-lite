@@ -1,0 +1,240 @@
+{
+  "model": "gemini-3.5-flash-lite",
+  "wall_seconds": 8.6,
+  "calls": [
+    {
+      "status": "ok",
+      "input_tokens": 5224,
+      "output_tokens": 2497,
+      "cost_usd_at_paid_rates": "0.007810",
+      "latency_ms": 8557,
+      "prompt_sha256": "50f77d63e6fb208c9e13ec46252a1baba4069f1b4609d48005f585866269f04e"
+    }
+  ],
+  "segments": [
+    {
+      "id": "s1",
+      "speaker": "doctor",
+      "start": 0.057,
+      "end": 3.827,
+      "text": "Hi there. I'm Dr. Brooks. You must be Tyler?"
+    },
+    {
+      "id": "s2",
+      "speaker": "patient",
+      "start": 4.148,
+      "end": 6.308,
+      "text": "Yeah, Tyler Guyan."
+    },
+    {
+      "id": "s3",
+      "speaker": "doctor",
+      "start": 7.157,
+      "end": 9.077,
+      "text": "Can you give me your date of birth?"
+    },
+    {
+      "id": "s4",
+      "speaker": "patient",
+      "start": 9.422,
+      "end": 12.872,
+      "text": "November 22nd, 2001."
+    },
+    {
+      "id": "s5",
+      "speaker": "doctor",
+      "start": 13.597,
+      "end": 16.037,
+      "text": "And the phone number we can reach you at?"
+    },
+    {
+      "id": "s6",
+      "speaker": "patient",
+      "start": 16.489,
+      "end": 22.319,
+      "text": "647-555-0119."
+    },
+    {
+      "id": "s7",
+      "speaker": "doctor",
+      "start": 23.367,
+      "end": 29.357,
+      "text": "Thanks. And your address is 305 Habourview Lane, Unit 12, Toronto?"
+    },
+    {
+      "id": "s8",
+      "speaker": "patient",
+      "start": 29.878,
+      "end": 31.338,
+      "text": "Yep, that's it."
+    },
+    {
+      "id": "s9",
+      "speaker": "doctor",
+      "start": 32.177,
+      "end": 33.747,
+      "text": "So what happened to your ankle?"
+    },
+    {
+      "id": "s10",
+      "speaker": "patient",
+      "start": 34.341,
+      "end": 42.751,
+      "text": "I was playing basketball last night and came down from a rebound on my teammate's foot. My right ankle rolled inward really hard."
+    },
+    {
+      "id": "s11",
+      "speaker": "doctor",
+      "start": 43.917,
+      "end": 45.427,
+      "text": "Did you hear or feel a pop?"
+    },
+    {
+      "id": "s12",
+      "speaker": "patient",
+      "start": 46.121,
+      "end": 51.721,
+      "text": "I felt something, kind of a snap, and then it swelled up pretty fast on the outside."
+    },
+    {
+      "id": "s13",
+      "speaker": "doctor",
+      "start": 52.877,
+      "end": 54.897,
+      "text": "Were you able to walk on it afterwards?"
+    },
+    {
+      "id": "s14",
+      "speaker": "patient",
+      "start": 55.432,
+      "end": 102.132,
+      "text": "I lived off the court. It hurt, but I could walk to the car, maybe 10 or 15 steps. What have you done for it since? I iced it last night and kept it up on a pillow and I took 400 milligrams of ibuprofen this morning. Have you ever hurt this ankle before? Not this one. I sprained my left ankle about 2 years ago."
+    },
+    {
+      "id": "s15",
+      "speaker": "doctor",
+      "start": 120.937,
+      "end": 122.957,
+      "text": "Any numbness or tingling in your foot?"
+    },
+    {
+      "id": "s16",
+      "speaker": "patient",
+      "start": 123.644,
+      "end": 125.404,
+      "text": "No, nothing like that."
+    },
+    {
+      "id": "s17",
+      "speaker": "doctor",
+      "start": 126.547,
+      "end": 136.877,
+      "text": "Okay, let's take a look. There's moderate swelling and some bruising over the outside of your right ankle. Tell me where it hurts. Here, just in front of the ankle bone?"
+    },
+    {
+      "id": "s18",
+      "speaker": "patient",
+      "start": 137.426,
+      "end": 140.236,
+      "text": "Yeah, right there. That's the worst spot."
+    },
+    {
+      "id": "s19",
+      "speaker": "doctor",
+      "start": 141.137,
+      "end": 147.937,
+      "text": "That's over the anterior talofibular ligament. Now, I'm pressing on the back edge and the tip of both ankle bones. Any pain?"
+    },
+    {
+      "id": "s20",
+      "speaker": "patient",
+      "start": 149.03,
+      "end": 150.31,
+      "text": "No, not really."
+    },
+    {
+      "id": "s21",
+      "speaker": "doctor",
+      "start": 151.627,
+      "end": 156.497,
+      "text": "And the base of the fifth metatarsal here, and the navicular on the inside of your foot?"
+    },
+    {
+      "id": "s22",
+      "speaker": "patient",
+      "start": 157.069,
+      "end": 158.079,
+      "text": "That's fine."
+    },
+    {
+      "id": "s23",
+      "speaker": "doctor",
+      "start": 159.087,
+      "end": 206.207,
+      "text": "Your pulses and sensation in the foot are normal. The anterior drawer test shows a bit of laxity compared with the other side. Can you take four steps for me? It hurts, but yes, I can do it."
+    },
+    {
+      "id": "s24",
+      "speaker": "doctor",
+      "start": 212.827,
+      "end": 224.877,
+      "text": "Good, based on the Ottawa ankle rules, you don't need an X-ray today. There's no bony tenderness and you can bear weight. This looks like a moderate, grade 2 sprain of the lateral ligaments."
+    },
+    {
+      "id": "s25",
+      "speaker": "patient",
+      "start": 225.568,
+      "end": 227.678,
+      "text": "How long will I be out of basketball?"
+    },
+    {
+      "id": "s26",
+      "speaker": "doctor",
+      "start": 228.607,
+      "end": 245.247,
+      "text": "Usually 3 to 4 weeks, sometimes a bit longer. For the next few days, keep it elevated. Use ice for 15 to 20 minutes at a time and wear an air stirrup brace. Crutches are fine for 2 or 3 days, but put as much weight on it as you comfortably can."
+    },
+    {
+      "id": "s27",
+      "speaker": "patient",
+      "start": 246.046,
+      "end": 248.016,
+      "text": "Can I keep taking the ibuprofen?"
+    },
+    {
+      "id": "s28",
+      "speaker": "doctor",
+      "start": 248.607,
+      "end": 301.217,
+      "text": "Yes, 400 milligrams every 8 hours with food, for up to 5 days. I'm also referring you to physiotherapy for balance and strengthening exercises, which lowers the chance of spraining it again."
+    },
+    {
+      "id": "s29",
+      "speaker": "patient",
+      "start": 301.996,
+      "end": 305.106,
+      "text": "I work at a warehouse. Can I still go in?"
+    },
+    {
+      "id": "s30",
+      "speaker": "doctor",
+      "start": 306.017,
+      "end": 310.607,
+      "text": "I'll write a note for modified duties for 1 week. No heavy lifting and no ladders."
+    },
+    {
+      "id": "s31",
+      "speaker": "patient",
+      "start": 311.236,
+      "end": 312.446,
+      "text": "Okay, thanks."
+    },
+    {
+      "id": "s32",
+      "speaker": "doctor",
+      "start": 313.907,
+      "end": 320.217,
+      "text": "Come back if you can't bear weight at all, if your foot gets numb or cold, or if it's not getting better in a week."
+    }
+  ]
+}

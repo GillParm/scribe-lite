@@ -1,0 +1,247 @@
+{
+  "model": "gemini-3.8-flash",
+  "wall_seconds": 234.7,
+  "calls": [
+    {
+      "status": "ok",
+      "input_tokens": 5488,
+      "output_tokens": 3367,
+      "cost_usd_at_paid_rates": "0.016742",
+      "latency_ms": 234659,
+      "prompt_sha256": "6ba391f075a66e89a41581558f7c054223fa62034044f3373cf5f576c2f28879"
+    }
+  ],
+  "segments": [
+    {
+      "id": "s1",
+      "speaker": "doctor",
+      "start": 0.0,
+      "end": 8.0,
+      "text": "Hi, Mr. Mitchell. I'm Dr. Raman. Good to see you again. Before we start, can you confirm your date of birth for me?"
+    },
+    {
+      "id": "s2",
+      "speaker": "patient",
+      "start": 8.0,
+      "end": 12.0,
+      "text": "July 19th, 1967."
+    },
+    {
+      "id": "s3",
+      "speaker": "doctor",
+      "start": 12.0,
+      "end": 22.0,
+      "text": "Thank you. And we have your address as 1187 Birchwood Drive, Mississauga, L5G 2K9. Is that still current?"
+    },
+    {
+      "id": "s4",
+      "speaker": "patient",
+      "start": 22.0,
+      "end": 24.0,
+      "text": "Still the same, yes."
+    },
+    {
+      "id": "s5",
+      "speaker": "doctor",
+      "start": 24.0,
+      "end": 30.5,
+      "text": "And your phone number, 905-555-0147?"
+    },
+    {
+      "id": "s6",
+      "speaker": "patient",
+      "start": 30.5,
+      "end": 35.5,
+      "text": "That's the house phone. My wife, Linda, usually answers it."
+    },
+    {
+      "id": "s7",
+      "speaker": "doctor",
+      "start": 35.5,
+      "end": 41.0,
+      "text": "That's fine. So this is your 3-month diabetes check. How have things been going?"
+    },
+    {
+      "id": "s8",
+      "speaker": "patient",
+      "start": 41.0,
+      "end": 49.0,
+      "text": "Honestly, not great. The holidays were rough. I've been eating a lot more bread and sweets than I should."
+    },
+    {
+      "id": "s9",
+      "speaker": "doctor",
+      "start": 49.0,
+      "end": 55.0,
+      "text": "That's common. Are you still taking the metformin, 1,000 mg twice a day?"
+    },
+    {
+      "id": "s10",
+      "speaker": "patient",
+      "start": 55.0,
+      "end": 63.5,
+      "text": "Mostly. I skipped the evening dose sometimes because it upsets my stomach. Maybe 3 or 4 times a week I miss it."
+    },
+    {
+      "id": "s11",
+      "speaker": "doctor",
+      "start": 63.5,
+      "end": 65.5,
+      "text": "What kind of stomach upset?"
+    },
+    {
+      "id": "s12",
+      "speaker": "patient",
+      "start": 65.5,
+      "end": 71.0,
+      "text": "Cramping and loose stools, usually an hour or so after I take it."
+    },
+    {
+      "id": "s13",
+      "speaker": "doctor",
+      "start": 71.0,
+      "end": 74.5,
+      "text": "Okay. What have your sugars been like at home?"
+    },
+    {
+      "id": "s14",
+      "speaker": "patient",
+      "start": 74.5,
+      "end": 78.0,
+      "text": "In the mornings they're usually between 8 and 10."
+    },
+    {
+      "id": "s15",
+      "speaker": "doctor",
+      "start": 78.0,
+      "end": 80.0,
+      "text": "And exercise?"
+    },
+    {
+      "id": "s16",
+      "speaker": "patient",
+      "start": 80.0,
+      "end": 85.0,
+      "text": "I walk the dog maybe twice a week, less since it got cold."
+    },
+    {
+      "id": "s17",
+      "speaker": "doctor",
+      "start": 85.0,
+      "end": 89.5,
+      "text": "Any chest pain, shortness of breath, or problems with your vision?"
+    },
+    {
+      "id": "s18",
+      "speaker": "patient",
+      "start": 89.5,
+      "end": 101.5,
+      "text": "No chest pain. My eyes seem fine, but I haven't had an eye exam in about 2 years. The one thing is my feet. Sometimes at night I get tingling in my toes."
+    },
+    {
+      "id": "s19",
+      "speaker": "doctor",
+      "start": 101.5,
+      "end": 103.0,
+      "text": "Both feet?"
+    },
+    {
+      "id": "s20",
+      "speaker": "patient",
+      "start": 103.0,
+      "end": 105.0,
+      "text": "Yes, both."
+    },
+    {
+      "id": "s21",
+      "speaker": "doctor",
+      "start": 105.0,
+      "end": 108.5,
+      "text": "Okay. Are you taking any supplements?"
+    },
+    {
+      "id": "s22",
+      "speaker": "patient",
+      "start": 108.5,
+      "end": 114.5,
+      "text": "My brother-in-law keeps telling me to try cinnamon pills, but I haven't started them."
+    },
+    {
+      "id": "s23",
+      "speaker": "doctor",
+      "start": 114.5,
+      "end": 125.0,
+      "text": "I'd hold off on those. There isn't good evidence that they help. Now, your A1C from last week came back at 8.1%. In the spring it was 7.4."
+    },
+    {
+      "id": "s24",
+      "speaker": "patient",
+      "start": 125.0,
+      "end": 127.5,
+      "text": "So it's going up."
+    },
+    {
+      "id": "s25",
+      "speaker": "doctor",
+      "start": 127.5,
+      "end": 145.5,
+      "text": "It is. Your blood pressure today is 142/88, and your weight is 98 kg, up 2 from last time. On the foot exam, your pulses are good, but sensation with the monofilament is reduced at both big toes. That fits with early nerve changes from diabetes."
+    },
+    {
+      "id": "s26",
+      "speaker": "patient",
+      "start": 145.5,
+      "end": 147.5,
+      "text": "That's worrying."
+    },
+    {
+      "id": "s27",
+      "speaker": "doctor",
+      "start": 147.5,
+      "end": 169.0,
+      "text": "It's a sign we should tighten things up. Here's what I'd suggest. First, let's switch your metformin to the extended-release form, still 1,000 mg twice a day. It's usually easier on the stomach. Second, I'd like to add a medication called empagliflozin, 10 mg once a day. It lowers sugar and also protects the heart and kidneys."
+    },
+    {
+      "id": "s28",
+      "speaker": "patient",
+      "start": 169.0,
+      "end": 171.0,
+      "text": "Any side effects?"
+    },
+    {
+      "id": "s29",
+      "speaker": "doctor",
+      "start": 171.0,
+      "end": 187.5,
+      "text": "It can cause genital yeast infections and make you pee more, so drink enough water. Third, I'm referring you to the diabetes education program to meet with a dietitian, and to an eye doctor for a retinal exam. We'll also do kidney function and a urine test today."
+    },
+    {
+      "id": "s30",
+      "speaker": "patient",
+      "start": 187.5,
+      "end": 190.0,
+      "text": "And the blood pressure?"
+    },
+    {
+      "id": "s31",
+      "speaker": "doctor",
+      "start": 190.0,
+      "end": 199.5,
+      "text": "I'll recheck it at your next visit. If it's still above 130/80, we'll start a medication for it. Let's repeat the A1C in 3 months."
+    },
+    {
+      "id": "s32",
+      "speaker": "patient",
+      "start": 199.5,
+      "end": 204.0,
+      "text": "Okay. That's a lot, but it makes sense."
+    },
+    {
+      "id": "s33",
+      "speaker": "doctor",
+      "start": 204.0,
+      "end": 211.5,
+      "text": "Check your feet every day, and call us if you notice any sores. See you in 3 months, Mr. Mitchell."
+    }
+  ]
+}
