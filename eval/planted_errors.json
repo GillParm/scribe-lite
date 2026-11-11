@@ -1,0 +1,23 @@
+{
+  "notice": "Deliberate errors planted in the generated sample notes to test whether the claim check catches them. Each edit contradicts or goes beyond the transcript.",
+  "samples": {
+    "sore-throat": [
+      { "kind": "wrong dose", "replace": "plan-2", "text": "Azithromycin 250 mg once daily for five days was prescribed and sent to the patient's pharmacy." },
+      { "kind": "flipped negation", "replace": "subjective-3", "text": "The patient reports a productive cough and a runny nose." },
+      { "kind": "wrong number", "replace": "objective-1", "text": "Temperature 39.4, heart rate 96, blood pressure 118/76." },
+      { "kind": "invented order", "insert": "plan", "text": "A chest X-ray was ordered to rule out pneumonia.", "cites": ["s21"] }
+    ],
+    "diabetes-follow-up": [
+      { "kind": "wrong dose", "replace": "plan-2", "text": "Start empagliflozin 25 mg twice daily." },
+      { "kind": "not started recorded as taken", "replace": "subjective-10", "text": "The patient takes cinnamon pills daily to help control his blood sugar." },
+      { "kind": "inverted finding", "replace": "objective-4", "text": "Foot exam shows reduced pulses with normal monofilament sensation." },
+      { "kind": "invented diagnosis and drug", "insert": "assessment", "text": "Hypertension, now treated with lisinopril 10 mg daily.", "cites": ["s25"] }
+    ],
+    "ankle-sprain": [
+      { "kind": "wrong side", "replace": "assessment-1", "text": "Moderate, grade two sprain of the lateral ligaments of the left ankle." },
+      { "kind": "wrong dose and duration", "replace": "plan-6", "text": "Ibuprofen 800 mg every four hours for two weeks." },
+      { "kind": "reversed decision", "replace": "assessment-2", "text": "X-ray ordered to rule out a fracture of the lateral malleolus." },
+      { "kind": "invented referral", "insert": "plan", "text": "Referred to orthopaedic surgery to discuss ligament repair.", "cites": ["s33"] }
+    ]
+  }
+}
