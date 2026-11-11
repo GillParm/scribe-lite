@@ -5,7 +5,7 @@ from __future__ import annotations
 import json
 from dataclasses import dataclass
 from pathlib import Path
-from typing import Literal
+from typing import Any, Literal
 
 from pydantic import BaseModel
 
@@ -102,3 +102,18 @@ def load_samples(samples_dir: Path) -> list[Sample]:
         for path in sorted(samples_dir.glob("*/transcript.json"))
         if (path.parent / "script.json").exists()
     ]
+
+
+OUTPUT_FILE = "encounter.json"
+
+
+def load_sample_outputs(samples: list[Sample]) -> dict[str, dict[str, Any]]:
+    """Precomputed pipeline outputs, keyed by slug, for the samples that have them."""
+    outputs: dict[str, dict[str, Any]] = {}
+    for sample in samples:
+        path = sample.outputs_dir / OUTPUT_FILE
+        if path.exists():
+            data = json.loads(path.read_text(encoding="utf-8"))
+            assert isinstance(data, dict)
+            outputs[sample.slug] = data
+    return outputs
